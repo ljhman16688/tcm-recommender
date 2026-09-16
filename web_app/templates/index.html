@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>KG-RAR 中药剂型智能推荐系统 v2.1</title>
+<link rel="stylesheet" href="/static/style.css?v=2.1">
+</head>
+<body>
+
+<!-- JS 诊断：如果 JS 正常运行，页面顶部会出现绿色横条 -->
+<script>
+(function() {
+  var bar = document.createElement('div');
+  bar.id = 'js-diag';
+  bar.style.cssText = 'position:fixed;top:0;left:0;right:0;height:4px;background:#22c55e;z-index:99999;';
+  document.body.appendChild(bar);
+  console.log('JS diag: OK');
+})();
+</script>
+
+<!-- Ambient background decorations -->
+<div class="froth froth-1"></div>
+<div class="froth froth-2"></div>
+
+<div class="container">
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-icon">🌿</div>
+    <h1>中药剂型智能推荐系统</h1>
+    <p class="subtitle">KG-RAR · Knowledge Graph Retrieval-Augmented Recommender</p>
+    <p class="desc">融合知识图谱与机器学习，为中药处方智能推荐最适宜剂型，并提供可追溯的推理依据</p>
+    <div class="divider"></div>
+  </header>
+
+  <!-- Input Section -->
+  <section class="input-section">
+    <div class="input-row">
+      <div class="input-group">
+        <label for="prescription">
+          <span class="label-icon">📝</span>
+          药材处方
+          <span class="label-hint">药名 克数，逗号分隔</span>
+        </label>
+        <textarea id="prescription" rows="3"
+          placeholder="例：丹参 15g, 三七 9g, 冰片 0.5g"></textarea>
+      </div>
+      <div class="input-group">
+        <label for="indication">
+          <span class="label-icon">🔍</span>
+          适应症
+        </label>
+        <input type="text" id="indication"
+          placeholder="例：冠心病心绞痛，气滞血瘀证">
+      </div>
+    </div>
+    <div class="button-row">
+      <button id="predict-btn" onclick="console.log('Button clicked!'); doPredict();">
+        <span class="btn-icon">▶</span> 开始推荐
+      </button>
+      <button class="clear-btn" onclick="clearAll()">清空</button>
+      <label class="llm-toggle" title="调用大语言模型基于知识图谱证据生成推理依据（KG-RAR Generate 环节）">
+        <input type="checkbox" id="llm-toggle">
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+        <span class="toggle-label">LLM 增强推理</span>
+      </label>
+    </div>
+
+    <!-- Examples -->
+    <div class="examples">
+      <span class="examples-label">💡 快捷示例</span>
+    </div>
+  </section>
+
+  <!-- Loading -->
+  <div id="loading" class="loading hidden">
+    <div class="spinner"></div>
+    <p id="loading-text">正在分析药材属性，检索知识图谱证据…</p>
+  </div>
+
+  <!-- Error -->
+  <div id="error" class="error hidden"></div>
+
+  <!-- ==============================================
+       Results — 按 KG-RAR 流程分模块展示
+       ============================================== -->
+  <div id="results" class="results hidden">
+
+    <!-- Input summary -->
+    <div class="input-summary">
+      <span class="summary-tag">📋 处方</span>
+      <span class="summary-value" id="summary-herbs"></span>
+      <span class="summary-tag">🎯 适应症</span>
+      <span class="summary-value" id="summary-indication"></span>
+    </div>
+
+    <!-- Anchor badge -->
+    <div id="anchor-badge" class="anchor-badge hidden">
+      <span class="anchor-icon">🏷️</span>
+      <span id="anchor-text"></span>
+    </div>
+
+    <!-- ==============================================
+         KG-RAR 流程图（步骤条）
+         ============================================== -->
+    <div class="pipeline-bar">
+      <div class="pipeline-step active">
+        <span class="pipeline-num">1</span>
+        <span class="pipeline-label">处方解析</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step active">
+        <span class="pipeline-num">2</span>
+        <span class="pipeline-label">CatBoost<br>分类推理</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step active">
+        <span class="pipeline-num">3</span>
+        <span class="pipeline-label">KG 多路<br>证据检索</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step active">
+        <span class="pipeline-num">4</span>
+        <span class="pipeline-label">规则引擎<br>约束匹配</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step active" id="pipeline-llm">
+        <span class="pipeline-num">5</span>
+        <span class="pipeline-label">LLM 生成<br>推理文本</span>
+      </div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step active">
+        <span class="pipeline-num">✦</span>
+        <span class="pipeline-label">推荐结果<br>输出</span>
+      </div>
+    </div>
+
+    <!-- ==============================================
+         模块一：CatBoost 模型推理 → 推荐剂型 Top-5
+         ============================================== -->
+    <div class="module-card module-ml">
+      <div class="module-header">
+        <div class="module-header-left">
+          <span class="module-icon">🧠</span>
+          <div>
+            <span class="module-title">推荐剂型 Top-5</span>
+            <span class="module-subtitle">—— CatBoost 多分类模型 · 68 维手工特征 + 41 维 KG 特征（109 维融合）</span>
+          </div>
+        </div>
+        <span class="module-badge">Step 2 · 模型推理</span>
+      </div>
+      <div id="top5-cards" class="top5-cards"></div>
+    </div>
+
+    <!-- ==============================================
+         模块二：规则引擎推理 → 匹配的规则 + 排除剂型
+         ============================================== -->
+    <div class="module-card module-rules">
+      <div class="module-header">
+        <div class="module-header-left">
+          <span class="module-icon">📜</span>
+          <div>
+            <span class="module-title">规则引擎约束匹配</span>
+            <span class="module-subtitle">—— 25 条专业规则 · 4 级证据体系（L1 法规禁忌 → L4 弱先验）</span>
+          </div>
+        </div>
+        <span class="module-badge">Step 4 · 规则约束</span>
+      </div>
+
+      <!-- 规则匹配详情 -->
+      <div id="rules-section" class="hidden">
+        <div class="sub-module-title">匹配触发的规则</div>
+        <div id="rules-detail" class="rules-detail"></div>
+      </div>
+
+      <!-- L1 硬约束排除的剂型 -->
+      <div id="excluded-section" class="hidden">
+        <div class="sub-module-title">⛔ L1 硬约束 — 应排除的剂型（不可违反）</div>
+        <div id="excluded-list" class="excluded-list"></div>
+      </div>
+
+      <!-- L2 风险警示 -->
+      <div id="warned-section" class="hidden">
+        <div class="sub-module-title">⚠️ L2 风险警示 — 需审慎评估的剂型（不直接排除，但须在临床决策中标注风险）</div>
+        <div id="warned-list" class="warned-list"></div>
+      </div>
+
+      <!-- 规则冲突 -->
+      <div id="conflicts-section" class="hidden">
+        <div class="sub-module-title">⚡ 规则冲突提示</div>
+        <div id="conflicts-list" class="conflicts-list"></div>
+      </div>
+
+      <div id="rules-empty" class="no-data-block hidden">
+        <span>✅ 无规则触发 — 该处方不触发任何约束条件，剂型选择灵活</span>
+      </div>
+    </div>
+
+    <!-- ==============================================
+         模块三：KG 多路证据检索
+         ============================================== -->
+    <div class="module-card module-kg">
+      <div class="module-header">
+        <div class="module-header-left">
+          <span class="module-icon">🔗</span>
+          <div>
+            <span class="module-title">知识图谱多路证据检索</span>
+            <span class="module-subtitle">—— 药材属性 · 相似处方 · 疾病-剂型偏好 · 药材历史剂型统计</span>
+          </div>
+        </div>
+        <span class="module-badge">Step 3 · KG 检索</span>
+      </div>
+
+      <!-- 药材属性 + KG 偏好 -->
+      <div class="sub-module-title">① 药材属性分析</div>
+      <div id="herb-props" class="herb-props"></div>
+      <div id="props-tags" class="props-tags"></div>
+
+      <!-- 相似处方 -->
+      <div id="similar-section" class="hidden">
+        <div class="sub-module-title">② 知识图谱相似处方（药材重叠 ≥ 2 味，Jaccard ≥ 0.3）</div>
+        <div id="similar-formulas" class="similar-list"></div>
+      </div>
+
+      <!-- 疾病偏好 -->
+      <div id="disease-section" class="hidden">
+        <div class="sub-module-title">③ 适应症-剂型偏好（基于 KG 历史统计）</div>
+        <div id="disease-prefs" class="disease-prefs"></div>
+      </div>
+    </div>
+
+    <!-- ==============================================
+         模块四：LLM 生成推理文本（Generate 环节）
+         ============================================== -->
+    <div class="module-card module-llm">
+      <div class="module-header">
+        <div class="module-header-left">
+          <span class="module-icon">🤖</span>
+          <div>
+            <span class="module-title">推理依据</span>
+            <span class="module-subtitle" id="reasoning-source-label">—— 基于知识图谱检索证据与规则引擎约束生成</span>
+          </div>
+        </div>
+        <span class="module-badge" id="reasoning-step-badge">Step 3+4 融合</span>
+      </div>
+
+      <!-- LLM 徽章 -->
+      <div id="llm-badge" class="llm-badge hidden">
+        <div class="llm-badge-body">
+          <span class="llm-badge-icon">🤖</span>
+          <span id="llm-badge-text"></span>
+        </div>
+        <span class="llm-badge-tag">KG-RAR · Generate 环节</span>
+      </div>
+
+      <!-- LLM 冲突预警 -->
+      <div id="llm-conflicts" class="llm-conflicts hidden"></div>
+
+      <div id="reasoning-list" class="reasoning-list"></div>
+      <div id="reasoning-template-badge" class="template-badge">
+        <span>📋 离线模板推理（未启用 LLM 增强推理）</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-line"></div>
+    KG-RAR 中药剂型智能推荐系统 · 基于知识图谱增强检索
+  </footer>
+
+</div>
+
+<script>
+// ==============================================
+// Load examples
+// ==============================================
+fetch('/api/examples')
+  .then(r => r.json())
+  .then(examples => {
+    const container = document.querySelector('.examples');
+    examples.forEach(ex => {
+      const btn = document.createElement('button');
+      btn.className = 'example-btn';
+      btn.textContent = ex.name;
+      btn.onclick = () => {
+        document.getElementById('prescription').value = ex.prescription;
+        document.getElementById('indication').value = ex.indication;
+        document.getElementById('predict-btn').scrollIntoView({ behavior: 'smooth' });
+      };
+      container.appendChild(btn);
+    });
+  });
+
+// ==============================================
+// Predict
+// ==============================================
+async function doPredict() {
+  const prescription = document.getElementById('prescription').value.trim();
+  const indication = document.getElementById('indication').value.trim();
+
+  if (!prescription) {
+    showError('请输入药材处方');
+    return;
+  }
+
+  const useLlm = document.getElementById('llm-toggle').checked;
+  const loading = document.getElementById('loading');
+  const results = document.getElementById('results');
+  const error = document.getElementById('error');
+  const btn = document.getElementById('predict-btn');
+  const loadingText = document.getElementById('loading-text');
+
+  loading.classList.remove('hidden');
+  results.classList.add('hidden');
+  error.classList.add('hidden');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="btn-icon">⏳</span> 分析中…';
+  loadingText.textContent = useLlm
+    ? '正在调用大语言模型（qwen3.7-max）基于知识图谱证据生成推理…'
+    : '正在分析药材属性，检索知识图谱证据…';
+
+  try {
+    const resp = await fetch('/api/predict', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ prescription, indication, use_llm: useLlm })
+    });
+    const data = await resp.json();
+
+    if (data.error) {
+      showError(data.error);
+      return;
+    }
+
+    renderResults(data);
+    results.classList.remove('hidden');
+    results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  } catch (e) {
+    showError('请求失败: ' + e.message);
+  } finally {
+    loading.classList.add('hidden');
+    btn.disabled = false;
+    btn.innerHTML = '<span class="btn-icon">▶</span> 开始推荐';
+  }
+}
+
+// ==============================================
+// Render
+// ==============================================
+function renderResults(data) {
+  // ---- Input summary ----
+  document.getElementById('summary-herbs').textContent =
+    data.herbs.map((h, i) => `${h} ${data.doses[i]}g`).join(', ');
+  document.getElementById('summary-indication').textContent = data.indication || '(未填写)';
+
+  // ---- Anchor badge ----
+  const anchorBadge = document.getElementById('anchor-badge');
+  const anchorText = document.getElementById('anchor-text');
+  if (data.anchor_match) {
+    anchorBadge.classList.remove('hidden');
+    const isClassic = data.anchor_match.name && !data.anchor_match.name.startsWith('formula:');
+    const prefix = isClassic ? '经典名方锚定' : 'KG 锚定触发';
+    anchorText.innerHTML = `<strong>${prefix}</strong>：该处方与「<strong>${data.anchor_match.name}</strong>」高度匹配（药材重叠 ${data.anchor_match.overlap_count} 味：${data.anchor_match.overlap.join('、')}），已将标准剂型「<strong>${data.anchor_match.form}</strong>」置顶`;
+  } else {
+    anchorBadge.classList.add('hidden');
+  }
+
+  // ---- LLM step in pipeline ----
+  const pipelineLlm = document.getElementById('pipeline-llm');
+  if (data.use_llm) {
+    pipelineLlm.classList.remove('inactive');
+    pipelineLlm.classList.add('active');
+  } else {
+    pipelineLlm.classList.add('inactive');
+    pipelineLlm.classList.remove('active');
+  }
+
+  // ==============================================
+  // Module 1: Top-5 cards (CatBoost)
+  // ==============================================
+  const cards = document.getElementById('top5-cards');
+  cards.innerHTML = data.top5.map((item, i) => {
+    const isAnchor = item.is_anchor;
+    const conf = item.confidence;
+    const barWidth = isAnchor ? 100 : Math.round(conf * 100);
+    const barClass = isAnchor ? 'anchor' : (i === 0 ? 'top1' : '');
+    const badge = isAnchor ? '<span class="anchor-tag">⭐ KG锚定</span>' : '';
+    const rankBadge = isAnchor
+      ? '<span class="rank-badge anchor">★</span>'
+      : `<span class="rank-badge">#${item.rank}</span>`;
+    const pctNum = isAnchor ? '100' : (conf * 100).toFixed(1);
+    const ruleTag = item.rule_evidence ? '<span class="rule-evidence-tag">📋 规则证据</span>' : '';
+    return `
+      <div class="card ${isAnchor ? 'card-anchor' : ''}">
+        <div class="card-main">
+          ${rankBadge}
+          <span class="card-form">${item.form}</span>
+          ${badge}
+          ${ruleTag}
+          <span class="card-conf">${pctNum}<span class="card-conf-unit">%</span></span>
+        </div>
+        <div class="card-bar">
+          <div class="card-bar-fill ${barClass}" style="width:${barWidth}%"></div>
+        </div>
+        ${isAnchor ? '<div class="card-anchor-note">经知识图谱锚定，标准剂型置信置顶</div>' : ''}
+      </div>`;
+  }).join('');
+
+  // ==============================================
+  // Module 2: Rules
+  // ==============================================
+  const rulesSection = document.getElementById('rules-section');
+  const rulesDetail = document.getElementById('rules-detail');
+  const excludedSection = document.getElementById('excluded-section');
+  const rulesEmpty = document.getElementById('rules-empty');
+
+  if (data.matched_rules) {
+    const levelMeta = {
+      'L1': { label: '法规禁忌（硬约束）', cls: 'level-1', icon: '🛡️', desc: '基于药典/法规，具有强制性约束力' },
+      'L2': { label: '风险警示', cls: 'level-2', icon: '⚠️', desc: '基于药理学/毒理学证据，需审慎评估' },
+      'L3': { label: '工艺调整建议', cls: 'level-3', icon: '🔧', desc: '基于药剂学/制剂工艺，建议性指导' },
+      'L4': { label: '弱先验', cls: 'level-4', icon: '📊', desc: '基于KG统计规律，弱参考信号' },
+    };
+    let hasAny = false;
+    let html = '';
+    for (const [level, meta] of Object.entries(levelMeta)) {
+      const rules = data.matched_rules[level] || [];
+      if (rules.length === 0) continue;
+      hasAny = true;
+      html += `<div class="rule-level-block ${meta.cls}">`;
+      html += `<div class="rule-level-header">`;
+      html += `<span class="rule-level-icon">${meta.icon}</span>`;
+      html += `<span class="rule-level-label">${meta.label}</span>`;
+      html += `<span class="rule-level-count">${rules.length}条</span>`;
+      html += `<span class="rule-level-desc">${meta.desc}</span>`;
+      html += `</div>`;
+      html += `<div class="rule-level-items">`;
+      rules.forEach(r => {
+        const actionBadge = r.action === 'exclude' ? '⛔ 排除'
+          : r.action === 'warn_exclude' ? '🚫 警示排除'
+          : r.action === 'warn' ? '⚠️ 警示'
+          : r.action === 'suggest_process' ? '🔧 工艺建议'
+          : r.action === 'suggest_prefer' ? '👍 偏好'
+          : r.action === 'boost_rank' ? '📈 加权'
+          : '💡 提示';
+        const consensus = r.expert_consensus
+          ? `<span class="rule-consensus">👥 ${r.expert_consensus}</span>` : '';
+        const exceptions = r.exceptions && r.exceptions.length > 0 && r.exceptions[0] !== '无'
+          ? `<span class="rule-exceptions">⚠️ 例外: ${r.exceptions.join('；')}</span>` : '';
+        html += `<div class="rule-item">`;
+        html += `<div class="rule-item-header">`;
+        html += `<span class="rule-item-name">${r.rule_name}</span>`;
+        html += `<span class="rule-item-action">${actionBadge}</span>`;
+        html += consensus;
+        html += `</div>`;
+        html += `<div class="rule-item-body">${r.recommendation}</div>`;
+        html += `<div class="rule-item-footer">`;
+        html += `<span class="rule-source">📖 ${r.source}</span>`;
+        html += exceptions;
+        if (r.target_forms && r.target_forms.length > 0) {
+          html += `<span class="rule-targets">🎯 ${r.target_forms.join('、')}</span>`;
+        }
+        html += `</div>`;
+        html += `</div>`;
+      });
+      html += `</div></div>`;
+    }
+    if (hasAny) {
+      rulesSection.classList.remove('hidden');
+      rulesDetail.innerHTML = html;
+    } else {
+      rulesSection.classList.add('hidden');
+    }
+  } else {
+    rulesSection.classList.add('hidden');
+  }
+
+  // Excluded forms (L1 only — hard constraints)
+  const warnedSection = document.getElementById('warned-section');
+  const conflictsSection = document.getElementById('conflicts-section');
+
+  if (data.excluded && data.excluded.length > 0) {
+    excludedSection.classList.remove('hidden');
+    document.getElementById('excluded-list').innerHTML = data.excluded.map(e => {
+      const src = e.source ? `<span class="exc-source">📖 ${e.source}</span>` : '';
+      return `
+      <div class="excluded-item">
+        <div class="exc-header">
+          <span class="exc-form">✕ ${e.form}</span>
+          <span class="exc-level level-1">L1 硬约束</span>
+        </div>
+        <span class="exc-reason">${e.reason}</span>
+        ${src}
+      </div>`;
+    }).join('');
+  } else {
+    excludedSection.classList.add('hidden');
+  }
+
+  // L2 warned forms (risk warnings — not excluded, just flagged)
+  if (data.warned && data.warned.length > 0) {
+    warnedSection.classList.remove('hidden');
+    document.getElementById('warned-list').innerHTML = data.warned.map(w => {
+      const src = w.source ? `<span class="warned-source">📖 ${w.source}</span>` : '';
+      return `
+      <div class="warned-item">
+        <div class="warned-header">
+          <span class="warned-form">⚠ ${w.form}</span>
+          <span class="warned-level">L2 风险警示</span>
+        </div>
+        <span class="warned-reason">${w.reason}</span>
+        ${src}
+      </div>`;
+    }).join('');
+  } else {
+    warnedSection.classList.add('hidden');
+  }
+
+  // Rule conflicts
+  if (data.rule_conflicts && data.rule_conflicts.length > 0) {
+    conflictsSection.classList.remove('hidden');
+    document.getElementById('conflicts-list').innerHTML = data.rule_conflicts.map(c => {
+      const icon = c.severity === 'resolved_l1' ? '🛡️' : '⚠️';
+      return `
+      <div class="conflict-block">
+        <span class="conflict-block-icon">${icon}</span>
+        <span class="conflict-block-form">${c.form}</span>
+        <span class="conflict-block-msg">${c.message}</span>
+      </div>`;
+    }).join('');
+  } else {
+    conflictsSection.classList.add('hidden');
+  }
+
+  // Show rules-empty if no rules and no excluded and no warned
+  const hasRules = data.matched_rules &&
+    ['L1','L2','L3','L4'].some(l => (data.matched_rules[l] || []).length > 0);
+  const hasExcluded = data.excluded && data.excluded.length > 0;
+  const hasWarned = data.warned && data.warned.length > 0;
+  if (!hasRules && !hasExcluded && !hasWarned) {
+    rulesEmpty.classList.remove('hidden');
+  } else {
+    rulesEmpty.classList.add('hidden');
+  }
+
+  // ==============================================
+  // Module 3: KG Evidence
+  // ==============================================
+  // Herb properties
+  const herbProps = document.getElementById('herb-props');
+  herbProps.innerHTML = data.props_summary.herbs.map(p => {
+    if (!p.found) return `<div class="herb-item"><span class="herb-name unknown">${p.name}</span><span class="herb-attr">（未收录）</span></div>`;
+    const tags = [];
+    if (p.nature) tags.push(`<span class="tag nature">${p.nature}</span>`);
+    if (p.taste) p.taste.forEach(t => tags.push(`<span class="tag taste">${t}</span>`));
+    if (p.meridian) p.meridian.slice(0, 3).forEach(m => tags.push(`<span class="tag meridian">归${m}经</span>`));
+    if (p.volatile) tags.push('<span class="tag warn">🌿 挥发油</span>');
+    if (p.toxic) tags.push('<span class="tag danger">☠ 毒性</span>');
+    if (p.mineral) tags.push('<span class="tag warn">💎 矿物</span>');
+    if (p.precious) tags.push('<span class="tag precious">💎 贵重</span>');
+    // KG form preference
+    if (p.kg_top_forms && p.kg_top_forms.length > 0) {
+      tags.push(`<span class="tag kg-pref">📊 ${p.kg_top_forms.map(f => `${f.form}(${f.ratio}%)`).join(' ')}</span>`);
+    }
+    return `<div class="herb-item"><span class="herb-name">${p.name}</span>${tags.join('')}</div>`;
+  }).join('');
+
+  // Props summary tags
+  const tags = document.getElementById('props-tags');
+  const tagArr = [];
+  if (data.props_summary.has_volatile) tagArr.push('<span class="tag warn">🌿 含挥发性成分</span>');
+  if (data.props_summary.has_toxic) tagArr.push('<span class="tag danger">☠ 含毒性药材</span>');
+  if (data.props_summary.has_mineral) tagArr.push('<span class="tag warn">💎 含矿物药</span>');
+  if (data.props_summary.has_precious) tagArr.push('<span class="tag precious">💎 含贵重药</span>');
+  tagArr.push(`<span class="tag info">📖 字典覆盖率 ${data.props_summary.known}/${data.props_summary.total}</span>`);
+  tags.innerHTML = tagArr.join('');
+
+  // Similar formulas
+  const simSection = document.getElementById('similar-section');
+  if (data.evidence.similar_formulas && data.evidence.similar_formulas.length > 0) {
+    simSection.classList.remove('hidden');
+    document.getElementById('similar-formulas').innerHTML = data.evidence.similar_formulas.map(f => `
+      <div class="similar-item">
+        <span class="sim-name">${f.name}</span>
+        <span class="sim-form">${f.form}</span>
+        <span class="sim-overlap">重叠 ${f.overlap_count} 味：${f.overlap.join('、')}</span>
+        <span class="sim-jaccard">Jaccard ${f.jaccard}</span>
+      </div>`).join('');
+  } else {
+    simSection.classList.add('hidden');
+  }
+
+  // Disease preference
+  const diseaseSection = document.getElementById('disease-section');
+  if (data.evidence.disease_preference && Object.keys(data.evidence.disease_preference).length > 0) {
+    diseaseSection.classList.remove('hidden');
+    const prefs = data.evidence.disease_preference;
+    document.getElementById('disease-prefs').innerHTML = Object.entries(prefs)
+      .sort((a, b) => b[1] - a[1])
+      .map(([form, pct]) => `
+        <span class="disease-pref-item">
+          <span class="dp-form">${form}</span>
+          <span class="dp-pct">${pct}%</span>
+        </span>`).join('');
+  } else {
+    diseaseSection.classList.add('hidden');
+  }
+
+  // ==============================================
+  // Module 4: Reasoning (LLM or Template)
+  // ==============================================
+  const llmBadge = document.getElementById('llm-badge');
+  const llmBadgeText = document.getElementById('llm-badge-text');
+  const reasoningSourceLabel = document.getElementById('reasoning-source-label');
+  const reasoningStepBadge = document.getElementById('reasoning-step-badge');
+  const templateBadge = document.getElementById('reasoning-template-badge');
+  const reasoningList = document.getElementById('reasoning-list');
+
+  if (data.use_llm) {
+    // LLM mode
+    llmBadge.classList.remove('hidden');
+    llmBadge.classList.remove('llm-failed');
+    llmBadgeText.innerHTML = '本推理依据由大语言模型 <strong>qwen3.7-max</strong> 基于知识图谱检索证据与规则引擎约束生成';
+    reasoningSourceLabel.textContent = '—— KG-RAR · Generate 环节：大语言模型整合 KG 证据与规则引擎结论生成可解释推荐';
+    reasoningStepBadge.textContent = 'Step 5 · LLM 生成';
+    templateBadge.classList.add('hidden');
+  } else if (data.llm_failed) {
+    llmBadge.classList.remove('hidden');
+    llmBadge.classList.add('llm-failed');
+    llmBadgeText.textContent = 'LLM 调用失败，已回退为离线模板推理';
+    reasoningSourceLabel.textContent = '—— 离线模板推理（基于 KG 证据 + 规则引擎）';
+    reasoningStepBadge.textContent = 'Step 3+4 融合';
+    templateBadge.classList.remove('hidden');
+  } else {
+    llmBadge.classList.add('hidden');
+    llmBadge.classList.remove('llm-failed');
+    reasoningSourceLabel.textContent = '—— 离线模板推理（基于 KG 证据 + 规则引擎）';
+    reasoningStepBadge.textContent = 'Step 3+4 融合';
+    templateBadge.classList.remove('hidden');
+  }
+
+  // LLM Conflicts
+  const conflictsDiv = document.getElementById('llm-conflicts');
+  if (data.llm_conflicts && data.llm_conflicts.length > 0) {
+    conflictsDiv.classList.remove('hidden');
+    conflictsDiv.innerHTML = data.llm_conflicts.map(c => `
+      <div class="conflict-item">
+        <span class="conflict-icon">⚠️</span>
+        <span class="conflict-form">${c.form}</span>
+        <span class="conflict-detail">${c.conflicts.join('；')}</span>
+      </div>`).join('');
+  } else {
+    conflictsDiv.classList.add('hidden');
+  }
+
+  // Reasoning paragraphs
+  if (data.reasoning) {
+    const paras = data.reasoning.split('\n\n').filter(p => p.trim());
+    reasoningList.innerHTML = paras.map((p, idx) => {
+      const icon = idx === 0 ? '⭐' : '💡';
+      return `
+        <div class="reasoning-item">
+          <span class="ri-icon">${icon}</span>
+          <span class="ri-text">${p.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</span>
+        </div>`;
+    }).join('');
+  } else {
+    reasoningList.innerHTML = '<p class="no-data">暂无推理信息</p>';
+  }
+}
+
+// ==============================================
+// Helpers
+// ==============================================
+function showError(msg) {
+  const el = document.getElementById('error');
+  el.textContent = msg;
+  el.classList.remove('hidden');
+}
+
+function clearAll() {
+  document.getElementById('prescription').value = '';
+  document.getElementById('indication').value = '';
+  document.getElementById('results').classList.add('hidden');
+  document.getElementById('error').classList.add('hidden');
+}
+
+// Enter key to submit
+document.getElementById('prescription').addEventListener('keydown', e => {
+  if (e.key === 'Enter' && e.ctrlKey) doPredict();
+});
+document.getElementById('indication').addEventListener('keydown', e => {
+  if (e.key === 'Enter') doPredict();
+});
+</script>
+</body>
+</html>

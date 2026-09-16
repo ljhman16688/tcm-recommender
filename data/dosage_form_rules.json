@@ -1,0 +1,2638 @@
+{
+  "_meta": {
+    "version": "2.1.0",
+    "last_updated": "2026-09-11",
+    "total_rules": 74,
+    "description": "中药剂型选择知识规则库。来源均基于可核实文献：《中华人民共和国药典》2025年版、《医疗用毒性药品管理办法》、《药品管理法》、CFDA/NMPA公告、全国中医药行业高等教育十四五规划教材（《中药药剂学》《中药学》《中药药理学》《中药化学》《中药炮制学》）、WHO儿童用药指南，以及本项目知识图谱（71,571条三元组）的统计分析。"
+  },
+  "rules": [
+    {
+      "id": "L1-001",
+      "category": "法规禁忌",
+      "evidence_level": 1,
+      "rule_name": "含汞/砷矿物药禁止注射给药",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "朱砂",
+          "雄黄",
+          "轻粉",
+          "红粉",
+          "白降丹"
+        ],
+        "match_mode": "any"
+      },
+      "action": "exclude",
+      "target_forms": [
+        "注射剂"
+      ],
+      "recommendation": "含{herb}的处方严禁制成注射剂。{herb}的主要成分为汞或砷化合物，直接入血存在严重安全隐患，可导致急性中毒或慢性蓄积性损害。",
+      "source": "《中华人民共和国药典》2025年版（一部）；《医疗用毒性药品管理办法》（国务院令第23号，1988年）",
+      "scope": "适用于所有含上述药材的处方，无论炮制方法和剂量",
+      "exceptions": [
+        "无。经炮制减毒后仍不可注射给药"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "absolute"
+    },
+    {
+      "id": "L1-002",
+      "category": "法规禁忌",
+      "evidence_level": 1,
+      "rule_name": "含毒性药材注射剂需药典/法规明确依据",
+      "trigger": {
+        "type": "composite",
+        "op": "and",
+        "conditions": [
+          {
+            "type": "property_check",
+            "field": "has_toxic",
+            "value": true
+          },
+          {
+            "type": "form_check",
+            "target": "注射剂"
+          }
+        ]
+      },
+      "action": "exclude",
+      "target_forms": [
+        "注射剂"
+      ],
+      "recommendation": "含毒性药材的处方在缺乏药典或法规明确依据时，严禁选用注射剂。若确需评估注射给药途径，需提供毒理学安全性评价和临床前研究数据。",
+      "source": "《药品管理法》（2019年修订）；《中华人民共和国药典》2025年版",
+      "scope": "含毒性药材且拟选用注射剂的处方",
+      "exceptions": [
+        "已获NMPA正式批准并经系统毒理学评价（急性毒性、长期毒性、生殖毒性）和II/III期临床试验验证安全性的中药注射剂品种"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "absolute"
+    },
+    {
+      "id": "L1-003",
+      "category": "法规禁忌",
+      "evidence_level": 1,
+      "rule_name": "含马兜铃酸药材禁止制成任何剂型",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "关木通",
+          "广防己",
+          "青木香",
+          "马兜铃",
+          "天仙藤",
+          "寻骨风",
+          "朱砂莲"
+        ],
+        "match_mode": "any"
+      },
+      "action": "exclude",
+      "target_forms": [
+        "丸剂",
+        "片剂",
+        "胶囊剂",
+        "颗粒剂",
+        "口服液",
+        "散剂",
+        "汤剂",
+        "膏剂",
+        "糖浆剂",
+        "注射剂",
+        "酒剂",
+        "酊剂",
+        "栓剂",
+        "茶剂",
+        "丹剂",
+        "搽剂",
+        "洗剂",
+        "气雾剂",
+        "露剂",
+        "膜剂"
+      ],
+      "recommendation": "含{herb}的处方禁止制成任何剂型上市销售。马兜铃酸具有明确的肾毒性和致癌性，CFDA已于2003-2005年分批禁止关木通、广防己、青木香等含马兜铃酸药材的药用。",
+      "source": "CFDA《关于加强广防己等6种药材及其制剂监管的通知》（食药监注〔2004〕379号）；《中华人民共和国药典》2025年版（一部）",
+      "scope": "含上述马兜铃酸药材的任何处方",
+      "exceptions": [
+        "无。含马兜铃酸药材已全面禁止药用"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "absolute"
+    },
+    {
+      "id": "L1-004",
+      "category": "法规禁忌",
+      "evidence_level": 1,
+      "rule_name": "含乌头碱类药材禁止注射给药",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "川乌",
+          "草乌",
+          "附子",
+          "雪上一枝蒿",
+          "关白附",
+          "天雄"
+        ],
+        "match_mode": "any"
+      },
+      "action": "exclude",
+      "target_forms": [
+        "注射剂"
+      ],
+      "recommendation": "含{herb}的处方严禁制成注射剂。乌头碱类成分具有极强的神经毒性和心脏毒性（LD50口服约1-2mg），静脉给药的安全窗极窄，任何剂量的乌头碱直接入血均可导致严重心律失常甚至死亡。",
+      "source": "《医疗用毒性药品管理办法》（国务院令第23号，1988年）；《中华人民共和国药典》2025年版（一部）",
+      "scope": "所有含乌头碱类药材的处方",
+      "exceptions": [
+        "无。乌头碱类药材在任何炮制条件下均不可注射给药"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "absolute"
+    },
+    {
+      "id": "L1-005",
+      "category": "法规禁忌",
+      "evidence_level": 1,
+      "rule_name": "含斑蝥等峻烈毒性药禁止非外用制剂",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "斑蝥",
+          "红娘子",
+          "青娘子",
+          "蟾酥",
+          "马钱子",
+          "巴豆",
+          "闹羊花"
+        ],
+        "match_mode": "any"
+      },
+      "action": "exclude",
+      "target_forms": [
+        "注射剂",
+        "口服液",
+        "酒剂",
+        "酊剂"
+      ],
+      "recommendation": "含{herb}的处方禁止制成注射剂、口服液、酒剂和酊剂。此类药材含有剧毒成分（斑蝥素、蟾酥毒苷、士的宁等），制成溶液型剂型时毒性成分完全溶出，剂量控制困难，安全风险极高。应严格控制为外用制剂或经严格限定剂量的固体制剂。",
+      "source": "《医疗用毒性药品管理办法》（国务院令第23号，1988年）（毒性药品品种目录）；《中华人民共和国药典》2025年版（一部）",
+      "scope": "所有含上述峻烈毒性药材的处方",
+      "exceptions": [
+        "经充分炮制减毒后，可限定为外用膏剂或散剂",
+        "马钱子经砂烫炮制后可制成限定剂量的丸散剂"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "absolute"
+    },
+    {
+      "id": "L1-006",
+      "category": "法规禁忌",
+      "evidence_level": 1,
+      "rule_name": "含强心苷类药材禁止静脉给药",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "夹竹桃",
+          "万年青",
+          "福寿草",
+          "羊角拗",
+          "黄花夹竹桃",
+          "罗布麻",
+          "香加皮",
+          "铃兰"
+        ],
+        "match_mode": "any"
+      },
+      "action": "exclude",
+      "target_forms": [
+        "注射剂"
+      ],
+      "recommendation": "含{herb}的处方严禁制成注射剂。此类药材含强心苷类成分（夹竹桃苷、万年青苷等），静脉给药的治疗指数极窄，极易诱发致死性心律失常（室颤、心脏停搏），不存在临床安全剂量窗。",
+      "source": "《中华人民共和国药典》2025年版（一部）；《中药药理学》（彭成主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "所有含强心苷类药材的处方",
+      "exceptions": [
+        "无。强心苷类静脉给药的不可控风险远超任何潜在获益"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "absolute"
+    },
+    {
+      "id": "L1-007",
+      "category": "法规禁忌",
+      "evidence_level": 1,
+      "rule_name": "妊娠禁忌药材的注射剂与酒剂限制",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "莪术",
+          "三棱",
+          "水蛭",
+          "虻虫",
+          "麝香",
+          "穿山甲",
+          "土鳖虫",
+          "蜈蚣",
+          "千金子",
+          "芫花",
+          "大戟",
+          "甘遂",
+          "商陆",
+          "牵牛子"
+        ],
+        "match_mode": "any"
+      },
+      "action": "exclude",
+      "target_forms": [
+        "注射剂",
+        "酒剂"
+      ],
+      "recommendation": "含{herb}的处方在妊娠期严禁制成注射剂或酒剂。此类药材具有破血逐瘀、峻下逐水作用，注射给药和酒剂的乙醇助溶会增强活性成分的体内暴露，显著增加流产风险。",
+      "source": "《中华人民共和国药典》2025年版（一部）；《中药药理学》（彭成主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "妊娠期使用含上述药材的处方",
+      "exceptions": [
+        "非妊娠人群不受此限制"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "absolute"
+    },
+    {
+      "id": "L1-008",
+      "category": "配伍禁忌",
+      "evidence_level": 1,
+      "rule_name": "十八反配伍药材的注射剂绝对禁止",
+      "trigger": {
+        "type": "composite",
+        "op": "or",
+        "conditions": [
+          {
+            "type": "composite",
+            "op": "and",
+            "conditions": [
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "甘草",
+                  "炙甘草",
+                  "甘草浸膏"
+                ],
+                "match_mode": "any"
+              },
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "甘遂",
+                  "大戟",
+                  "芫花",
+                  "海藻",
+                  "昆布"
+                ],
+                "match_mode": "any"
+              }
+            ]
+          },
+          {
+            "type": "composite",
+            "op": "and",
+            "conditions": [
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "川乌",
+                  "草乌",
+                  "附子",
+                  "天雄",
+                  "关白附"
+                ],
+                "match_mode": "any"
+              },
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "半夏",
+                  "法半夏",
+                  "姜半夏",
+                  "清半夏",
+                  "瓜蒌",
+                  "瓜蒌皮",
+                  "瓜蒌子",
+                  "天花粉",
+                  "川贝母",
+                  "浙贝母",
+                  "平贝母",
+                  "伊贝母",
+                  "湖北贝母",
+                  "白蔹",
+                  "白及"
+                ],
+                "match_mode": "any"
+              }
+            ]
+          },
+          {
+            "type": "composite",
+            "op": "and",
+            "conditions": [
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "藜芦"
+                ],
+                "match_mode": "any"
+              },
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "人参",
+                  "党参",
+                  "丹参",
+                  "玄参",
+                  "南沙参",
+                  "北沙参",
+                  "苦参",
+                  "细辛",
+                  "白芍",
+                  "赤芍"
+                ],
+                "match_mode": "any"
+              }
+            ]
+          }
+        ]
+      },
+      "action": "exclude",
+      "target_forms": [
+        "注射剂"
+      ],
+      "recommendation": "处方中同时存在十八反配伍药对，严禁制成注射剂。十八反是中医最具代表性的配伍禁忌理论，始载于《神农本草经》，历代本草均有记载。在口服给药时，十八反配伍的毒性协同效应经胃肠道吸收和肝脏首过代谢后可部分减轻——部分现代药理学研究（如甘草与甘遂合煎的动物实验）也提示口服给药的相互作用程度可能受剂量比例、炮制和煎煮条件影响。但注射给药绕过所有生理屏障，将两味相反药材的化学成分直接注入血液循环，可诱发急性毒性反应（溶血、过敏性休克、多器官损伤），不存在任何安全剂量窗。",
+      "source": "《中华人民共和国药典》2025年版（一部）（药材与饮片通则，十八反项下）；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（总论·配伍禁忌）；《神农本草经》（公元前1世纪，最早记载十八反理论的传世文献）",
+      "scope": "处方中同时含有十八反中任一相反药对的药材组合",
+      "exceptions": [
+        "无。十八反配伍在任何情况下均不可制成注射剂"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "absolute"
+    },
+    {
+      "id": "L2-001",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含毒性药材与酒剂的乙醇-毒性协同风险",
+      "trigger": {
+        "type": "composite",
+        "op": "and",
+        "conditions": [
+          {
+            "type": "property_check",
+            "field": "has_toxic",
+            "value": true
+          },
+          {
+            "type": "form_check",
+            "target": "酒剂"
+          }
+        ]
+      },
+      "action": "warn",
+      "target_forms": [
+        "酒剂"
+      ],
+      "recommendation": "含毒性药材的处方制成酒剂时，乙醇可能增强毒性成分的溶出率，导致毒性成分的体内暴露量显著增加。应关注毒性成分在乙醇中的溶解度——脂溶性毒性成分（如乌头碱、马钱子碱）在酒剂中溶出率可增高2-5倍。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（制剂通则）",
+      "scope": "含毒性药材且拟选用酒剂的处方",
+      "exceptions": [
+        "若毒性成分不溶于乙醇，或经炮制后毒性显著降低，风险可降级"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-002",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含毒性药材口服剂型的剂量安全窗评估",
+      "trigger": {
+        "type": "property_check",
+        "field": "has_toxic",
+        "value": true
+      },
+      "action": "warn",
+      "target_forms": [
+        "口服液"
+      ],
+      "recommendation": "含毒性药材的处方需关注剂量安全窗。口服液等溶液剂型中，毒性成分完全溶出、吸收迅速，相比丸剂等缓释固体制剂，峰浓度更高且达峰时间更短，毒性反应风险增大。若需制成口服液，应严格控制单次剂量并监测血药浓度。",
+      "source": "《中华人民共和国药典》2025年版（一部）；《中药药理学》（彭成主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "所有含毒性药材的处方",
+      "exceptions": [
+        "经炮制减毒且日用量远低于中毒剂量者可放宽",
+        "丸剂等缓释固体制剂因溶出缓慢，风险显著降低"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-003",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含挥发油药材胶囊剂的囊壳渗透与交联风险",
+      "trigger": {
+        "type": "composite",
+        "op": "and",
+        "conditions": [
+          {
+            "type": "property_check",
+            "field": "has_volatile",
+            "value": true
+          },
+          {
+            "type": "form_check",
+            "target": "胶囊剂"
+          }
+        ]
+      },
+      "action": "warn",
+      "target_forms": [
+        "胶囊剂"
+      ],
+      "recommendation": "含挥发性成分的处方制成胶囊剂时，挥发油可能渗透明胶囊壳导致囊壳变脆、破裂或与囊壳蛋白发生交联反应，影响崩解时限和生物利用度。建议采用β-环糊精包合技术处理挥发油后再填充胶囊，或选用羟丙甲纤维素（HPMC）植物胶囊。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（胶囊剂通则）",
+      "scope": "含挥发性成分且拟制成胶囊剂的处方",
+      "exceptions": [
+        "已采用环糊精包合或微囊化技术处理者",
+        "挥发油含量很低（<1%）者风险可忽略"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-004",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含鞣质与蛋白质类药材配伍的注射剂沉淀风险",
+      "trigger": {
+        "type": "composite",
+        "op": "and",
+        "conditions": [
+          {
+            "type": "herb_match",
+            "herbs": [
+              "五倍子",
+              "地榆",
+              "诃子",
+              "石榴皮",
+              "大黄",
+              "茶叶",
+              "儿茶"
+            ],
+            "match_mode": "any"
+          },
+          {
+            "type": "form_check",
+            "target": "注射剂"
+          }
+        ]
+      },
+      "action": "warn",
+      "target_forms": [
+        "注射剂"
+      ],
+      "recommendation": "含高鞣质药材的处方制成注射剂时，鞣质可与处方中蛋白质、生物碱形成不溶性沉淀，导致注射剂澄明度不合格、引发过敏反应或栓塞。注射剂生产中必须彻底去除鞣质（一般采用明胶沉淀法或聚酰胺吸附法），但完全去除达到注射级标准的技术难度极高。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（注射剂通则）",
+      "scope": "含高鞣质药材且拟制成注射剂的处方",
+      "exceptions": [
+        "经鞣质检测合格（<0.05mg/mL）且热原检查合格者"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-005",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含糖量高的处方在糖尿病患者中的剂型选择",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "蜂蜜",
+          "饴糖",
+          "冰糖",
+          "红糖",
+          "白糖",
+          "大枣",
+          "龙眼肉",
+          "枸杞子",
+          "熟地黄",
+          "黄精"
+        ],
+        "match_mode": "any"
+      },
+      "action": "warn",
+      "target_forms": [
+        "糖浆剂",
+        "膏剂",
+        "颗粒剂"
+      ],
+      "recommendation": "处方含高糖类药材或辅料，制成糖浆剂、膏剂或含糖颗粒剂时应注意：糖尿病患者需选用无糖型制剂；蜂蜜和饴糖作为辅料时需在说明书注明含糖量；颗粒剂应优先采用无糖型辅料（如糊精、乳糖替代品）。",
+      "source": "《中华人民共和国药典》2025年版（四部）（制剂通则）；《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含高糖药材且拟制成含糖剂型的处方",
+      "exceptions": [
+        "已明确设计为无糖型制剂者",
+        "非糖尿病患者人群不受此限制"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-006",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "长期服用含朱砂/雄黄丸剂的蓄积毒性风险",
+      "trigger": {
+        "type": "composite",
+        "op": "and",
+        "conditions": [
+          {
+            "type": "herb_match",
+            "herbs": [
+              "朱砂",
+              "雄黄",
+              "轻粉"
+            ],
+            "match_mode": "any"
+          },
+          {
+            "type": "feature_check",
+            "field": "urgency",
+            "op": "eq",
+            "value": "chronic"
+          }
+        ]
+      },
+      "action": "warn",
+      "target_forms": [
+        "丸剂",
+        "丹剂"
+      ],
+      "recommendation": "含朱砂/雄黄的处方用于慢性病需长期服药时，即使制成丸剂（传统认为可缓释减毒），汞/砷的慢性蓄积性中毒风险仍不可忽视。建议：①严格限定疗程（一般不超过4周）；②监测肝肾功能和血/尿汞砷水平；③儿童、孕妇、哺乳期妇女禁用；④尽可能寻找不含汞砷的替代药材。",
+      "source": "《中华人民共和国药典》2025年版（一部）（朱砂、雄黄项下）；《医疗用毒性药品管理办法》（国务院令第23号，1988年）",
+      "scope": "含朱砂/雄黄且用于慢性病的处方",
+      "exceptions": [
+        "急性热病短期使用（≤7天）风险可控",
+        "已采用替代药材者无需关注"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-007",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含麻黄碱类药材的心血管患者慎用速释口服剂型",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "麻黄",
+          "麻黄根"
+        ],
+        "match_mode": "any"
+      },
+      "action": "warn",
+      "target_forms": [
+        "口服液",
+        "颗粒剂",
+        "注射剂"
+      ],
+      "recommendation": "含麻黄的处方用于心血管疾病患者时，口服液、颗粒剂等速释剂型可使麻黄碱迅速吸收，导致血压骤升、心率加快，诱发心脑血管事件。建议：①心血管患者改用缓释固体制剂（如丸剂、片剂）；②或在处方中去除麻黄，改用其他宣肺平喘药（如紫苏子、桑白皮）。",
+      "source": "《中药药理学》（彭成主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（一部）",
+      "scope": "含麻黄且用于心血管风险人群的处方",
+      "exceptions": [
+        "非心血管疾病人群且短期使用（≤3天）风险可控",
+        "已去除麻黄者"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-008",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含细辛的马兜铃酸肾毒性风险",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "细辛"
+        ],
+        "match_mode": "any"
+      },
+      "action": "warn",
+      "target_forms": [
+        "汤剂",
+        "口服液",
+        "颗粒剂",
+        "散剂"
+      ],
+      "recommendation": "华细辛的地上部分含微量马兜铃酸（马兜铃内酰胺），虽远低于关木通，但长期或大剂量使用仍有肾毒性风险。汤剂和口服液等水煎提取剂型相对安全（马兜铃酸水溶性低），散剂等全粉末入药制剂风险最高。建议优先选用辽细辛（根及根茎），严格控制日用量（≤3g），避免散剂直服。",
+      "source": "《中华人民共和国药典》2025年版（一部）（细辛项下）；《中药药理学》（彭成主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含细辛的处方",
+      "exceptions": [
+        "辽细辛根及根茎入药、日用量≤3g且采用水煎提取者风险可控"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-009",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含甘草的处方长期服用需警惕假性醛固酮增多症",
+      "trigger": {
+        "type": "composite",
+        "op": "and",
+        "conditions": [
+          {
+            "type": "herb_match",
+            "herbs": [
+              "甘草",
+              "炙甘草",
+              "甘草浸膏"
+            ],
+            "match_mode": "any"
+          },
+          {
+            "type": "feature_check",
+            "field": "urgency",
+            "op": "eq",
+            "value": "chronic"
+          }
+        ]
+      },
+      "action": "warn",
+      "target_forms": [
+        "口服液",
+        "颗粒剂",
+        "膏剂"
+      ],
+      "recommendation": "甘草中的甘草酸具有盐皮质激素样作用，长期大剂量服用可导致水钠潴留、低钾血症和血压升高（假性醛固酮增多症）。口服液和颗粒剂吸收快，甘草酸的全身暴露量大。慢性病需长期用药时，建议：①监测血压和血钾；②甘草日用量不宜超过10g；③已有高血压/低钾血症者慎用；④可考虑改用其他调和药性的药材。",
+      "source": "《中华人民共和国药典》2025年版（一部）（甘草项下）；《中药药理学》（彭成主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含甘草且用于慢性病的处方",
+      "exceptions": [
+        "甘草日用量<5g且疗程<2周者风险可控"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-010",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "肝功能不全患者慎用含吡咯里西啶生物碱的药材",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "千里光",
+          "款冬花",
+          "佩兰",
+          "紫草",
+          "菊三七",
+          "土三七",
+          "橐吾"
+        ],
+        "match_mode": "any"
+      },
+      "action": "warn",
+      "target_forms": [
+        "口服液",
+        "注射剂",
+        "酒剂",
+        "散剂"
+      ],
+      "recommendation": "含吡咯里西啶生物碱（PAs）的药材具有肝窦阻塞综合征（HSOS）风险，口服液/注射剂等高生物利用度剂型和酒剂（乙醇增强PAs肝毒性）风险更高，散剂全粉末入药也无法去除PAs。此类药材应优先采用水煎提取的剂型（PAs水溶性有限），并严格控制疗程。",
+      "source": "《中华人民共和国药典》2025年版（一部）；《中药药理学》（彭成主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含PAs类药材的处方",
+      "exceptions": [
+        "部分PAs含量极低或不含肝毒性PAs的品种（如菊科千里光属中部分无PAs品种）"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-011",
+      "category": "配伍禁忌",
+      "evidence_level": 2,
+      "rule_name": "十八反药对的非注射剂型协同毒性风险警示",
+      "trigger": {
+        "type": "composite",
+        "op": "or",
+        "conditions": [
+          {
+            "type": "composite",
+            "op": "and",
+            "conditions": [
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "甘草",
+                  "炙甘草",
+                  "甘草浸膏"
+                ],
+                "match_mode": "any"
+              },
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "甘遂",
+                  "大戟",
+                  "芫花",
+                  "海藻",
+                  "昆布"
+                ],
+                "match_mode": "any"
+              }
+            ]
+          },
+          {
+            "type": "composite",
+            "op": "and",
+            "conditions": [
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "川乌",
+                  "草乌",
+                  "附子",
+                  "天雄",
+                  "关白附"
+                ],
+                "match_mode": "any"
+              },
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "半夏",
+                  "法半夏",
+                  "姜半夏",
+                  "清半夏",
+                  "瓜蒌",
+                  "瓜蒌皮",
+                  "瓜蒌子",
+                  "天花粉",
+                  "川贝母",
+                  "浙贝母",
+                  "白蔹",
+                  "白及"
+                ],
+                "match_mode": "any"
+              }
+            ]
+          },
+          {
+            "type": "composite",
+            "op": "and",
+            "conditions": [
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "藜芦"
+                ],
+                "match_mode": "any"
+              },
+              {
+                "type": "herb_match",
+                "herbs": [
+                  "人参",
+                  "党参",
+                  "丹参",
+                  "玄参",
+                  "南沙参",
+                  "北沙参",
+                  "苦参",
+                  "细辛",
+                  "白芍",
+                  "赤芍"
+                ],
+                "match_mode": "any"
+              }
+            ]
+          }
+        ]
+      },
+      "action": "warn",
+      "target_forms": [
+        "口服液",
+        "酒剂",
+        "汤剂",
+        "散剂"
+      ],
+      "recommendation": "处方中存在十八反配伍药对，制成口服液、酒剂、汤剂或散剂时需高度警惕协同毒性风险。口服液和汤剂中两味相反药材的化学成分在溶液中充分接触，可能发生物理化学反应（沉淀、络合、氧化还原）或协同增毒；酒剂的乙醇可促进毒性成分溶出；散剂以原粉入药，保留了药材的全组分。建议：①首选丸剂、片剂或胶囊剂——固体制剂中各药材粉末相对分离，相互作用几率较低；②若必须制成液体制剂，需进行急性毒性试验和化学相容性评价；③查阅该具体药对的现代药理学研究文献，评估风险程度。",
+      "source": "《中华人民共和国药典》2025年版（一部）（十八反项下）；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（总论·配伍禁忌）；《中药药理学》（彭成主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（药物相互作用章节）",
+      "scope": "处方中同时含有十八反药对且拟制成液体制剂或散剂",
+      "exceptions": [
+        "经现代药理学研究证实该具体药对在特定剂量比例下无明显毒性协同效应者",
+        "已有批准文号的含十八反药对的上市制剂（如部分含甘草-海藻的成方）可按其既定工艺执行"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-012",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含矿物药的重金属及有害元素限量监测",
+      "trigger": {
+        "type": "property_check",
+        "field": "has_mineral",
+        "value": true
+      },
+      "action": "warn",
+      "target_forms": [
+        "丸剂",
+        "散剂",
+        "胶囊剂",
+        "片剂",
+        "颗粒剂",
+        "口服液",
+        "膏剂"
+      ],
+      "recommendation": "含矿物药的处方制成口服制剂时，必须关注重金属及有害元素的限量。矿物药（尤其是朱砂含HgS、雄黄含As₂S₂/As₂O₃、密陀僧含PbO、轻粉含Hg₂Cl₂、铅丹含Pb₃O₄）可能含有铅、镉、砷、汞、铜等有害元素。《中国药典》2025年版四部对中药制剂的重金属及有害元素有明确的限量标准：铅≤10mg/kg、镉≤1mg/kg、砷≤5mg/kg、汞≤0.5mg/kg、铜≤150mg/kg。建议：①原料矿物药需测定重金属含量，符合药典各论项下标准；②制剂成品需按药典通则进行重金属检查；③在说明书中注明矿物药来源和炮制方法。",
+      "source": "《中华人民共和国药典》2025年版（四部）（通则2321：铅、镉、砷、汞、铜测定法）；《中华人民共和国药典》2025年版（一部）（朱砂、雄黄、轻粉等项下）；WHO Guidelines for Assessing Quality of Herbal Medicines with Reference to Contaminants and Residues, 2007",
+      "scope": "含矿物药的口服制剂",
+      "exceptions": [
+        "矿物药已经过规范炮制（如朱砂水飞、雄黄水飞）且重金属检测合格者",
+        "矿物药仅为外用制剂成分者"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-013",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含蒽醌类药材的长期用药结肠黑变病风险",
+      "trigger": {
+        "type": "composite",
+        "op": "and",
+        "conditions": [
+          {
+            "type": "herb_match",
+            "herbs": [
+              "大黄",
+              "何首乌",
+              "番泻叶",
+              "决明子",
+              "芦荟",
+              "虎杖",
+              "制何首乌",
+              "酒大黄",
+              "熟大黄"
+            ],
+            "match_mode": "any"
+          },
+          {
+            "type": "feature_check",
+            "field": "urgency",
+            "op": "eq",
+            "value": "chronic"
+          }
+        ]
+      },
+      "action": "warn",
+      "target_forms": [
+        "胶囊剂",
+        "片剂",
+        "颗粒剂",
+        "口服液",
+        "丸剂",
+        "散剂"
+      ],
+      "recommendation": "含蒽醌类成分的药材（大黄、何首乌、番泻叶、决明子、芦荟、虎杖等）长期口服可导致结肠黑变病（melanosis coli），其病理机制为蒽醌类成分损伤结肠黏膜上皮细胞，凋亡小体被巨噬细胞吞噬后形成脂褐素沉积。结肠黑变病虽多为良性、停药可逆，但长期重度病变是否增加结直肠肿瘤风险仍有争议。建议：①连续用药不超过2周（便秘对症治疗），慢性调理需间断用药（如服5天停2天）；②慢性便秘优先选择容积性泻药（火麻仁、郁李仁等含油脂的润下药），而非蒽醌类刺激性泻药；③在说明书中注明不宜长期服用；④用药期间出现腹痛、排便习惯改变需行结肠镜检查。",
+      "source": "《中华人民共和国药典》2025年版（一部）（大黄、何首乌、番泻叶等项下）；《中药药理学》（彭成主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（泻下药·不良反应）；《中华消化内镜杂志》2018年第35卷第7期（结肠黑变病的临床与内镜特征分析）",
+      "scope": "含蒽醌类药材且用于慢性病的口服制剂",
+      "exceptions": [
+        "短期对症治疗（≤2周）的急性便秘",
+        "外用制剂（蒽醌类成分经皮吸收极微）"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-014",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含细辛的日剂量限制与剂型选择",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "细辛",
+          "华细辛",
+          "辽细辛"
+        ],
+        "match_mode": "any"
+      },
+      "action": "warn",
+      "target_forms": [
+        "散剂",
+        "丸剂",
+        "胶囊剂"
+      ],
+      "recommendation": "细辛的用量有严格的药典规定：2025年版《中国药典》规定细辛日用量为1-3g。散剂（全粉末入药）风险最高，因为：①不经水煎提取，马兜铃内酰胺等成分全部进入体内；②细辛粉末的剂量难以精确控制，容易超量。丸剂和胶囊剂同样存在全粉末入药的问题（若未经提取而直接以细辛原粉制丸/填充胶囊）。建议：①细辛入丸散剂时日用量严格≤3g；②优先选用经水煎提取后制粒的颗粒剂或经提取的胶囊剂，可显著降低马兜铃内酰胺的暴露量；③细辛必须使用根及根茎部位（药典规定入药部位），禁止使用地上部分。",
+      "source": "《中华人民共和国药典》2025年版（一部）（细辛项下：用量1-3g，入药部位为根及根茎）；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（解表药·细辛）",
+      "scope": "含细辛且制成全粉末固体制剂的处方",
+      "exceptions": [
+        "已采用水煎提取工艺（而非原粉入药）的颗粒剂、胶囊剂",
+        "外用制剂不受此限"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-015",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含麻黄的运动员禁用与心血管风险警示",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "麻黄",
+          "麻黄根"
+        ],
+        "match_mode": "any"
+      },
+      "action": "warn",
+      "target_forms": [
+        "口服液",
+        "颗粒剂",
+        "注射剂",
+        "散剂",
+        "胶囊剂",
+        "片剂",
+        "丸剂"
+      ],
+      "recommendation": "麻黄含有麻黄碱（ephedrine）和伪麻黄碱（pseudoephedrine），属于世界反兴奋剂机构（WADA）竞赛期禁用的S6类兴奋剂（尿中麻黄碱浓度>10μg/mL即为阳性）。所有口服剂型均可导致麻黄碱阳性。此外，麻黄碱具有α、β肾上腺素受体激动作用，口服速释剂型（口服液、颗粒剂、散剂）可使麻黄碱迅速吸收，导致血压骤升、心率加快，增加心脑血管事件（卒中、心肌梗死）风险。建议：①运动员在竞赛期和赛前禁用含麻黄的制剂；②心血管疾病患者禁用麻黄或改用其他宣肺平喘药；③在药品说明书和标签中注明运动员慎用和高血压心脏病患者慎用。",
+      "source": "World Anti-Doping Agency (WADA) Prohibited List 2026 (S6. Stimulants: ephedrine); 《中华人民共和国药典》2025年版（一部）（麻黄项下）；《中药药理学》（彭成主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（解表药·麻黄）；国家体育总局反兴奋剂中心《运动员常用治疗药物使用指南》（2024年版）",
+      "scope": "含麻黄的各类口服制剂",
+      "exceptions": [
+        "外用制剂（麻黄碱经皮吸收极微，但运动员仍需谨慎）",
+        "已确认麻黄碱含量低于WADA阈值的制剂（需提供检测报告）"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L2-016",
+      "category": "风险警示",
+      "evidence_level": 2,
+      "rule_name": "含蟾酥的固体制剂剂量均匀性与强心苷中毒风险",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "蟾酥",
+          "蟾皮",
+          "干蟾"
+        ],
+        "match_mode": "any"
+      },
+      "action": "warn",
+      "target_forms": [
+        "丸剂",
+        "散剂",
+        "胶囊剂"
+      ],
+      "recommendation": "蟾酥含蟾毒灵（bufalin）、华蟾酥毒基（cinobufagin）等强心苷类成分，治疗指数极窄（有效剂量与中毒剂量接近），口服丸剂和散剂时需特别关注剂量均匀性：①蟾酥日用量极微（药典规定15-30mg/日），手工泛丸或散剂分装难以保证每丸/每包的蟾酥含量偏差在可接受范围内（通常要求≤±10%），剂量偏低的制剂无效，偏高的可致中毒（恶心、呕吐、心律失常甚至心脏停搏）；②建议优先选择经含量均匀度验证的胶囊剂或经现代制剂工艺（等量递加法、溶剂分散法）制备的丸剂；③每批制剂需检测蟾毒灵和华蟾酥毒基的含量均匀度（按药典通则0941）；④药品说明书中应明确标示蟾酥含量。",
+      "source": "《中华人民共和国药典》2025年版（一部）（蟾酥项下：用量15-30mg）；《医疗用毒性药品管理办法》（国务院令第23号，1988年）（蟾酥为毒性药品管理品种）；《中华人民共和国药典》2025年版（四部）（通则0941：含量均匀度检查法）；《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（毒性药物的制剂）",
+      "scope": "含蟾酥的固体制剂",
+      "exceptions": [
+        "经含量均匀度验证合格（A+2.2S ≤ L）的批次",
+        "采用现代制剂设备（如高效湿法制粒机+多向运动混合机）制备的胶囊剂"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L3-001",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "挥发性成分的煎煮工艺调整",
+      "trigger": {
+        "type": "property_check",
+        "field": "has_volatile",
+        "value": true
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "汤剂"
+      ],
+      "recommendation": "含挥发性成分的处方若制成汤剂，建议采用后下、短时煎煮（≤15分钟）、密闭提取或挥发油回收等工艺以减少挥发性成分损失。不可仅因处方中存在一味含挥发性成分的药材而直接排除汤剂——若该挥发性成分为佐使药或含量较低，常规煎煮的损失在可接受范围内。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中药化学》（匡海学主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含挥发性成分且拟制成汤剂的处方",
+      "exceptions": [
+        "挥发性成分为非关键药效物质时忽略",
+        "已采用挥发油回收工艺时忽略",
+        "处方以非挥发性成分为主要药效物质时损失可接受"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.08
+    },
+    {
+      "id": "L3-002",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含贵重药材的剂型选择优化",
+      "trigger": {
+        "type": "property_check",
+        "field": "has_precious",
+        "value": true
+      },
+      "action": "suggest_prefer",
+      "target_forms": [
+        "散剂",
+        "胶囊剂"
+      ],
+      "recommendation": "含贵重药材的处方可优先考虑散剂或胶囊剂，以减少煎煮过程中的吸附损失和药渣残留。但“贵重”为经济属性而非热稳定性指标——若贵重药材的有效成分热稳定性好（如人参皂苷耐热），仍可水煎；若热敏性强（如麝香酮受热易挥发），则不宜煎煮。剂型选择应以有效成分的理化性质为依据。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（制剂通则）",
+      "scope": "含贵重药材的处方",
+      "exceptions": [
+        "贵重药材有效成分热稳定性好的可水煎",
+        "贵重药材为矿物类且需煎煮提取的（如珍珠母需先煎）"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.08
+    },
+    {
+      "id": "L3-003",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含矿物药的先煎与粉碎工艺",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "石膏",
+          "龙骨",
+          "牡蛎",
+          "珍珠母",
+          "石决明",
+          "代赭石",
+          "磁石",
+          "赤石脂",
+          "禹余粮"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "汤剂"
+      ],
+      "recommendation": "含{herb}的处方若制成汤剂，需先煎30-60分钟以充分提取有效成分。若制成丸散剂，需粉碎至规定细度（通常≥100目）。",
+      "source": "《中华人民共和国药典》2025年版（四部）（制剂通则）；《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含上述矿物药的处方",
+      "exceptions": [
+        "石膏等可溶性矿物药煎煮提取效率高，无需粉碎"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.07
+    },
+    {
+      "id": "L3-004",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含热敏性成分的干燥与成型工艺",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "薄荷",
+          "冰片",
+          "樟脑",
+          "麝香",
+          "苏合香",
+          "安息香"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "颗粒剂",
+        "片剂",
+        "胶囊剂"
+      ],
+      "recommendation": "含{herb}等热敏性成分的处方在制粒、干燥和压片过程中，应控制温度≤60℃，或采用喷雾干燥、冷冻干燥等低温工艺，避免有效成分挥发或分解。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中药化学》（匡海学主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含上述热敏性药材且采用热干燥工艺的处方",
+      "exceptions": [
+        "采用低温干燥工艺时忽略",
+        "热敏性成分为非关键药效物质时忽略"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.1
+    },
+    {
+      "id": "L3-005",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含淀粉类药材的丸剂/片剂成型优势",
+      "trigger": {
+        "type": "texture_check",
+        "field": "starchy_ratio",
+        "op": "gt",
+        "value": 0.3
+      },
+      "action": "suggest_prefer",
+      "target_forms": [
+        "丸剂",
+        "片剂"
+      ],
+      "recommendation": "处方中淀粉类药材占比较高（>{threshold}%），天然具备良好的成型性和崩解性，适宜制成丸剂或片剂。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（软胶囊、片剂通则）",
+      "scope": "淀粉类药材占比>30%的处方",
+      "exceptions": [
+        "若需速效剂型则丸剂不适宜"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.07
+    },
+    {
+      "id": "L3-006",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含黏液质药材的膏剂/口服液适应性",
+      "trigger": {
+        "type": "texture_check",
+        "field": "mucilaginous_ratio",
+        "op": "gt",
+        "value": 0.2
+      },
+      "action": "suggest_prefer",
+      "target_forms": [
+        "膏剂",
+        "口服液",
+        "糖浆剂"
+      ],
+      "recommendation": "处方中黏液质类药材占比较高，天然具备增稠和助悬作用，适宜制成膏剂、口服液或糖浆剂。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（合剂、口服液通则）",
+      "scope": "黏液质药材占比>20%的处方",
+      "exceptions": [
+        "若需固体制剂则不适用"
+      ],
+      "expert_consensus": "弱一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.06
+    },
+    {
+      "id": "L3-007",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含油脂类药材的丸剂/胶囊剂适应性",
+      "trigger": {
+        "type": "texture_check",
+        "field": "oily_ratio",
+        "op": "gt",
+        "value": 0.2
+      },
+      "action": "suggest_prefer",
+      "target_forms": [
+        "丸剂",
+        "胶囊剂"
+      ],
+      "recommendation": "处方中含油脂类药材占比较高，可充当丸剂的黏合剂和润滑剂，或直接灌装胶囊，适宜制成丸剂或胶囊剂。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（滴丸、软胶囊通则）",
+      "scope": "油脂类药材占比>20%的处方",
+      "exceptions": [
+        "若需水性剂型则不适用"
+      ],
+      "expert_consensus": "弱一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.07
+    },
+    {
+      "id": "L3-008",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含纤维类药材的汤剂提取效率",
+      "trigger": {
+        "type": "texture_check",
+        "field": "fibrous_ratio",
+        "op": "gt",
+        "value": 0.3
+      },
+      "action": "suggest_prefer",
+      "target_forms": [
+        "汤剂",
+        "颗粒剂"
+      ],
+      "recommendation": "处方中纤维类药材占比较高，水煎提取效率高，适宜制成汤剂或经提取后制颗粒剂。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中药炮制学》（龚千锋主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "纤维类药材占比>30%的处方",
+      "exceptions": [],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.09
+    },
+    {
+      "id": "L3-009",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含动物药腥味的掩蔽处理",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "全蝎",
+          "蜈蚣",
+          "地龙",
+          "水蛭",
+          "土鳖虫",
+          "蝉蜕",
+          "僵蚕",
+          "乌梢蛇",
+          "白花蛇"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_prefer",
+      "target_forms": [
+        "丸剂",
+        "胶囊剂"
+      ],
+      "recommendation": "含动物药{herb}的处方，丸剂或胶囊剂可有效掩盖腥味，提高患者服药依从性。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（片剂包衣通则）",
+      "scope": "含上述动物药的处方",
+      "exceptions": [
+        "若患者对腥味不敏感或处方已添加矫味剂"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.05
+    },
+    {
+      "id": "L3-010",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "大处方的剂型容量限制",
+      "trigger": {
+        "type": "composite",
+        "op": "and",
+        "conditions": [
+          {
+            "type": "feature_check",
+            "field": "num_herbs",
+            "op": "gte",
+            "value": 15
+          },
+          {
+            "type": "feature_check",
+            "field": "total_weight",
+            "op": "gte",
+            "value": 200
+          }
+        ]
+      },
+      "action": "suggest_prefer",
+      "target_forms": [
+        "丸剂",
+        "片剂",
+        "胶囊剂"
+      ],
+      "recommendation": "处方药味数≥15且总日剂量≥200g，若制成汤剂则单剂体积过大，不便于患者服用。建议制成丸剂、片剂或胶囊剂，通过提取浓缩减小服用体积。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（制剂通则）",
+      "scope": "药味数≥15味且总剂量≥200g的处方",
+      "exceptions": [
+        "若为外用处方则不受此限"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.06
+    },
+    {
+      "id": "L3-011",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含树脂类药材的醇提工艺建议",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "乳香",
+          "没药",
+          "血竭",
+          "安息香",
+          "苏合香",
+          "枫香脂",
+          "松香"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "汤剂",
+        "口服液"
+      ],
+      "recommendation": "含{herb}等树脂类药材的处方制成汤剂或口服液时，因树脂不溶于水，水煎提取效率极低。建议采用乙醇回流提取或渗漉法提取树脂类成分，或直接以细粉入丸散剂。若必须水提，需添加适量增溶剂（如吐温-80）。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中药化学》（匡海学主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含树脂类药材且拟制成水性提取剂型的处方",
+      "exceptions": [
+        "树脂含量很低（<2%）或非主要药效物质时忽略"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.07
+    },
+    {
+      "id": "L3-012",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含胶类药材的溶解与成型工艺",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "阿胶",
+          "鹿角胶",
+          "龟甲胶",
+          "鳖甲胶",
+          "黄明胶",
+          "鱼鳔胶"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_prefer",
+      "target_forms": [
+        "膏剂",
+        "口服液",
+        "颗粒剂"
+      ],
+      "recommendation": "含{herb}等胶类药材的处方制成膏剂或口服液时，胶类可直接烊化溶解，利用其天然胶体保护作用提高制剂的稳定性。若制成固体制剂，胶类药材需单独粉碎（低温粉碎以防粘连）后与其他药粉混合。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中药化学》（匡海学主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含胶类药材的处方",
+      "exceptions": [
+        "胶类含量极低者可忽略"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.07
+    },
+    {
+      "id": "L3-013",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含蛋白质丰富药材的灭菌方式选择",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "水蛭",
+          "地龙",
+          "全蝎",
+          "蜈蚣",
+          "僵蚕",
+          "蝉蜕",
+          "蜂房",
+          "海马",
+          "海龙",
+          "蛤蚧"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "散剂",
+        "胶囊剂",
+        "丸剂"
+      ],
+      "recommendation": "含动物蛋白类药材的固体制剂，热压灭菌（121℃）可能导致蛋白质变性、活性丧失，建议采用60Co-γ射线辐照灭菌或微波灭菌，灭菌后需检测蛋白质活性和微生物限度。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中药化学》（匡海学主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含动物蛋白药材且需灭菌的固体制剂",
+      "exceptions": [
+        "已灭活使用的动物药（如炮制后的水蛭）可采用热压灭菌"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.08
+    },
+    {
+      "id": "L3-014",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含多糖类药材的吸湿性与防潮包装",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "黄芪",
+          "党参",
+          "枸杞子",
+          "黄精",
+          "玉竹",
+          "山药",
+          "茯苓",
+          "麦冬",
+          "天冬",
+          "石斛"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "颗粒剂",
+        "散剂",
+        "片剂"
+      ],
+      "recommendation": "含{herb}等高多糖药材的固体制剂极易吸湿潮解，导致结块、软化或霉变。建议：①采用铝塑复合膜或双铝包装；②添加适量微粉硅胶（0.5-2%）作为抗黏助流剂；③控制生产环境相对湿度≤45%；④在说明书注明密封、干燥处保存。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（制剂通则）",
+      "scope": "含高多糖药材且制成固体制剂的处方",
+      "exceptions": [
+        "已采用防潮包装或防潮型辅料者"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.07
+    },
+    {
+      "id": "L3-015",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含苷类成分的酶解防护",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "苦杏仁",
+          "桃仁",
+          "郁李仁",
+          "芥子",
+          "莱菔子",
+          "人参",
+          "三七",
+          "黄芪"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "汤剂",
+        "口服液",
+        "颗粒剂"
+      ],
+      "recommendation": "含苷类成分（氰苷、硫苷、人参皂苷等）的药材在制成水性制剂时，药材自身的酶在水溶液中可催化苷键水解，导致有效成分降解（如人参皂苷转化为次级苷元而活性改变）。建议在提取初期采用80-85℃热水迅速灭酶（“杀酶保苷”），或采用乙醇-水混合溶剂提取以抑制酶活性。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中药化学》（匡海学主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含苷类成分且制成水性提取制剂的处方",
+      "exceptions": [
+        "已采用热灭酶预处理者",
+        "目的产物为苷元而非苷者（如苦杏仁止咳需酶解产生氢氰酸）"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.1
+    },
+    {
+      "id": "L3-016",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含生物碱类药材的提取pH优化",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "黄连",
+          "黄柏",
+          "延胡索",
+          "防己",
+          "吴茱萸",
+          "麻黄",
+          "川乌",
+          "草乌",
+          "马钱子",
+          "颠茄"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "汤剂",
+        "口服液",
+        "注射剂",
+        "颗粒剂"
+      ],
+      "recommendation": "含{herb}等富含生物碱的药材，提取溶剂的pH显著影响生物碱的溶出率。游离生物碱在碱性条件下溶出率高但稳定性差，生物碱盐则在酸性条件下溶出率高。建议：水提时pH控制在4.0-5.5（有利于生物碱成盐溶出），醇提时添加0.1-0.5%的盐酸或醋酸。需注意与处方中酸性药材（山楂、乌梅等）同煎时，pH降低有利于生物碱溶出但也可能改变药性配伍。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中药化学》（匡海学主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含高生物碱药材且采用溶剂提取的处方",
+      "exceptions": [
+        "生物碱含量极低或非主要药效成分者忽略"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.06
+    },
+    {
+      "id": "L3-017",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含蜂蜜/糖类辅料的丸剂微生物控制",
+      "trigger": {
+        "type": "composite",
+        "op": "and",
+        "conditions": [
+          {
+            "type": "herb_match",
+            "herbs": [
+              "蜂蜜",
+              "炼蜜",
+              "饴糖"
+            ],
+            "match_mode": "any"
+          },
+          {
+            "type": "form_check",
+            "target": "丸剂"
+          }
+        ]
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "丸剂"
+      ],
+      "recommendation": "含蜂蜜或炼蜜作为黏合剂的丸剂（蜜丸、浓缩蜜丸）水分活度高、含糖丰富，极易滋生霉菌和酵母菌。建议：①炼蜜需控制含水量在10-12%；②丸剂成型后需充分干燥（水分≤9.0%）；③可添加适量山梨酸或苯甲酸钠（≤0.1%）作为防腐剂；④包装内放置干燥剂。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（制剂通则）",
+      "scope": "含蜂蜜作为辅料的丸剂",
+      "exceptions": [
+        "已采用水泛丸或浓缩丸（不用蜂蜜）者"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.08
+    },
+    {
+      "id": "L3-018",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含丹皮酚等易升华成分的制剂工艺",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "牡丹皮",
+          "徐长卿",
+          "冰片",
+          "樟脑",
+          "薄荷脑"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "颗粒剂",
+        "片剂",
+        "胶囊剂"
+      ],
+      "recommendation": "含{herb}的处方含有丹皮酚等易升华成分，在制粒干燥（≥60℃）和压片过程中，此类成分可因升华而损失。建议：①采用β-环糊精包合技术（包合率可达80%以上）；②干燥温度控制在40-50℃；③气相色谱法测定制剂中丹皮酚含量以控制质量。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中药化学》（匡海学主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含易升华成分且需加热干燥的固体制剂",
+      "exceptions": [
+        "已采用包合技术或低温干燥者"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.07
+    },
+    {
+      "id": "L3-019",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含多酚类药材的金属离子螯合变色问题",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "大黄",
+          "何首乌",
+          "虎杖",
+          "拳参",
+          "地榆",
+          "五倍子",
+          "儿茶",
+          "诃子",
+          "石榴皮"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "口服液",
+        "注射剂",
+        "颗粒剂"
+      ],
+      "recommendation": "含{herb}等富含鞣质和多酚的药材，在制剂过程中与铁、铜等金属离子接触可产生墨绿色至黑色螯合物沉淀，导致制剂变色和有效成分损失。建议：①生产设备采用316L不锈钢或搪玻璃材质；②提取液中添加EDTA-2Na（0.01-0.05%）螯合金属离子；③避免使用铁制或铜制容器。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中药化学》（匡海学主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含高鞣质/多酚药材且制成溶液型制剂的处方",
+      "exceptions": [
+        "采用非水性溶剂（如甘油、PEG）者",
+        "固体制剂（丸片散）不易发生螯合变色"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.06
+    },
+    {
+      "id": "L3-020",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含油脂高的种子类药材的酸败防控",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "苦杏仁",
+          "桃仁",
+          "柏子仁",
+          "郁李仁",
+          "酸枣仁",
+          "火麻仁",
+          "芝麻",
+          "核桃仁",
+          "苏子",
+          "莱菔子"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "散剂",
+        "胶囊剂",
+        "丸剂"
+      ],
+      "recommendation": "含{herb}等富含油脂的种子类药材，制剂中长期储存时油脂易氧化酸败，产生哈喇味和过氧化物（POV值升高），影响制剂质量和安全性。建议：①药材粉碎后立即制粒或灌装，减少与空气接触时间；②添加适量抗氧剂（维生素E 0.02-0.05%）；③采用充氮包装；④在说明书注明阴凉处保存和有效期。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（制剂通则）",
+      "scope": "含高油脂种子类药材且制成固体制剂的处方",
+      "exceptions": [
+        "短期使用（≤1个月）的制剂",
+        "已脱脂处理的药材粉末"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.07
+    },
+    {
+      "id": "L3-021",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含大量矿物药的固体制剂崩解时限调整",
+      "trigger": {
+        "type": "texture_check",
+        "field": "mineral_ratio",
+        "op": "gt",
+        "value": 0.25
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "片剂",
+        "丸剂"
+      ],
+      "recommendation": "处方中凝胶类药材占比较高，制成片剂或丸剂时可能导致崩解时限延长、溶出度下降。建议：①添加足量崩解剂（交联聚维酮或羧甲淀粉钠 5-10%）；②控制压片压力不过高（硬度3-5kg/cm²）；③崩解时限检测应符合《中国药典》规定。",
+      "source": "《中华人民共和国药典》2025年版（四部）（制剂通则）；《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "凝胶类药材占比>25%且制成固体制剂的处方",
+      "exceptions": [
+        "设计为缓释制剂者无需快速崩解"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.06
+    },
+    {
+      "id": "L3-022",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含色素类药材的光稳定性与包装要求",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "紫草",
+          "姜黄",
+          "栀子",
+          "红花",
+          "茜草",
+          "丹参",
+          "紫苏叶",
+          "青黛"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "口服液",
+        "颗粒剂",
+        "片剂"
+      ],
+      "recommendation": "含{herb}等富含天然色素的药材，制剂在光照条件下易发生光降解反应，导致颜色改变和有效成分含量下降（如丹参酮IIA在光照下半衰期仅为数小时）。建议：①采用棕色玻璃瓶或不透光包装；②添加遮光剂（二氧化钛0.5-1%）；③避光保存并在说明书标注。",
+      "source": "《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（制剂通则）",
+      "scope": "含光敏性色素的制剂",
+      "exceptions": [
+        "已采用遮光包装者",
+        "光降解产物无毒性且不影响药效者"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive",
+      "boost_weight": 0.06
+    },
+    {
+      "id": "L3-023",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含附子的炮制减毒与先煎久煎工艺",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "附子",
+          "川乌",
+          "草乌",
+          "天雄",
+          "关白附"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "汤剂",
+        "口服液",
+        "颗粒剂"
+      ],
+      "boost_weight": 0.1,
+      "recommendation": "含{herb}的处方制成汤剂、口服液或需水提的颗粒剂时，必须严格执行先煎久煎工艺。附子、川乌、草乌等含双酯型乌头碱（乌头碱aconitine、中乌头碱mesaconitine、次乌头碱hypaconitine），毒性极强（LD₅₀口服约1-2mg/kg），经长时间加热煎煮可水解为毒性显著降低的单酯型乌头碱（苯甲酰乌头原碱，毒性约为双酯型的1/200）和乌头原碱（几乎无毒）。建议：①附子先煎≥60分钟（至口尝无麻舌感），川乌/草乌先煎≥60-120分钟；②不可与半夏、瓜蒌、贝母、白蔹、白及同用（十八反）；③煎煮液应取样检测双酯型乌头碱残留（HPLC法，限量应≤0.002%）；④若制成颗粒剂等现代剂型，提取液需经充分加热水解并检测乌头碱限量合格后方可进行浓缩和制粒。",
+      "source": "《中华人民共和国药典》2025年版（一部）（附子、川乌、草乌项下：炮制与用法用量）；《中药炮制学》（龚千锋主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（附子炮制章节）；《中药化学》（匡海学主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（乌头碱的水解转化）",
+      "scope": "含附子/川乌/草乌且制成水性提取制剂的处方",
+      "exceptions": [
+        "已使用炮附子（黑顺片、白附片、炮附片）且经充分煎煮者",
+        "已确认双酯型乌头碱含量检测合格（≤0.002%）的制剂"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L3-024",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含雄黄的制剂温度控制与砷形态转化防控",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "雄黄"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "丸剂",
+        "散剂",
+        "片剂",
+        "胶囊剂"
+      ],
+      "boost_weight": 0.09,
+      "recommendation": "雄黄的主要成分为二硫化二砷（As₂S₂，含量≥90%），遇热（≥80℃）可氧化生成三氧化二砷（As₂O₃，即砒霜），毒性剧增。在制剂过程中需严格控制温度：①雄黄严禁火煅和高温烘烤——传统「雄黄见火毒如砒」的警示即源于此化学反应；②雄黄应水飞法粉碎（加水研磨，利用细粉悬浮原理分离杂质和粗粒），水飞过程温度不升高，且可去除可溶性砷盐；③含雄黄的丸剂/散剂干燥温度必须≤60℃（低温烘干或自然阴干）；④片剂制备过程中避免高速压片产生局部高温；⑤每批制剂应检测可溶性砷含量（按药典通则0808砷盐检查法），As₂O₃限量≤1mg/g。",
+      "source": "《中华人民共和国药典》2025年版（一部）（雄黄项下：本品有毒，不宜火制）；《中药炮制学》（龚千锋主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（雄黄的炮制）；《中药化学》（匡海学主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（砷的化学形态转化）",
+      "scope": "含雄黄的固体制剂",
+      "exceptions": [
+        "已确认采用水飞雄黄粉且干燥温度≤60℃者",
+        "已检测可溶性砷限量合格的制剂"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L3-025",
+      "category": "工艺调整建议",
+      "evidence_level": 3,
+      "rule_name": "含朱砂的制剂水飞法与游离汞控制",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "朱砂"
+        ],
+        "match_mode": "any"
+      },
+      "action": "suggest_process",
+      "target_forms": [
+        "丸剂",
+        "散剂",
+        "片剂",
+        "胶囊剂"
+      ],
+      "boost_weight": 0.09,
+      "recommendation": "朱砂的主要成分为硫化汞（HgS，含量≥96%），化学性质稳定、胃肠道几乎不吸收。但朱砂中可能含有微量游离汞（Hg⁰）和可溶性汞盐（HgCl₂等），这些形态的汞具有显著的生物利用度和毒性。制剂工艺中需注意：①朱砂必须水飞处理——水飞法利用HgS与游离汞的密度差异和亲水性差异，可有效分离极细的HgS粉末和游离汞；②严禁球磨或干法粉碎——机械摩擦产生的局部高温可使HgS分解产生游离汞（HgS → Hg + S，分解温度约580℃，但球磨的局部冲击温度可瞬时高达数百摄氏度）；③含朱砂制剂禁止高温干燥（≤50℃）；④每批朱砂原料和制剂应检测游离汞含量（冷原子吸收法，限量应符合药典规定：可溶性汞≤0.01%）；⑤朱砂不应用于注射剂（见L1-001）。",
+      "source": "《中华人民共和国药典》2025年版（一部）（朱砂项下：炮制水飞，本品有毒不宜大量服用也不宜少量久服）；《中药炮制学》（龚千锋主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（朱砂的水飞法）；《中华人民共和国药典》2025年版（四部）（可溶性汞检查法）",
+      "scope": "含朱砂的固体制剂",
+      "exceptions": [
+        "已确认采用水飞朱砂粉且制剂干燥温度≤50℃者",
+        "已检测游离汞和可溶性汞盐限量合格的制剂"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-001",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "矿物药历史偏好丸散剂型",
+      "trigger": {
+        "type": "property_check",
+        "field": "has_mineral",
+        "value": true
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "丸剂",
+        "散剂"
+      ],
+      "boost_weight": 0.05,
+      "recommendation": "含矿物药的处方在历史上多选择丸散剂型，统计上存在偏好。但不同矿物药性质差异显著，此为弱先验，不构成硬性推荐。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（清热药）",
+      "scope": "含矿物药的处方",
+      "exceptions": [
+        "石膏、龙骨、牡蛎等传统煎煮入药的矿物药除外"
+      ],
+      "expert_consensus": "弱一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-002",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "急症偏好速效剂型",
+      "trigger": {
+        "type": "feature_check",
+        "field": "urgency",
+        "op": "eq",
+        "value": "acute"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "注射剂",
+        "口服液",
+        "气雾剂"
+      ],
+      "boost_weight": 0.06,
+      "recommendation": "急症用药需快速起效，注射剂、口服液和气雾剂等速效剂型在统计上更受偏好。但注射剂需额外满足L1/L2安全性约束。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "急症处方",
+      "exceptions": [
+        "若急症可用口服给药达到足够起效速度，注射剂非必需"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-003",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "慢性病偏好缓释长效剂型",
+      "trigger": {
+        "type": "feature_check",
+        "field": "urgency",
+        "op": "eq",
+        "value": "chronic"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "丸剂",
+        "片剂",
+        "胶囊剂",
+        "膏剂"
+      ],
+      "boost_weight": 0.06,
+      "recommendation": "慢性病需长期用药，丸剂、片剂、胶囊剂等固体制剂便于携带、储存和长期服用，统计上更受偏好。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "慢性病处方",
+      "exceptions": [
+        "若患者吞咽困难，口服液或颗粒剂更适宜"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-004",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "外用药偏好局部剂型",
+      "trigger": {
+        "type": "feature_check",
+        "field": "is_topical",
+        "op": "eq",
+        "value": 1
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "膏剂",
+        "搽剂",
+        "洗剂",
+        "栓剂",
+        "散剂"
+      ],
+      "boost_weight": 0.09,
+      "recommendation": "外用处方应优先选择局部给药剂型。膏剂适用于皮肤局部给药，搽剂和洗剂适用于大面积皮损，栓剂适用于腔道给药。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "外用处方",
+      "exceptions": [
+        "若需全身治疗则口服剂型更适宜"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-005",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "呼吸系统疾病偏好气雾剂和口服液",
+      "trigger": {
+        "type": "feature_check",
+        "field": "disease_respiratory",
+        "op": "eq",
+        "value": 1
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "气雾剂",
+        "口服液",
+        "颗粒剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "呼吸系统疾病（感冒、咳嗽、哮喘等）的处方在统计上偏好气雾剂（直达病所）、口服液和颗粒剂（吸收快）。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计",
+      "scope": "呼吸系统疾病处方",
+      "exceptions": [],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-006",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "消化系统疾病偏好口服液和颗粒剂",
+      "trigger": {
+        "type": "feature_check",
+        "field": "disease_digestive",
+        "op": "eq",
+        "value": 1
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "口服液",
+        "颗粒剂",
+        "丸剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "消化系统疾病处方在统计上偏好口服液和颗粒剂（吸收快，对胃肠道刺激小），部分慢性脾胃病偏好丸剂（缓释长效）。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计",
+      "scope": "消化系统疾病处方",
+      "exceptions": [],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-007",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "儿科用药偏好高顺应性剂型",
+      "trigger": {
+        "type": "feature_check",
+        "field": "disease_pediatrics",
+        "op": "eq",
+        "value": 1
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "口服液",
+        "颗粒剂",
+        "糖浆剂"
+      ],
+      "boost_weight": 0.08,
+      "recommendation": "儿科处方应优先选择口服液、颗粒剂、糖浆剂等高顺应性剂型，避免丸剂、片剂等吞咽困难的剂型。",
+      "source": "WHO Model Formulary for Children, 2010；《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "儿科处方",
+      "exceptions": [
+        "若为外用制剂则不受此限"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-008",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "妇科疾病偏好丸剂和膏剂",
+      "trigger": {
+        "type": "feature_check",
+        "field": "disease_gynecology",
+        "op": "eq",
+        "value": 1
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "丸剂",
+        "膏剂",
+        "胶囊剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "妇科慢性疾病（月经不调、带下等）在统计上偏好丸剂和膏剂（缓释调理），急性妇科感染偏好胶囊剂。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计",
+      "scope": "妇科疾病处方",
+      "exceptions": [],
+      "expert_consensus": "弱一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-009",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "风湿痹痛偏好酒剂和膏剂",
+      "trigger": {
+        "type": "feature_check",
+        "field": "disease_rheumatology",
+        "op": "eq",
+        "value": 1
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "酒剂",
+        "膏剂",
+        "丸剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "风湿痹痛类疾病在统计上偏好酒剂（温通经络，引药上行）和膏剂（外用贴敷直达病所），慢性调理偏好丸剂。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计",
+      "scope": "风湿痹痛处方",
+      "exceptions": [
+        "酒精过敏或肝病患者不宜酒剂"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-010",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "皮肤病偏好外用剂型",
+      "trigger": {
+        "type": "feature_check",
+        "field": "disease_dermatology",
+        "op": "eq",
+        "value": 1
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "膏剂",
+        "搽剂",
+        "洗剂",
+        "散剂"
+      ],
+      "boost_weight": 0.07,
+      "recommendation": "皮肤病处方在统计上偏好外用剂型（膏剂、搽剂、洗剂），可直接作用于皮损部位。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计",
+      "scope": "皮肤病处方",
+      "exceptions": [
+        "若需全身治疗则口服剂型更适宜"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-011",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "心脑血管疾病偏好片剂和胶囊剂",
+      "trigger": {
+        "type": "feature_check",
+        "field": "disease_cardiovascular",
+        "op": "eq",
+        "value": 1
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "片剂",
+        "胶囊剂",
+        "丸剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "心脑血管疾病需长期规范用药，片剂和胶囊剂剂量准确、便于携带和长期服用，统计上偏好显著。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计",
+      "scope": "心脑血管疾病处方",
+      "exceptions": [
+        "急性发作需速效剂型"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-012",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "泌尿系统疾病偏好丸剂和胶囊剂",
+      "trigger": {
+        "type": "feature_check",
+        "field": "disease_urology",
+        "op": "eq",
+        "value": 1
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "丸剂",
+        "胶囊剂",
+        "片剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "泌尿系统疾病（淋证、水肿等）的处方在统计上偏好丸剂和胶囊剂。慢性肾病需长期用药，固体制剂的剂量准确性和便携性优势突出；同时避免口服液等水性制剂中防腐剂和电解质可能对肾功能造成的额外负担。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计",
+      "scope": "泌尿系统疾病处方",
+      "exceptions": [
+        "急性尿路感染需快速起效时，口服液和颗粒剂更适宜"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-013",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "补益类处方偏好膏剂和丸剂",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "人参",
+          "黄芪",
+          "党参",
+          "当归",
+          "熟地黄",
+          "枸杞子",
+          "何首乌",
+          "黄精",
+          "山药",
+          "山茱萸",
+          "巴戟天",
+          "肉苁蓉",
+          "淫羊藿",
+          "杜仲",
+          "续断",
+          "菟丝子",
+          "鹿茸",
+          "紫河车"
+        ],
+        "match_mode": "any"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "膏剂",
+        "丸剂",
+        "口服液"
+      ],
+      "boost_weight": 0.05,
+      "recommendation": "补益类药材在中医传统“膏丹丸散”分类中，膏剂和丸剂是最经典的选择（如十全大补丸、龟鹿二仙膏）。膏剂可浓缩大量药材，丸剂可缓补久服，符合“虚则补之，缓以图之”的治疗原则。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）",
+      "scope": "含补益类药材的处方",
+      "exceptions": [
+        "急症虚脱需速补者注射或口服液更适宜"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-014",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "解表药偏好汤剂和散剂",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "麻黄",
+          "桂枝",
+          "紫苏叶",
+          "防风",
+          "荆芥",
+          "羌活",
+          "白芷",
+          "细辛",
+          "生姜",
+          "薄荷",
+          "桑叶",
+          "菊花",
+          "柴胡",
+          "升麻",
+          "葛根"
+        ],
+        "match_mode": "any"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "汤剂",
+        "散剂",
+        "颗粒剂"
+      ],
+      "boost_weight": 0.05,
+      "recommendation": "解表药以发散表邪为治疗目的，传统上以汤剂和散剂为主。汤剂“力峻而速“，可以迅速发汗解表；散剂“散也，去急病用之”（《本草纲目》），同样强调速效发散。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（解表药）",
+      "scope": "含解表药材且以发散表邪为主要目的的处方",
+      "exceptions": [
+        "体虚外感需扶正解表者，丸剂缓补亦可"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-015",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "清热药偏好汤剂和口服液",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "石膏",
+          "知母",
+          "黄连",
+          "黄芩",
+          "黄柏",
+          "栀子",
+          "金银花",
+          "连翘",
+          "板蓝根",
+          "蒲公英",
+          "紫花地丁",
+          "鱼腥草",
+          "大青叶",
+          "生地黄",
+          "玄参",
+          "牡丹皮",
+          "赤芍",
+          "白鲜皮"
+        ],
+        "match_mode": "any"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "汤剂",
+        "口服液",
+        "颗粒剂"
+      ],
+      "boost_weight": 0.05,
+      "recommendation": "清热药以清热泻火、凉血解毒为主要功效，传统上以汤剂为主（如白虎汤、黄连解毒汤、清营汤），取其“汤者荡也”快速清泻热邪的特点。现代临床中，清热类口服液和颗粒剂的使用频率也很高，吸收快且服用方便。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（清热药）",
+      "scope": "含清热药材且以清热为主要目的的处方",
+      "exceptions": [
+        "慢性虚热证可选用丸剂缓清"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-016",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "泻下药偏好汤剂和口服液",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "大黄",
+          "芒硝",
+          "番泻叶",
+          "芦荟",
+          "火麻仁",
+          "郁李仁",
+          "牵牛子",
+          "甘遂",
+          "大戟",
+          "芫花",
+          "商陆",
+          "巴豆"
+        ],
+        "match_mode": "any"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "汤剂",
+        "口服液"
+      ],
+      "boost_weight": 0.05,
+      "recommendation": "泻下药以通利大便、排除积滞为主要功效，需快速起效。汤剂和口服液吸收迅速，可在服药后2-6小时内产生泻下作用，符合临床“急则治其标”的需求。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（泻下药）",
+      "scope": "含泻下药材且以通便为主要目的的处方",
+      "exceptions": [
+        "峻下逐水类毒性药（甘遂、大戟等）宜丸散剂控制剂量",
+        "慢性便秘可用丸剂缓下"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-017",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "活血化瘀药偏好胶囊剂和片剂",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "丹参",
+          "川芎",
+          "红花",
+          "桃仁",
+          "牛膝",
+          "郁金",
+          "延胡索",
+          "乳香",
+          "没药",
+          "三棱",
+          "莪术",
+          "水蛭",
+          "地龙",
+          "血竭",
+          "益母草"
+        ],
+        "match_mode": "any"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "胶囊剂",
+        "片剂",
+        "丸剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "活血化瘀类处方在现代临床中多制成胶囊剂、片剂或滴丸（如复方丹参滴丸、血塞通胶囊），剂量准确、便于长期服用，且胶囊剂可掩盖部分药材的不适气味。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（活血化瘀药）",
+      "scope": "含活血化瘀药材且以活血为主要目的的处方",
+      "exceptions": [
+        "急性血瘀疼痛可用汤剂速效"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-018",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "安神药偏好丸剂和颗粒剂",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "酸枣仁",
+          "柏子仁",
+          "远志",
+          "合欢皮",
+          "首乌藤",
+          "灵芝",
+          "龙骨",
+          "牡蛎",
+          "磁石",
+          "琥珀",
+          "朱砂"
+        ],
+        "match_mode": "any"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "丸剂",
+        "颗粒剂",
+        "胶囊剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "安神类处方以治疗失眠、心悸等慢性神志异常为主，需长期规律服药。丸剂缓释持久（如天王补心丹、朱砂安神丸），颗粒剂方便睡前冲服，均为经典选择。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（安神药）",
+      "scope": "含安神药材且以安神为主要目的的处方",
+      "exceptions": [
+        "急性焦虑发作可选用口服液速效"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-019",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "祛湿药偏好丸剂和散剂",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "苍术",
+          "厚朴",
+          "藿香",
+          "佩兰",
+          "砂仁",
+          "豆蔻",
+          "草果",
+          "茯苓",
+          "猪苓",
+          "泽泻",
+          "薏苡仁",
+          "车前子",
+          "茵陈",
+          "金钱草",
+          "防己"
+        ],
+        "match_mode": "any"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "丸剂",
+        "散剂",
+        "颗粒剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "祛湿类处方的剂型选择因湿邪部位而异：芳香化湿药（藿香、砂仁等）含挥发性成分，散剂和丸剂可减少挥发损失；利水渗湿药（茯苓、泽泻等）制成丸剂可缓利水湿而不伤正。总体上丸散剂的统计偏好较为明显。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（祛风湿药、利水渗湿药）",
+      "scope": "含祛湿药材的处方",
+      "exceptions": [
+        "急性水湿内停可用汤剂速利"
+      ],
+      "expert_consensus": "弱一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-020",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "止血药偏好散剂和丸剂",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "三七",
+          "白及",
+          "仙鹤草",
+          "蒲黄",
+          "茜草",
+          "侧柏叶",
+          "地榆",
+          "槐花",
+          "大蓟",
+          "小蓟",
+          "血余炭",
+          "棕榈炭"
+        ],
+        "match_mode": "any"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "散剂",
+        "丸剂",
+        "胶囊剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "止血类药材（尤其是三七、白及等）传统上以散剂直服效果最佳——散剂可直接覆盖出血面（内服或外敷），丸剂和胶囊剂可掩蔽不良气味且便于携带。如云南白药（散剂/胶囊）、三七粉均以散剂为基础剂型。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（止血药）",
+      "scope": "含止血药材的处方",
+      "exceptions": [
+        "需快速全身止血者注射剂更适宜"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-021",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "含香燥药材偏好丸散剂",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "木香",
+          "砂仁",
+          "豆蔻",
+          "草豆蔻",
+          "丁香",
+          "沉香",
+          "檀香",
+          "降香",
+          "小茴香",
+          "荜茇",
+          "荜澄茄"
+        ],
+        "match_mode": "any"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "丸剂",
+        "散剂",
+        "胶囊剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "含芳香性挥发成分的香燥类药材（木香、砂仁、豆蔻等），传统上多以丸散剂入药。此类药材“芳香走窜”，挥发油为主要药效物质，丸散剂以原粉入药可最大程度保留挥发性成分，避免水煎过程的有效成分损失。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（化湿药、理气药）",
+      "scope": "含芳香性挥发成分药材的处方",
+      "exceptions": [
+        "若已采用包合技术或挥发油回收工艺，汤剂亦可考虑"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-022",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "单味药或小处方偏好颗粒剂和口服液",
+      "trigger": {
+        "type": "feature_check",
+        "field": "num_herbs",
+        "op": "lte",
+        "value": 3
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "颗粒剂",
+        "口服液",
+        "胶囊剂"
+      ],
+      "boost_weight": 0.03,
+      "recommendation": "药味数≤3味的简单处方，各药材成分之间物理化学相互作用较为简单，适宜制成颗粒剂或口服液（提取工艺简单、质量易于控制）。现代中药配方颗粒的实践也证明了少味药处方的颗粒剂可行性。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计",
+      "scope": "药味数≤3味的处方",
+      "exceptions": [
+        "若含贵重或热敏性药材则不适用"
+      ],
+      "expert_consensus": "弱一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-023",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "消导药偏好丸剂和颗粒剂",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "山楂",
+          "神曲",
+          "麦芽",
+          "谷芽",
+          "莱菔子",
+          "鸡内金",
+          "焦山楂",
+          "焦麦芽",
+          "焦神曲"
+        ],
+        "match_mode": "any"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "丸剂",
+        "颗粒剂",
+        "口服液"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "消食导滞类药材（山楂、神曲、麦芽等）传统上以丸剂为多见（如保和丸、大山楂丸），丸剂在胃肠道缓慢释放可持续发挥助消化作用。颗粒剂和口服液则吸收快、适合饭后服用。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（消食药）",
+      "scope": "含消导药材且以消食化积为主要目的的处方",
+      "exceptions": [],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-024",
+      "category": "弱先验",
+      "evidence_level": 4,
+      "rule_name": "平肝熄风药偏好丸剂",
+      "trigger": {
+        "type": "herb_match",
+        "herbs": [
+          "天麻",
+          "钩藤",
+          "石决明",
+          "珍珠母",
+          "龙骨",
+          "牡蛎",
+          "代赭石",
+          "羚羊角",
+          "牛黄",
+          "地龙",
+          "全蝎",
+          "蜈蚣",
+          "僵蚕"
+        ],
+        "match_mode": "any"
+      },
+      "action": "boost_rank",
+      "target_forms": [
+        "丸剂",
+        "胶囊剂",
+        "片剂"
+      ],
+      "boost_weight": 0.04,
+      "recommendation": "平肝熄风类药材多含矿物药和动物药，传统上以丸剂为经典剂型（如羚角钩藤丸、镇肝熄风丸）。矿物药宜粉碎入丸，动物药丸剂可掩蔽腥味且持续释放。",
+      "source": "本项目知识图谱（71,571条三元组）适应症-剂型共现频率统计；《中药学》（钟赣生主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）（平肝息风药）",
+      "scope": "含平肝熄风药材的处方",
+      "exceptions": [
+        "急性惊厥发作需速效时注射剂或口服液更适宜"
+      ],
+      "expert_consensus": "中等一致",
+      "certainty": "suggestive"
+    },
+    {
+      "id": "L4-025",
+      "category": "负向偏好",
+      "evidence_level": 4,
+      "rule_name": "儿科处方负向偏好（吞咽困难剂型降权）",
+      "trigger": {
+        "type": "feature_check",
+        "field": "disease_pediatrics",
+        "op": "eq",
+        "value": 1
+      },
+      "action": "discourage",
+      "target_forms": [
+        "丸剂",
+        "片剂",
+        "胶囊剂"
+      ],
+      "boost_weight": 0.08,
+      "recommendation": "儿科处方应避免丸剂、片剂、胶囊剂等吞咽困难的剂型。对上述剂型施加负向降权（probs = probs × (1-w)），权重与正向规则L4-007对称（w=0.08）。该降权力度低于L3药剂学原理（max 0.10），但高于最低KG先验（min 0.03），反映儿科用药指南的强推荐强度。",
+      "source": "WHO Model Formulary for Children, 2010；《中药药剂学》（杨明主编，全国中医药行业高等教育十四五规划教材，中国中医药出版社）；《中华人民共和国药典》2025年版（四部）（制剂通则）",
+      "scope": "儿科处方",
+      "exceptions": [
+        "若为医院制剂且能分剂量"
+      ],
+      "expert_consensus": "强一致",
+      "certainty": "suggestive"
+    }
+  ]
+}

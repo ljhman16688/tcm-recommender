@@ -1,0 +1,10917 @@
+{
+  "一枝黄花": {
+    "nature": "凉",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "丁公藤": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "丁香": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺",
+      "肾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "八角茴香": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "脾",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "人工牛黄": {
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "人参": {
+    "nature": "微温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "心",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "人参叶": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "儿茶": {
+    "nature": "微寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "九里香": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "九香虫": {
+    "nature": "温",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "刀豆": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "胃",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "三七": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "三白草": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "三棱": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "三颗针": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "干姜": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肾",
+      "心",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "炮姜": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "干漆": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "土木香": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "土贝母": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "土荆皮": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "土茯苓": {
+    "nature": "平",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "土鳖虫（䗪虫）": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大叶紫珠": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大血藤": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "大肠",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大豆黄卷": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大皂角": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大青叶": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大青盐": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "心",
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大枣": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大黄": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "大肠",
+      "肝",
+      "心包"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大蒜": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大蓟": {
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大蓟炭": {
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "大腹皮": {
+    "nature": "微温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "大肠",
+      "小肠"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "山麦冬": {
+    "nature": "微寒",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "山豆根": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "山茱萸": {
+    "nature": "微温",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "山药": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "山柰": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "山香圆叶": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "山银花": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "心",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "山楂": {
+    "nature": "微温",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "山楂叶": {
+    "nature": "平",
+    "taste": [
+      "酸"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "山慈菇": {
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "千年健": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "千里光": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "千金子": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "千金子霜": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "川木香": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "大肠",
+      "胆"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "川木通": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "小肠",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "川贝母": {
+    "nature": "微寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "川牛膝": {
+    "nature": "平",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "川乌": {
+    "nature": "热",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "制川乌": {
+    "nature": "热",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "川芎": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "心包"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "川射干": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "川楝子": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "小肠",
+      "膀胱"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "广东紫珠": {
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "广枣": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "酸"
+    ],
+    "meridian": [
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "广金钱草": {
+    "nature": "凉",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "广藿香": {
+    "nature": "微温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "女贞子": {
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "小叶莲": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "小驳骨": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "小茴香": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "脾",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "小通草": {
+    "nature": "寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "小蓟": {
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "飞扬草": {
+    "nature": "凉",
+    "taste": [
+      "辛",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "膀胱",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "马齿苋": {
+    "nature": "寒",
+    "taste": [
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "马勃": {
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "马钱子": {
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": true,
+    "texture": "normal"
+  },
+  "马钱子粉": {
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "马鞭草": {
+    "nature": "凉",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "王不留行": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "天山雪莲": {
+    "nature": "温",
+    "taste": [
+      "微苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "天仙子": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "胃",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": true,
+    "texture": "normal"
+  },
+  "天冬": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "天花粉": {
+    "nature": "微寒",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "天竺黄": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "天南星": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "制天南星": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "天麻": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "天葵子": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "天然冰片（右旋龙脑）": {
+    "nature": "凉",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "云芝": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "木瓜": {
+    "nature": "温",
+    "taste": [
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "木芙蓉叶": {
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "木香": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "大肠",
+      "三焦",
+      "胆"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "木贼": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "木通": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "小肠",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "木棉花": {
+    "nature": "凉",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "木蝴蝶": {
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "木鳖子": {
+    "nature": "凉",
+    "taste": [
+      "微甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "五加皮": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "五味子": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "心",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "五倍子": {
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "大肠",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "太子参": {
+    "nature": "平",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "车前子": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "肺",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "车前草": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "肺",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "瓦松": {
+    "nature": "凉",
+    "taste": [
+      "苦",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "瓦楞子": {
+    "nature": "平",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "牛黄": {
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "牛蒡子": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "牛膝": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "苦",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "毛诃子": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "涩"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "升麻": {
+    "nature": "微寒",
+    "taste": [
+      "微甘",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "胃",
+      "大肠"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "片姜黄": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "化橘红": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "月季花": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "丹参": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "乌药": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "肾",
+      "膀胱"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "乌梢蛇": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "乌梅": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "火麻仁": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "oily"
+  },
+  "巴豆": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": true,
+    "texture": "oily"
+  },
+  "巴豆霜": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "巴戟天": {
+    "nature": "微温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肾",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "水飞蓟": {
+    "nature": "凉",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胆"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "水牛角": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "水红花子": {
+    "nature": "微寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "水蛭": {
+    "nature": "平",
+    "taste": [
+      "咸",
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "玉竹": {
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "功劳木": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "甘松": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "甘草": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "炙甘草": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "甘遂": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "艾片（左旋龙脑）": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "艾叶": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "石韦": {
+    "nature": "微寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "石吊兰": {
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "石决明": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "石菖蒲": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "石斛": {
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "胃",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "石榴皮": {
+    "nature": "温",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "石膏": {
+    "nature": "大寒",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "煅石膏": {
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "布渣叶": {
+    "nature": "凉",
+    "taste": [],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "龙胆": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胆"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "龙眼肉": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "龙脷叶": {
+    "nature": "平",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "平贝母": {
+    "nature": "微寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "北刘寄奴": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肝",
+      "胆"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "北豆根": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "北沙参": {
+    "nature": "微寒",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "四季青": {
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "大肠",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "生姜": {
+    "nature": "微温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "仙茅": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肾",
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "仙鹤草": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "白及": {
+    "nature": "微寒",
+    "taste": [
+      "涩",
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "白术": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "白头翁": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "白芍": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "白芷": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "白附子": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "白茅根": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "白矾": {
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "白果": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "白屈菜": {
+    "nature": "凉",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "白前": {
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "白扁豆": {
+    "nature": "微温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "白蔹": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "白鲜皮": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "白薇": {
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "苦"
+    ],
+    "meridian": [
+      "胃",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "瓜子金": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "瓜蒌": {
+    "nature": "寒",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "瓜蒌子": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "炒瓜蒌子": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "瓜蒌皮": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "冬瓜皮": {
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "冬虫夏草": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "冬凌草": {
+    "nature": "微寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "冬葵果": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "大肠",
+      "小肠",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "玄明粉": {
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "苦"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "玄参": {
+    "nature": "微寒",
+    "taste": [
+      "咸",
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "半边莲": {
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "小肠",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "半枝莲": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "半夏": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "法半夏": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "姜半夏": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "清半夏": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "母丁香": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "丝瓜络": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "老鹳草": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "地龙": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "地枫皮": {
+    "nature": "温",
+    "taste": [
+      "涩"
+    ],
+    "meridian": [
+      "膀胱",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "地肤子": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "地骨皮": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "地黄": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "熟地黄": {
+    "nature": "微温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "地榆": {
+    "nature": "微寒",
+    "taste": [
+      "涩",
+      "苦",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "地锦草": {
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "芒硝": {
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "苦"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "亚乎奴（锡生藤）": {
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "亚麻子": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "西瓜霜": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "西红花": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "西青果": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "苦",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "西河柳": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "西洋参": {
+    "nature": "凉",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "百合": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "百部": {
+    "nature": "微温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "当归": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "心",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "当药": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "虫白蜡": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "肉苁蓉": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "肉豆蔻": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "肉桂": {
+    "nature": "大热",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肾",
+      "脾",
+      "心",
+      "肝"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "朱砂": {
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": true,
+    "texture": "normal"
+  },
+  "朱砂根": {
+    "nature": "平",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "竹节参": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "竹茹": {
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "心",
+      "胆"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "延胡索（元胡）": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "华山参": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "自然铜": {
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "伊贝母": {
+    "nature": "微寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "血余炭": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "血竭": {
+    "nature": "平",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "全蝎": {
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "合欢皮": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "合欢花": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "决明子": {
+    "nature": "微寒",
+    "taste": [
+      "咸",
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "冰片（合成龙脑）": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "关黄柏": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "灯心草": {
+    "nature": "微寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "灯盏细辛（灯盏花）": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "安息香": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "防己": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "膀胱",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "防风": {
+    "nature": "微温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "膀胱",
+      "肝",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "红大戟": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "红花": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "红花龙胆": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胆"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "红芪": {
+    "nature": "微温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "炙红芪": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "红豆蔻": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "红参": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "心",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "红粉": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": true,
+    "texture": "normal"
+  },
+  "红景天": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "麦冬": {
+    "nature": "微寒",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "麦芽": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "远志": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肾",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "赤小豆": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "心",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "赤石脂": {
+    "nature": "温",
+    "taste": [
+      "涩",
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "大肠",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "赤芍": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "芫花": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "花椒": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "花蕊石": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "芥子": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "苍术": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肝"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "苍耳子": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "芡实": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "芦荟": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "芦根": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "苏木": {
+    "nature": "平",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "苏合香": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "杜仲": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "杜仲叶": {
+    "nature": "温",
+    "taste": [],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "杠板归": {
+    "nature": "微寒",
+    "taste": [
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "巫山淫羊藿": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "豆蔻": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "两头尖": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "两面针": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "连钱草": {
+    "nature": "微寒",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "连翘": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "心",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "吴茱萸": {
+    "nature": "热",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "胃",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "牡丹皮": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "牡荆叶": {
+    "nature": "平",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "牡蛎": {
+    "nature": "微寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "体外培育牛黄": {
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "何首乌": {
+    "nature": "微温",
+    "taste": [
+      "涩",
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "心",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "制何首乌": {
+    "nature": "微温",
+    "taste": [
+      "涩",
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "心",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "伸筋草": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "皂角刺": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "皂矾（绿矾）": {
+    "nature": "凉",
+    "taste": [
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "佛手": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "余甘子": {
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "谷芽": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "谷精草": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "龟甲": {
+    "nature": "微寒",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "龟甲胶": {
+    "nature": "凉",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "gelatinous"
+  },
+  "辛夷": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "羌活": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "膀胱",
+      "肾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "沙苑子": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "沙棘": {
+    "nature": "温",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "沉香": {
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "没药": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "诃子": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "苦",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "补骨脂": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肾",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "灵芝": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "阿胶": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "gelatinous"
+  },
+  "阿魏": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "陈皮": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "附子": {
+    "nature": "大热",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肾",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "忍冬藤": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "鸡内金": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "小肠",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "鸡血藤": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "鸡骨草": {
+    "nature": "凉",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "鸡冠花": {
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "青风藤": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "青叶胆": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "青皮": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "青果": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "青葙子": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "青蒿": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胆"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "青礞石": {
+    "nature": "平",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "青黛": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "玫瑰花": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "苦木": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "苦玄参": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "苦地丁": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "苦杏仁": {
+    "nature": "微温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "oily"
+  },
+  "苦参": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "胃",
+      "大肠",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "苦楝皮": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "苘麻子": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "大肠",
+      "小肠",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "枇杷叶": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "板蓝根": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "松花粉": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "枫香脂": {
+    "nature": "平",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "刺五加": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肾",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "郁李仁": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "大肠",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "oily"
+  },
+  "郁金": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "心",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "虎杖": {
+    "nature": "微寒",
+    "taste": [
+      "微苦"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "昆布": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "明党参": {
+    "nature": "微寒",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "岩白菜": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "罗布麻叶": {
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "罗汉果": {
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "知母": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "垂盆草": {
+    "nature": "凉",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "委陵菜": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "使君子": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "oily"
+  },
+  "侧柏叶": {
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "佩兰": {
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "金龙胆草": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "金果榄": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "金沸草": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "金荞麦": {
+    "nature": "凉",
+    "taste": [
+      "涩"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "金钱白花蛇": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "金钱草": {
+    "nature": "微寒",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "金铁锁": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "金银花": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "心",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "金樱子": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肾",
+      "膀胱",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "金礞石": {
+    "nature": "平",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "乳香": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "肿节风": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "鱼腥草": {
+    "nature": "微寒",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "狗脊": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "京大戟": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "闹羊花": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": true,
+    "texture": "normal"
+  },
+  "卷柏": {
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "炉甘石": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "油松节": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "泽兰": {
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "泽泻": {
+    "nature": "寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "降香": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "细辛": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "肾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "贯叶金丝桃": {
+    "nature": "寒",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "珍珠": {
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": true,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "珍珠母": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "荆芥": {
+    "nature": "微温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "荆芥炭": {
+    "nature": "微温",
+    "taste": [
+      "涩",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "荆芥穗": {
+    "nature": "微温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "荆芥穗炭": {
+    "nature": "微温",
+    "taste": [
+      "涩",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "茜草": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "荜茇": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "荜澄茄": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "草乌": {
+    "nature": "热",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "制草乌": {
+    "nature": "热",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "草乌叶": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "辛"
+    ],
+    "meridian": [],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "草豆蔻": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "草果": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "茵陈": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肝",
+      "胆"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "茯苓": {
+    "nature": "平",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "茯苓皮": {
+    "nature": "平",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "茺蔚子": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心包",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "胡芦巴": {
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "胡黄连": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "胡椒": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "荔枝核": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "南五味子": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "心",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "南沙参": {
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "南板蓝根": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "南鹤虱": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "枳壳": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛",
+      "酸"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "枳实": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛",
+      "酸"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "柏子仁": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "oily"
+  },
+  "栀子": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "三焦"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "焦栀子": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "三焦"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "枸杞子": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "枸骨叶": {
+    "nature": "凉",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "柿蒂": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "威灵仙": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "厚朴": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺",
+      "大肠"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "厚朴花": {
+    "nature": "微温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "砂仁": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "牵牛子": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "轻粉": {
+    "nature": "寒",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "大肠",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": true,
+    "texture": "normal"
+  },
+  "鸦胆子": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "大肠",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "韭菜子": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "哈蟆油": {
+    "nature": "平",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "骨碎补": {
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "钟乳石": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "钩藤": {
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "心包"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "香加皮": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "香附": {
+    "nature": "平",
+    "taste": [
+      "微甘",
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "三焦"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "香橼": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "香薷": {
+    "nature": "微温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "重楼": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "禹州漏芦": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "禹余粮": {
+    "nature": "微寒",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "胆南星": {
+    "nature": "凉",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "胖大海": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "独一味": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "独活": {
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "急性子": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "姜黄": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肝"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "前胡": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "首乌藤": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "洪连": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "洋金花": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": true,
+    "texture": "normal"
+  },
+  "穿山龙": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "穿心莲": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "大肠",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "络石藤": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "秦艽": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "肝",
+      "胆"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "秦皮": {
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "珠子参": {
+    "nature": "微寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "莱菔子": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "oily"
+  },
+  "莲子": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肾",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "莲子心": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "莲房": {
+    "nature": "温",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "莲须": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "莪术": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "荷叶": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "桂枝": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "膀胱"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "桔梗": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "桃仁": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "oily"
+  },
+  "桃枝": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "核桃仁": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肾",
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "oily"
+  },
+  "夏天无": {
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "夏枯草": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胆"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "柴胡": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "党参": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "鸭跖草": {
+    "nature": "寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "铁皮石斛": {
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "胃",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "积雪草": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "臭灵丹草": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "射干": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "徐长卿": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "狼毒": {
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "凌霄花": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "心包"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "高山辣根菜": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "高良姜": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "拳参": {
+    "nature": "微寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "粉萆薢": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "粉葛": {
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "益母草": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "心包",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "益智": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "浙贝母": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "娑罗子": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "海马": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "海风藤": {
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "海金沙": {
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "膀胱",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "海螵蛸": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "涩"
+    ],
+    "meridian": [
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "海藻": {
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "浮萍": {
+    "nature": "寒",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "通关藤": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "通草": {
+    "nature": "微寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "预知子": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "胃",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "桑叶": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "桑白皮": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "桑枝": {
+    "nature": "平",
+    "taste": [
+      "微苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "桑寄生": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "桑椹": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "桑螵蛸": {
+    "nature": "平",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "黄山药": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "胃",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "黄芩": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胆",
+      "脾",
+      "大肠",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "黄芪": {
+    "nature": "微温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "炙黄芪": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "黄连": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "胃",
+      "肝",
+      "胆",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "黄柏": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "黄蜀葵花": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "黄精": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "mucilaginous"
+  },
+  "黄藤": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "菥蓂": {
+    "nature": "微寒",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "菝葜": {
+    "nature": "平",
+    "taste": [
+      "微苦",
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "菟丝子": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "菊苣": {
+    "nature": "凉",
+    "taste": [
+      "咸",
+      "微苦"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "菊花": {
+    "nature": "微寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "梅花": {
+    "nature": "平",
+    "taste": [],
+    "meridian": [
+      "肝",
+      "胃",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "救必应": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "大肠",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "常山": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "野马追": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "野木瓜": {
+    "nature": "平",
+    "taste": [
+      "微苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "野菊花": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蛇床子": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蛇蜕": {
+    "nature": "平",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "银杏叶": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "甜瓜子": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "猪牙皂": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "猪苓": {
+    "nature": "平",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "猪胆粉": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "猫爪草": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "麻黄": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "膀胱"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "麻黄根": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "鹿角": {
+    "nature": "温",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肾",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "鹿角胶": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肾",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "gelatinous"
+  },
+  "鹿角霜": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "涩"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "鹿茸": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肾",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "鹿衔草": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "商陆": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "肾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "旋覆花": {
+    "nature": "微温",
+    "taste": [
+      "咸",
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "羚羊角": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "断血流": {
+    "nature": "凉",
+    "taste": [
+      "微苦",
+      "涩"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "淫羊藿": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "淡竹叶": {
+    "nature": "寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "胃",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "淡豆豉": {
+    "nature": "凉",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "密蒙花": {
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "续断": {
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "绵马贯众": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "绵马贯众炭": {
+    "nature": "微寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "绵萆薢": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "斑蝥": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": true,
+    "texture": "normal"
+  },
+  "款冬花": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "葛根": {
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "葶苈子": {
+    "nature": "大寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "萹蓄": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "楮实子": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "棕榈": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "硫黄": {
+    "nature": "温",
+    "taste": [
+      "酸"
+    ],
+    "meridian": [
+      "肾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "雄黄": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": true,
+    "texture": "normal"
+  },
+  "紫石英": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肾",
+      "心",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "紫花地丁": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "紫花前胡": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "紫苏子": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "紫苏叶": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "紫苏梗": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "紫草": {
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "紫珠叶": {
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "紫萁贯众": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "紫菀": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蛤壳": {
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蛤蚧": {
+    "nature": "平",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "黑芝麻": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "oily"
+  },
+  "黑豆": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "黑种草子": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "锁阳": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "筋骨草": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "鹅不食草": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "番泻叶": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "湖北贝母": {
+    "nature": "凉",
+    "taste": [
+      "微苦"
+    ],
+    "meridian": [
+      "肺",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "滑石": {
+    "nature": "寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "膀胱",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "滑石粉": {
+    "nature": "寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "膀胱",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蓝布正": {
+    "nature": "凉",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蓖麻子": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "大肠",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蒺藜": {
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蒲公英": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蒲黄": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "心包"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "椿皮": {
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "大肠",
+      "胃",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "槐花": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "槐角": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "雷丸": {
+    "nature": "寒",
+    "taste": [
+      "微苦"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "路路通": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蜈蚣": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蜂房": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蜂胶": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蜂蜡": {
+    "nature": "微温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蜂蜜": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "锦灯笼": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "矮地茶": {
+    "nature": "平",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "满山红": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "滇鸡血藤": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "裸花紫珠": {
+    "nature": "凉",
+    "taste": [
+      "苦",
+      "微辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蔓荆子": {
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "膀胱",
+      "肝",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蓼大青叶": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "榧子": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "榼藤子": {
+    "nature": "凉",
+    "taste": [
+      "微苦"
+    ],
+    "meridian": [],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "槟榔": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "焦槟榔": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "酸枣仁": {
+    "nature": "平",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "oily"
+  },
+  "磁石": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "心",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "豨莶草": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蜘蛛香": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蝉蜕": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "罂粟壳": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "大肠",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "辣椒": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "漏芦": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "赭石": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "心",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "蕤仁": {
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蕲蛇": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "槲寄生": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "暴马子皮": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "墨旱莲": {
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肾",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "稻芽": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "僵蚕": {
+    "nature": "平",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "鹤虱": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "薤白": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "薏苡仁": {
+    "nature": "凉",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "starchy"
+  },
+  "薄荷": {
+    "nature": "凉",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "颠茄草": {
+    "nature": "温",
+    "taste": [
+      "微苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "橘红": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "橘核": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "藏菖蒲": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "藁本": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "膀胱"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "檀香": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "心",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "翼首草": {
+    "nature": "凉",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "藕节": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "覆盆子": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "瞿麦": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "小肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "翻白草": {
+    "nature": "平",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "蟾酥": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": true,
+    "texture": "normal"
+  },
+  "鳖甲": {
+    "nature": "微寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "麝香": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "穿山甲": {
+    "nature": "微寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "琥珀": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "膀胱"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "硫磺": {
+    "nature": "温",
+    "taste": [
+      "酸"
+    ],
+    "meridian": [
+      "肾",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": true,
+    "texture": "normal"
+  },
+  "熊胆": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "心"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "寒水石": {
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "硼砂": {
+    "nature": "凉",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "藿香": {
+    "nature": "微温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "桂皮": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肝",
+      "肾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "龙骨": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "山奈": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "海蛤壳": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "咸"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "胃"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "明矾": {
+    "nature": "寒",
+    "taste": [
+      "酸",
+      "涩"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "白豆蔻": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "枯矾": {
+    "nature": "寒",
+    "taste": [
+      "酸",
+      "涩"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "藏红花": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "海龙": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "mineral": false,
+    "precious": true,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "龙齿": {
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "mineral": true,
+    "precious": false,
+    "toxic": false,
+    "texture": "hard"
+  },
+  "紫苏": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "脾",
+      "胃"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "fibrous"
+  },
+  "樟脑": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "冰片": {
+    "nature": "微寒",
+    "taste": [
+      "辛",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肺"
+    ],
+    "volatile": true,
+    "mineral": false,
+    "precious": false,
+    "toxic": false,
+    "texture": "normal"
+  },
+  "延胡索": {
+    "nature": "温",
+    "taste": [
+      "辛",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "hard"
+  },
+  "土鳖虫": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "toxic": true,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "紫河车": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "咸"
+    ],
+    "meridian": [
+      "肺",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": true,
+    "texture": "normal"
+  },
+  "关木通": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "小肠",
+      "膀胱"
+    ],
+    "volatile": false,
+    "toxic": true,
+    "mineral": false,
+    "precious": false,
+    "texture": "fibrous"
+  },
+  "白花蛇舌草": {
+    "nature": "寒",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "胃",
+      "大肠",
+      "小肠"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "fibrous"
+  },
+  "六神曲": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "starchy"
+  },
+  "胡萎": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "竹叶": {
+    "nature": "寒",
+    "taste": [
+      "淡",
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "胃",
+      "小肠"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "青箱子": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "白": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "绿豆": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "生地黄": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "松子仁": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "蚕沙": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "昆明山海棠": {
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": true,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "稀签草": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "臭梧桐": {
+    "nature": "凉",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "雷公藤": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": true,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "老鹤草": {
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "雪莲花": {
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "玉米须": {
+    "nature": "平",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "胆"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "葫芦": {
+    "nature": "平",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "篇蓄": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "膀胱"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "冬葵子": {
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "小肠",
+      "大肠",
+      "膀胱"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "草薛": {
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肾",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "珍珠草": {
+    "nature": "凉",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "华芨": {
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "Gmson（草拾遗）": {
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "鹤草芽": {
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "芜荑": {
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "苎麻根": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "羊蹄": {
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "大肠"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "棕榈炭": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "灶心土": {
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "刘寄奴": {
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "虻虫": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "toxic": true,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "皂荚": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "toxic": true,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "竹沥": {
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肺"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "海浮石": {
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "石": {
+    "nature": "平",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肺"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "马兜铃": {
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "紫贝齿": {
+    "nature": "平",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "代赭石": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "饴糖": {
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "蛤蝓": {
+    "nature": "平",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肺",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "海狗肾": {
+    "nature": "热",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "浮小麦": {
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "糯稻根": {
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "海蝶蛸": {
+    "nature": "温",
+    "taste": [
+      "咸",
+      "涩"
+    ],
+    "meridian": [
+      "脾",
+      "肾"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "刺猬皮": {
+    "nature": "平",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肾",
+      "胃",
+      "大肠"
+    ],
+    "volatile": false,
+    "toxic": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "甜瓜蒂": {
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "胃",
+      "胆"
+    ],
+    "volatile": false,
+    "toxic": true,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "藜芦": {
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "volatile": false,
+    "toxic": true,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "吡石": {
+    "nature": "大热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肺"
+    ],
+    "volatile": false,
+    "toxic": true,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "铅丹": {
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾"
+    ],
+    "volatile": false,
+    "toxic": true,
+    "mineral": false,
+    "precious": false,
+    "texture": "normal"
+  },
+  "生何首乌": {
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "甘",
+      "涩"
+    ],
+    "meridian": [
+      "肝",
+      "心",
+      "肾"
+    ],
+    "toxic": true,
+    "volatile": false,
+    "mineral": false,
+    "precious": false,
+    "texture": "starchy"
+  }
+}

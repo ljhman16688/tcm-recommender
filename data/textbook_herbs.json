@@ -1,0 +1,5068 @@
+[
+  {
+    "name": "麻黄",
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "发汗解表，宣肺平喘，利水消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "桂枝",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "发汗解肌，温通经脉，助阳化气，平冲降逆。",
+    "precautions": "本品辛温助热，易伤阴动血，凡外感热病、阴虚火旺、血热妄行等证，均当忌用。孕妇及月经过多者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "紫苏叶",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "解表散寒，行气和胃。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "生姜",
+    "nature": "微温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "解表散寒，温中止呕，化痰止咳，解鱼蟹毒。",
+    "precautions": "本品助火伤阴，故热盛及阴虚内热者忌服。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "香薷",
+    "nature": "微温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "发汗解表，化湿和中，利水消肿。",
+    "precautions": "本品辛温发汗之力较强，表虚有汗及暑热证当忌用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "荆芥",
+    "nature": "微温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "解表散风，透疹，消疮。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "防风",
+    "nature": "微温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "祛风解表，胜湿止痛，止痉。",
+    "precautions": "本品药性偏温，阴血亏虚及热盛动风者不宜使用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白芷",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "解表散寒，祛风止痛，宣通鼻窍，燥湿止带，消肿排脓。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "细辛",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "肾"
+    ],
+    "toxic": true,
+    "function": "解表散寒，祛风止痛，通窍，温肺化饮。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "辛夷",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "散风寒，通鼻窍。",
+    "precautions": "阴虚火旺者忌服。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "胡萎",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "发表透疹，开胃消食。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "薄荷",
+    "nature": "凉",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "疏散风热，清利头目，利咽，透疹，疏肝行气。",
+    "precautions": "本品芳香辛散，发汗耗气，故体虚多汗者不宜使用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "牛蒡子",
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "疏散风热，宣肺祛痰，利咽透疹，解毒消肿。",
+    "precautions": "本品性寒，滑肠通便，气虚便溏者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "蝉蜕",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "疏散风热，利咽开音，透疹，明目退翳，息风止痉。",
+    "precautions": "《名医别录》有“主妇人生子不下”的记载，故孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "桑叶",
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "疏散风热，清肺润燥，平抑肝阳，清肝明目。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "菊花",
+    "nature": "微寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "疏散风热，平抑肝阳，清肝明目，清热解毒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "葛根",
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "解肌退热，生津止渴，透疹，升阳止泻，通经活络，解酒毒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "淡豆豉",
+    "nature": "凉",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "解表，除烦，宣发郁热。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "浮萍",
+    "nature": "寒",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "宣散风热，透疹止痒，利尿消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "谷精草",
+    "nature": "平",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "疏散风热，明目退翳。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "石膏",
+    "nature": "大寒",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "生用：清热泻火，除烦止渴；煅用：收湿，生肌，敛疮，止血。",
+    "precautions": "脾胃虚寒及阴虚内热者忌用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "寒水石",
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清热泻火。",
+    "precautions": "脾胃虚寒者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "芦根",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清热泻火，生津止渴，除烦，止呕，利尿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "竹叶",
+    "nature": "寒",
+    "taste": [
+      "淡",
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "胃",
+      "小肠"
+    ],
+    "toxic": false,
+    "function": "清热泻火，除烦，生津，利尿。",
+    "precautions": "阴虚火旺、骨蒸潮热者不宜使用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "淡竹叶",
+    "nature": "寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "胃",
+      "小肠"
+    ],
+    "toxic": false,
+    "function": "清热泻火，除烦止渴，利尿通淋。",
+    "precautions": "阴虚火旺、骨蒸潮热者不宜使用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "栀子",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "三焦"
+    ],
+    "toxic": false,
+    "function": "泻火除烦，清热利湿，凉血解毒；外用消肿止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "夏枯草",
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胆"
+    ],
+    "toxic": false,
+    "function": "清肝泻火，明目，散结消肿。",
+    "precautions": "脾胃虚弱者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "青箱子",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "清肝泻火，明目退翳。",
+    "precautions": "本品有扩散瞳孔作用，青光眼患者禁用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "黄芩",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胆",
+      "小肠",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "清热燥湿，泻火解毒，止血，安胎。",
+    "precautions": "本品苦寒伤胃，脾胃虚寒者不宜使用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "黄连",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾",
+      "胃",
+      "胆",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "清热燥湿，泻火解毒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "秦皮",
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "清热燥湿，收涩止痢，止带，明目。",
+    "precautions": "脾胃虚寒者忌用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "苦参",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "胃",
+      "大肠",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "清热燥湿，杀虫止痒，利尿。",
+    "precautions": "脾胃虚寒及阴虚津伤者者忌用或慎用。不宜与藜芦同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白鲜皮",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "清热燥湿，祛风解毒。",
+    "precautions": "脾胃虚寒者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "金银花",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清热解毒，疏散风热。",
+    "precautions": "脾胃虚寒及气虚疮疡脓清者忌用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "连翘",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "小肠"
+    ],
+    "toxic": false,
+    "function": "清热解毒，消肿散结，疏散风热。",
+    "precautions": "脾胃虚寒及气虚脓清者不宜用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "穿心莲",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "大肠",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "清热解毒，凉血，消肿，燥湿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "大青叶",
+    "nature": "",
+    "taste": [],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清热解毒，凉血消斑。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "青黛",
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "清热解毒，凉血消斑，泻火定惊。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "紫花地丁",
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "清热解毒，凉血消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "野菊花",
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "清热解毒，泻火平肝。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "重楼",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": true,
+    "function": "清热解毒，消肿止痛，凉肝定惊。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "漏芦",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清热解毒，消痈散结，通经下乳，舒筋通脉。",
+    "precautions": "孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "土茯苓",
+    "nature": "平",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "解毒，除湿，通利关节。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "大血藤",
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "清热解毒，活血，祛风止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "射干",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "toxic": false,
+    "function": "清热解毒，消痰，利咽。",
+    "precautions": "本品苦寒，脾虚便溏者不宜使用。孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "马勃",
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "toxic": false,
+    "function": "清肺，解毒利咽，止血。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "青果",
+    "nature": "平",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清热解毒，利咽，生津。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "木蝴蝶",
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清肺利咽，疏肝和胃。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白头翁",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "清热解毒，凉血止痢。",
+    "precautions": "虚寒泻痢者忌服。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "地锦草",
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "清热解毒，凉血止血，利湿退黄。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "半边莲",
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "小肠"
+    ],
+    "toxic": false,
+    "function": "清热解毒，利尿消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白花蛇舌草",
+    "nature": "寒",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "胃",
+      "小肠",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "清热解毒，利湿通淋。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "山慈菇",
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "清热解毒，化痰散结。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清热解毒，消痈散结，敛疮生肌。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "四季青",
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "大肠",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "清热解毒，消肿祛瘀，凉血止血，敛疮。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "绿豆",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清热解毒，消暑，利水。",
+    "precautions": "脾胃虚寒，肠滑泄泻者不宜使用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "生地黄",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "清热凉血，养阴生津。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "牡丹皮",
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "清热凉血，活血化瘀。",
+    "precautions": "血虚有寒、月经过多者不宜使用。孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "赤芍",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "清热凉血，散瘀止痛。",
+    "precautions": "血寒经闭者不宜使用。孕妇慎用。不宜与藜芦同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "青蒿",
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胆"
+    ],
+    "toxic": false,
+    "function": "清虚热，除骨蒸，解暑热，截疟，退黄。",
+    "precautions": "本品苦寒，脾胃虚弱、肠滑泄泻者忌用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白薇",
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清热凉血，利尿通淋，解毒疗疮。",
+    "precautions": "本品苦寒，脾胃虚寒、食少便溏者不宜服用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "地骨皮",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "凉血除蒸，清肺降火。",
+    "precautions": "本品性寒，外感风寒发热或脾虚便溏者不宜服用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "胡黄连",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "退虚热，除疳热，清湿热。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "大黄",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾",
+      "胃",
+      "大肠",
+      "心包"
+    ],
+    "toxic": false,
+    "function": "泻下攻积，清热泻火，凉血解毒，止血，逐癡通经，利湿退黄。",
+    "precautions": "孕妇及月经期、哺乳期慎用。又本品苦寒，易伤胃气，脾胃虚弱者亦应慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "芦荟",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "泻下通便，清肝泻火，杀虫疗疳。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "火麻仁",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "润肠通便。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "松子仁",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "润肠通便，润肺止咳。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "甘遂",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "大肠"
+    ],
+    "toxic": true,
+    "function": "泻水逐饮，消肿散结。",
+    "precautions": "孕妇及虚弱者禁用。不宜与甘草同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "京大戟",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "toxic": true,
+    "function": "泻水逐饮，消肿散结。",
+    "precautions": "孕妇及虚弱者禁用。不宜与甘草同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "芫花",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "toxic": true,
+    "function": "泻水逐饮，祛痰止咳；外用杀虫疗疮。",
+    "precautions": "孕妇及虚弱者禁用。不宜与甘草同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "牵牛子",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "大肠"
+    ],
+    "toxic": true,
+    "function": "泻水通便，消痰涤饮，杀虫攻积。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "巴豆霜",
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "toxic": true,
+    "function": "峻下冷积，逐水退肿，豁痰利咽；外用蚀疮。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "千金子",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "大肠"
+    ],
+    "toxic": true,
+    "function": "泻下逐水，破血消；外用疗癣蚀疣。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "独活",
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肾",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "祛风除湿，通痹止痛，解表。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "威灵仙",
+    "nature": "温",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "祛风湿，通经络，止痛，消骨骰。",
+    "precautions": "本品辛散走窜，气血虚弱者慎服。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "川乌",
+    "nature": "热",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "toxic": true,
+    "function": "祛风除湿，温经止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "蕲蛇",
+    "nature": "温",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": true,
+    "function": "祛风，通络，止痉。",
+    "precautions": "血虚生风者慎服。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "乌梢蛇",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "祛风，通络，止痉。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "木瓜",
+    "nature": "温",
+    "taste": [
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "舒筋活络，化湿和中。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "蚕沙",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "祛风除湿，化湿和中。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "伸筋草",
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "祛风除湿，舒筋活络。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "海风藤",
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "祛风湿，通经络，止痹痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "丁公藤",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "胃"
+    ],
+    "toxic": true,
+    "function": "祛风除湿，消肿止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "昆明山海棠",
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "toxic": true,
+    "function": "祛风除湿，活血止痛，续筋接骨。",
+    "precautions": "体弱者不宜使用。孕妇禁用。小儿及育龄期妇女慎服。不宜过量或久服。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "穿山龙",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "祛风除湿，舒筋通络，活血止痛，止咳平喘。",
+    "precautions": "粉碎加工时，注意防护，以免发生过敏反应。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "稀签草",
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "祛风湿，利关节，清热解毒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "臭梧桐",
+    "nature": "凉",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "祛风湿，通经络，平肝。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "络石藤",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "祛风通络，凉血消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "雷公藤",
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": true,
+    "function": "祛风除湿，活血通络，消肿止痛，杀虫解毒。",
+    "precautions": "本品有大毒，内服宜慎。外敷不可超过半小时，否则起疱。凡有心、肝、肾器质性病变及白细胞减少者慎服。孕妇禁用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "老鹤草",
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "祛风湿，通经络，止泻痢，清热解毒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "丝瓜络",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "祛风，通络，活血，下乳。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "桑寄生",
+    "nature": "平",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "祛风湿，补肝肾，强筋骨，安胎元。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "狗脊",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "祛风湿，补肝肾，强腰膝。",
+    "precautions": "肾虚有热，小便不利或短涩黄赤者慎服。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "雪莲花",
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "祛风湿，强筋骨，补肾阳，调冲任。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "苍术",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "燥湿健脾，祛风散寒，明目。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "厚朴",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "燥湿，行气，消积，消痰平喘。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "砂仁",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "化湿开胃，温中止泻，理气安胎。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "豆蔻",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "化湿行气，温中止呕，开胃消食。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "草豆蔻",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "燥湿行气，温中止呕。",
+    "precautions": "阴虚血燥者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "草果",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "燥湿温中，截疟除痰。",
+    "precautions": "阴虚血燥者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "茯苓",
+    "nature": "平",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "利水渗湿，健脾，宁心安神。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "薏苡仁",
+    "nature": "凉",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "利水渗湿，健脾止泻，除痹，排脓，解毒散结。",
+    "precautions": "本品性质滑利，孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "冬瓜皮",
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "小肠"
+    ],
+    "toxic": false,
+    "function": "利尿消肿，清热解暑。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "玉米须",
+    "nature": "平",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "胆"
+    ],
+    "toxic": false,
+    "function": "利水消肿，利湿退黄。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "葫芦",
+    "nature": "平",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "利水消肿，通淋。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "香加皮",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "toxic": true,
+    "function": "利水消肿，祛风湿，强筋骨。",
+    "precautions": "本品有毒，不宜长期或过量服用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "车前子",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "肾",
+      "小肠"
+    ],
+    "toxic": false,
+    "function": "清热利尿通淋，渗湿止泻，明目，祛痰。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "滑石",
+    "nature": "寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "利尿通淋，清热解暑；外用祛湿敛疮。",
+    "precautions": "脾虚、热病伤津及孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "木通",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "小肠",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "利尿通淋，清心除烦，通经下乳。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "通草",
+    "nature": "微寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清热利尿，通气下乳。",
+    "precautions": "孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "瞿麦",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "小肠"
+    ],
+    "toxic": false,
+    "function": "利尿通淋，活血通经。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "篇蓄",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "利尿通淋，杀虫，止痒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "地肤子",
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肾",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "清热利湿，祛风止痒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "海金沙",
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "小肠",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "清热利湿，通淋止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "石韦",
+    "nature": "微寒",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "利尿通淋，清肺止咳，凉血止血。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "冬葵子",
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "小肠",
+      "大肠",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "清热利尿，下乳，润肠。",
+    "precautions": "本品寒润滑利，脾虚便溏者及孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "灯心草",
+    "nature": "微寒",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "小肠"
+    ],
+    "toxic": false,
+    "function": "利小便，清心火。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "草薛",
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "利湿去浊，祛风除痹。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "茵陈",
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "胃",
+      "胆"
+    ],
+    "toxic": false,
+    "function": "清利湿热，利胆退黄。",
+    "precautions": "蓄血发黄者及血虚萎黄者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "虎杖",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胆"
+    ],
+    "toxic": false,
+    "function": "利湿退黄，清热解毒，散瘀止痛，化痰止咳。",
+    "precautions": "孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "垂盆草",
+    "nature": "凉",
+    "taste": [
+      "淡",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胆",
+      "小肠"
+    ],
+    "toxic": false,
+    "function": "利湿退黄，清热解毒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "鸡骨草",
+    "nature": "凉",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "利湿退黄，清热解毒，疏肝止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "珍珠草",
+    "nature": "凉",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "利湿退黄，清热解毒，明目，消积。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "附子",
+    "nature": "大热",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肾"
+    ],
+    "toxic": true,
+    "function": "回阳救逆，补火助阳，散寒止痛。",
+    "precautions": "本品辛热燥烈，孕妇慎用，阴虚阳亢者忌用。不宜与半夏、瓜萎、瓜萎皮、瓜萎子、天花粉、川贝母、浙贝母、平贝母、伊贝母、湖北贝母、白、白及同用。生品外用，内服须经炮制。若内服过量，或炮制、煎煮方法不当，可引起中毒。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "肉桂",
+    "nature": "大热",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补火助阳，散寒止痛，温通经脉，引火归元。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "吴茱萸",
+    "nature": "热",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾",
+      "胃"
+    ],
+    "toxic": true,
+    "function": "散寒止痛，降逆止呕，助阳止泻。",
+    "precautions": "本品辛热燥烈，易耗气动火，故不宜多用、久服。阴虚有热者忌用。孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "小茴香",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "散寒止痛，理气和胃。",
+    "precautions": "阴虚火旺者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "丁香",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "温中降逆，散寒止痛，温肾助阳。",
+    "precautions": "不宜与郁金同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "高良姜",
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "温中止呕，散寒止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "花椒",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "温中止痛，杀虫止痒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "胡椒",
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "温中散寒，下气，消痰。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "华芨",
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "温中散寒，下气止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "陈皮",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "理气健脾，燥湿化痰。",
+    "precautions": "本品辛散苦燥，温能助热，故内有实热、舌赤少津者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "青皮",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "胆"
+    ],
+    "toxic": false,
+    "function": "疏肝破气，消积化滞。",
+    "precautions": "本品性烈耗气，气虚者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "枳实",
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛",
+      "酸"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "破气消积，化痰散痞。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "木香",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "胆",
+      "大肠",
+      "三焦"
+    ],
+    "toxic": false,
+    "function": "行气止痛，健脾消食。",
+    "precautions": "本品辛温香燥，凡阴虚火旺者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "檀香",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "行气温中，开胃止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "荔枝核",
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "行气散结，祛寒止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "佛手",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "疏肝理气，和中止痛，燥湿化痰。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "玫瑰花",
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "行气解郁，和血，止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "梅花",
+    "nature": "平",
+    "taste": [],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "疏肝和中，化痰散结。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "娑罗子",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "疏肝理气，和胃止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "薤白",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "通阳散结，行气导滞。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "大腹皮",
+    "nature": "微温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "小肠",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "行气宽中，行水消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "Gmson（草拾遗）",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "理气止痛，开郁醒脾；外用祛湿消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "九香虫",
+    "nature": "温",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "理气止痛，温中助阳。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "柿蒂",
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "胃"
+    ],
+    "toxic": false,
+    "function": "降逆止呃。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "麦芽",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "行气消食，健脾开胃，回乳消胀。",
+    "precautions": "授乳期妇女不宜使用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "稻芽",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "消食和中，健脾开胃。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "莱菔子",
+    "nature": "平",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "消食除胀，降气化痰。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "鸡内金",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "小肠",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "健胃消食，涩精止遗，通淋化石。",
+    "precautions": "脾虚无积滞者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "使君子",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "杀虫，消积。",
+    "precautions": "大量服用可致呃逆、眩晕、呕吐、腹泻等反应。若与热茶同服，亦能引起呃逆、腹泻，故服用时忌饮浓茶。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "槟榔",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "杀虫，消积，行气，利水，截疟。",
+    "precautions": "脾虚便溏、气虚下陷者忌用；孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "鹤草芽",
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "杀虫。",
+    "precautions": "不宜入煎剂，因有效成分（鹤草酚）几乎不溶于水。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "鹤虱",
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": true,
+    "function": "杀虫，消积。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "榧子",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "杀虫消积，润肺止咳，润燥通便。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "芜荑",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "杀虫，消积。",
+    "precautions": "脾胃虚弱者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "小蓟",
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "凉血止血，散瘀解毒消痈。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "大蓟",
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "凉血止血，散瘀解毒消痈。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "地榆",
+    "nature": "微寒",
+    "taste": [
+      "涩",
+      "苦",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "凉血止血，解毒敛疮。",
+    "precautions": "本品性寒酸涩，凡虚寒性出血或有癡者慎用。对于大面积烧烫伤病人，不宜使用地榆制剂外涂，以防其所含鞣质被大量吸收而引起中毒性肝炎。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "槐花",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "凉血止血，清肝泻火。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "侧柏叶",
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "凉血止血，化痰止咳，生发乌发。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白茅根",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "凉血止血，清热利尿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "苎麻根",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "凉血止血，安胎，清热解毒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "羊蹄",
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "凉血止血，解毒杀虫，泻下通便。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "三七",
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "散癡止血，消肿定痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "蒲黄",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "心包"
+    ],
+    "toxic": false,
+    "function": "止血，化瘀，利尿通淋。",
+    "precautions": "孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "花蕊石",
+    "nature": "平",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "化瘀止血。",
+    "precautions": "孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "棕榈炭",
+    "nature": "平",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "收敛止血。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "血余炭",
+    "nature": "平",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "收敛止血，化瘀，利尿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "艾叶",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "toxic": true,
+    "function": "温经止血，散寒止痛，调经，安胎；外用祛湿止痒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "炮姜",
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "温经止血，温中止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "灶心土",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "温中止血，止呕，止泻。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "川芎",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "胆",
+      "心包"
+    ],
+    "toxic": false,
+    "function": "活血行气，祛风止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "延胡索",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "活血，行气，止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "郁金",
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肺",
+      "胆"
+    ],
+    "toxic": false,
+    "function": "活血止痛，行气解郁，清心凉血，利胆退黄。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "姜黄",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "活血行气，通经止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "没药",
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "活血定痛，消肿生肌。",
+    "precautions": "孕妇及胃弱者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "降香",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "化瘀止血，理气止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "丹参",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "活血祛瘀，通经止痛，清心除烦，凉血消。",
+    "precautions": "不宜与藜芦同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "牛膝",
+    "nature": "平",
+    "taste": [
+      "甘",
+      "苦",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "逐瘀通经，补肝肾，强筋骨，利尿通淋，引血下行。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "鸡血藤",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "活血补血，调经止痛，舒筋活络。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "王不留行",
+    "nature": "",
+    "taste": [],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "活血通经，下乳消肿，利尿通淋。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "月季花",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "活血调经，疏肝解郁。",
+    "precautions": "用量不宜过大，多服久服可引起腹痛腹泻及便溏。孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "凌霄花",
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "心包"
+    ],
+    "toxic": false,
+    "function": "活血通经，凉血祛风。",
+    "precautions": "孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "马钱子",
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "toxic": true,
+    "function": "通络止痛，散结消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "苏木",
+    "nature": "",
+    "taste": [],
+    "meridian": [],
+    "toxic": false,
+    "function": "活血祛瘀，消肿止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "骨碎补",
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "活血疗伤止痛，补肾强骨；外用消风祛斑。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "血竭",
+    "nature": "平",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "活血定痛，化瘀止血，生肌敛疮。",
+    "precautions": "孕妇慎用。月经期不宜服用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "儿茶",
+    "nature": "微寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "活血止痛，止血生肌，收湿敛疮，清肺化痰。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "刘寄奴",
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "散瘀止痛，疗伤止血，破血通经，消食化积。",
+    "precautions": "孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "莪术",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "破血行气，消积止痛。",
+    "precautions": "孕妇及月经过多者禁用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "三棱",
+    "nature": "平",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "破血行气，消积止痛。",
+    "precautions": "孕妇及月经过多者禁用。不宜与芒硝、玄明粉同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "水蛭",
+    "nature": "平",
+    "taste": [
+      "咸",
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": true,
+    "function": "破血通经，逐瘀消麚。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "虻虫",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": true,
+    "function": "破血逐瘀，消散积。",
+    "precautions": "孕妇禁用。体虚无瘀、腹泻者不宜使用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "半夏",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": true,
+    "function": "燥湿化痰，降逆止呕，消痞散结。",
+    "precautions": "本品性温燥，阴虚燥咳、血证、热痰、燥痰应慎用。不宜与川乌、制川乌、草乌、制草乌、附子同用。生品毒性大，内服宜慎。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "天南星",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肺"
+    ],
+    "toxic": true,
+    "function": "燥湿化痰，祛风止痉，散结消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白附子",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "胃"
+    ],
+    "toxic": true,
+    "function": "燥湿化痰，祛风定惊，止痛，解毒散结。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "芥子",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "toxic": false,
+    "function": "温肺豁痰利气，散结通络止痛。",
+    "precautions": "本品辛温走散，耗气伤阴。久咳肺虚及阴虚火旺者忌用；消化道溃疡、出血及皮肤过敏者忌用。用量不宜过大，以免引起腹泻。不宜久煎。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "皂荚",
+    "nature": "温",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "toxic": true,
+    "function": "祛痰开窍，散结消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白前",
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "toxic": false,
+    "function": "降气，祛痰，止咳。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "猫爪草",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "化痰散结，解毒消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "浙贝母",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "清热化痰止咳，解毒散结消痈。",
+    "precautions": "不宜与川乌、制川乌、草乌、制草乌、附子同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "竹茹",
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "胃",
+      "胆"
+    ],
+    "toxic": false,
+    "function": "清热化痰，除烦，止呕。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "竹沥",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "清热豁痰，定惊利窍。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "天竺黄",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "清热豁痰，清心定惊。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "前胡",
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "toxic": false,
+    "function": "降气化痰，散风清热。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "胖大海",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "清热润肺，利咽开音，润肠通便。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "海藻",
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "消痰软坚散结，利水消肿。",
+    "precautions": "不宜与甘草同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "昆布",
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "消痰软坚散结，利水消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "海浮石",
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "清肺化痰，软坚散结，利尿通淋。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "石",
+    "nature": "平",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "坠痰下气，平肝镇惊。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "苦杏仁",
+    "nature": "微温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "toxic": true,
+    "function": "降气止咳平喘，润肠通便。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "紫苏子",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "降气化痰，止咳平喘，润肠通便。",
+    "precautions": "脾虚便溏者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "百部",
+    "nature": "微温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "toxic": false,
+    "function": "润肺下气止咳，杀虫灭虱。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "马兜铃",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "清肺降气，止咳平喘，清肠消痔。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "枇杷叶",
+    "nature": "微寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "清肺止咳，降逆止呕。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "桑白皮",
+    "nature": "寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺"
+    ],
+    "toxic": false,
+    "function": "泻肺平喘，利水消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "葶苈子",
+    "nature": "大寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肺",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "泻肺平喘，行水消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "矮地茶",
+    "nature": "平",
+    "taste": [
+      "微苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "化痰止咳，清利湿热，活血化瘀。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "洋金花",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺"
+    ],
+    "toxic": true,
+    "function": "平喘止咳，解痉定痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "朱砂",
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心"
+    ],
+    "toxic": true,
+    "function": "清心镇惊，安神，明目，解毒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "磁石",
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "镇惊安神，平肝潜阳，聪耳明目，纳气平喘。",
+    "precautions": "因吞服后不易消化，如人丸散，不可多服。脾胃虚弱者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "龙骨",
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "镇惊安神，平肝潜阳，收敛固涩。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "琥珀",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "镇惊安神，活血散瘀，利尿通淋。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "酸枣仁",
+    "nature": "平",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "胆"
+    ],
+    "toxic": false,
+    "function": "养心补肝，宁心安神，敛汗，生津。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "柏子仁",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肾",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "养心安神，润肠通便，止汗。",
+    "precautions": "本品质润，便溏及痰多者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "首乌藤",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "养血安神，祛风通络。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "石决明",
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "平肝潜阳，清肝明目。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "珍珠母",
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "平肝潜阳，安神定惊，明目退翳。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "牡蛎",
+    "nature": "微寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "胆"
+    ],
+    "toxic": false,
+    "function": "潜阳补阴，重镇安神，软坚散结，收敛固涩，制酸止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "紫贝齿",
+    "nature": "平",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "平肝潜阳，镇惊安神，清肝明目。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "代赭石",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "平肝潜阳，重镇降逆，凉血止血。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "罗布麻叶",
+    "nature": "凉",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "平肝安神，清热利水。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "羚羊角",
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "平肝息风，清肝明目，清热解毒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "牛黄",
+    "nature": "凉",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "凉肝息风，清心豁痰，开窍醒神，清热解毒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "珍珠",
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝"
+    ],
+    "toxic": false,
+    "function": "安神定惊，明目消翳，解毒生肌，润肤祛斑。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "钩藤",
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "心包"
+    ],
+    "toxic": false,
+    "function": "息风定惊，清热平肝。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "天麻",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": false,
+    "function": "息风止痉，平抑肝阳，祛风通络。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "地龙",
+    "nature": "寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "清热定惊，通络，平喘，利尿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "全蝎",
+    "nature": "平",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝"
+    ],
+    "toxic": true,
+    "function": "息风镇痉，通络止痛，攻毒散结。",
+    "precautions": "本品有毒，用量不宜过大。孕妇禁用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "僵蚕",
+    "nature": "平",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "息风止痉，祛风止痛，化痰散结。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "麝香",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "开窍醒神，活血通经，消肿止痛。",
+    "precautions": "孕妇禁用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "冰片",
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "开窍醒神，清热止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "人参",
+    "nature": "微温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "大补元气，复脉固脱，补脾益肺，生津养血，安神益智。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "党参",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "补脾益肺，养血生津。",
+    "precautions": "不宜与藜芦同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "太子参",
+    "nature": "平",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "益气健脾，生津润肺。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "黄芪",
+    "nature": "微温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "补气升阳，益卫固表，利水消肿，生津养血，行滞通痹，托毒排脓，敛疮生肌。",
+    "precautions": "凡表实邪盛、内有积滞、阴虚阳亢、疮疡初起或溃后热毒尚盛等证，均不宜用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白术",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "苦"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "补气健脾，燥湿利水，止汗，安胎。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "山药",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "益气养阴，补脾肺肾，涩精止带。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白扁豆",
+    "nature": "微温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "健脾化湿，和中消暑。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "甘草",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药。",
+    "precautions": "不宜与海藻、京大戟、红大戟、甘遂、芫花同用。本品有助湿壅气之弊，湿盛胀满、水肿者不宜用。大剂量久服可导致水钠潴留，引起浮肿。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "大枣",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "补中益气，养血安神。",
+    "precautions": "本品助湿生热，令人中满，故湿盛中满或有积滞、痰热者不宜服用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "刺五加",
+    "nature": "温",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "益气健脾，补肾安神。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "沙棘",
+    "nature": "温",
+    "taste": [
+      "涩",
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "健脾消食，止咳祛痰，活血散瘀。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "饴糖",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "补中益气，缓急止痛，润肺止咳。",
+    "precautions": "本品助湿生热，令人中满，故湿热内郁、中满吐逆、痰热咳嗽、小儿疳积者不宜服用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "蜂蜜",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肺",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "补中，润燥，止痛，解毒；外用生肌敛疮。",
+    "precautions": "本品有助湿满中之弊，又能滑肠，故湿阻中满、湿热痰滞、便溏泄泻者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "鹿茸",
+    "nature": "温",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补肾壮阳，益精血，强筋骨，调冲任，托疮毒。",
+    "precautions": "服用本品宜从小量开始，缓缓增加，不可骤用大量，以免阳升风动，头晕目赤，或伤阴动血。凡热证、阴虚阳亢者均当忌服。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "紫河车",
+    "nature": "温",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "温肾补精，益气养血。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "淫羊藿",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补肾壮阳，强筋骨，祛风湿。",
+    "precautions": "阴虚火旺者不宜使用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "仙茅",
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肾"
+    ],
+    "toxic": true,
+    "function": "补肾阳，强筋骨，祛寒湿。",
+    "precautions": "本品燥热有毒，不宜过量、久服，阴虚火旺者忌服。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "胡芦巴",
+    "nature": "温",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "肾"
+    ],
+    "toxic": false,
+    "function": "温肾助阳，祛寒止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "续断",
+    "nature": "微温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补肝肾，强筋骨，续折伤，止崩漏。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "锁阳",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "补肾阳，益精血，润肠通便。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "补骨脂",
+    "nature": "温",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补肾壮阳，固精缩尿，纳气平喘，温脾止泻；外用消风祛斑。",
+    "precautions": "本品性质温燥，能伤阴助火，故阴虚火旺、大便秘结者忌服。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "沙苑子",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补肾助阳，固精缩尿，养肝明目。",
+    "precautions": "本品为温补固涩之品，阴虚火旺、小便不利者不宜服用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "蛤蝓",
+    "nature": "平",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补肺益肾，纳气定喘，助阳益精。",
+    "precautions": "咳喘实证不宜使用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "核桃仁",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "补肾，温肺，润肠。",
+    "precautions": "阴虚火旺、痰热咳嗽及便溏者不宜服用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "冬虫夏草",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补肾益肺，止血化痰。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "韭菜子",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "温补肝肾，壮阳固精。",
+    "precautions": "阴虚火旺者忌服。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "紫石英",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "温肾暖宫，镇心安神，温肺平喘。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "海狗肾",
+    "nature": "热",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肾"
+    ],
+    "toxic": false,
+    "function": "暖肾壮阳，益精补髓。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "海马",
+    "nature": "温",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "温肾壮阳，散结消肿。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "哈蟆油",
+    "nature": "平",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补肾益精，养阴润肺。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "当归",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "补血活血，调经止痛，润肠通便。",
+    "precautions": "湿盛中满、大便泻者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白芍",
+    "nature": "微寒",
+    "taste": [
+      "苦",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "养血调经，敛阴止汗，柔肝止痛，平抑肝阳。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "阿胶",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补血，止血，滋阴润燥。",
+    "precautions": "本品性质黏腻，有碍消化，故脾胃虚弱、食少便溏者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "龙眼肉",
+    "nature": "温",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "补益心脾，养血安神。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "北沙参",
+    "nature": "微寒",
+    "taste": [
+      "微苦",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "养阴清肺，益胃生津。",
+    "precautions": "不宜与藜芦同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "南沙参",
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "养阴清肺，益胃生津，化痰，益气。",
+    "precautions": "不宜与藜芦同用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "石斛",
+    "nature": "微寒",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "益胃生津，滋阴清热。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "墨旱莲",
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "滋补肝肾，凉血止血。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "桑椹",
+    "nature": "寒",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "滋阴补血，生津润燥。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "黑芝麻",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "肾",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "补肝肾，益精血，润肠燥。",
+    "precautions": "大便溏泻者不宜服用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "龟甲",
+    "nature": "微寒",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "滋阴潜阳，益肾强骨，养血补心，固经止崩。",
+    "precautions": "脾胃虚寒者忌服，孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "鳖甲",
+    "nature": "微寒",
+    "taste": [
+      "咸"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "滋阴潜阳，退热除蒸，软坚散结。",
+    "precautions": "脾胃虚寒者忌服，孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "麻黄根",
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "肺"
+    ],
+    "toxic": false,
+    "function": "固表止汗。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "浮小麦",
+    "nature": "凉",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "心"
+    ],
+    "toxic": false,
+    "function": "固表止汗，益气，除热。",
+    "precautions": "表邪汗出者忌用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "糯稻根",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "固表止汗，益胃生津，退虚热。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "五味子",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "心",
+      "肺",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "收敛固涩，益气生津，补肾宁心。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "乌梅",
+    "nature": "平",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肺",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "敛肺，涩肠，生津，安蛔。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "五倍子",
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "敛肺降火，涩肠止泻，敛汗，固精止遗，止血，收湿敛疮。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "罂粟壳",
+    "nature": "平",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "肾",
+      "大肠"
+    ],
+    "toxic": true,
+    "function": "敛肺，涩肠，止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "诃子",
+    "nature": "平",
+    "taste": [
+      "涩",
+      "苦",
+      "酸"
+    ],
+    "meridian": [
+      "肺",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "涩肠止泻，敛肺止咳，降火利咽。",
+    "precautions": "凡外有表邪、内有湿热积滞者忌用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "肉豆蔻",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "温中行气，涩肠止泻。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "赤石脂",
+    "nature": "温",
+    "taste": [
+      "涩",
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "涩肠止泻，收敛止血，生肌敛疮。",
+    "precautions": "湿热积滞泻痢者忌服。不宜与肉桂同用。孕妇慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "山茱萸",
+    "nature": "微温",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补益肝肾，收涩固脱。",
+    "precautions": "素有湿热而致小便淋涩者不宜服用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "覆盆子",
+    "nature": "温",
+    "taste": [
+      "甘",
+      "酸"
+    ],
+    "meridian": [],
+    "toxic": false,
+    "function": "益肾固精缩尿，养肝明目。",
+    "precautions": "阴虚火旺，膀胱蕴热而小便短涩者忌用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "海蝶蛸",
+    "nature": "温",
+    "taste": [
+      "咸",
+      "涩"
+    ],
+    "meridian": [
+      "脾",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "收敛止血，涩精止带，制酸止痛，收湿敛疮。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "金樱子",
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘",
+      "酸"
+    ],
+    "meridian": [
+      "肾",
+      "大肠",
+      "膀胱"
+    ],
+    "toxic": false,
+    "function": "固精缩尿，固崩止带，涩肠止泻。",
+    "precautions": "本品功专收涩，故邪气实者不宜使用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "莲子",
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "心",
+      "脾",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "补脾止泻，止带，益肾涩精，养心安神。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "芡实",
+    "nature": "平",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "脾",
+      "肾"
+    ],
+    "toxic": false,
+    "function": "益肾固精，补脾止泻，除湿止带。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "刺猬皮",
+    "nature": "平",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肾",
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "固精缩尿，收敛止血，化癡止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "椿皮",
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "苦"
+    ],
+    "meridian": [
+      "肝",
+      "胃",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "清热燥湿，收涩止带，止泻，止血。",
+    "precautions": "脾胃虚寒者慎用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "鸡冠花",
+    "nature": "凉",
+    "taste": [
+      "涩",
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "收敛止血，止带，止痢。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "常山",
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "肺"
+    ],
+    "toxic": true,
+    "function": "涌吐痰涎，截疟。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "甜瓜蒂",
+    "nature": "寒",
+    "taste": [
+      "苦"
+    ],
+    "meridian": [
+      "心",
+      "胃",
+      "胆"
+    ],
+    "toxic": true,
+    "function": "涌吐痰食，祛湿退黄。",
+    "precautions": "孕妇，体虚、心脏病、吐血、咳血、胃弱及上部无实邪者忌用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "藜芦",
+    "nature": "寒",
+    "taste": [
+      "苦",
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "肺",
+      "胃"
+    ],
+    "toxic": true,
+    "function": "涌吐风痰，杀虫。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "白矾",
+    "nature": "寒",
+    "taste": [
+      "涩",
+      "酸"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肺",
+      "大肠"
+    ],
+    "toxic": false,
+    "function": "外用解毒杀虫，燥湿止痒；内服止血止泻，祛除风痰。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "土荆皮",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺"
+    ],
+    "toxic": true,
+    "function": "杀虫，疗癣，止痒。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "蜂房",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "胃"
+    ],
+    "toxic": false,
+    "function": "攻毒杀虫，祛风止痛。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "樟脑",
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "脾"
+    ],
+    "toxic": true,
+    "function": "除湿杀虫，温散止痛，开窍辟秽。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "蟾酥",
+    "nature": "温",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "心"
+    ],
+    "toxic": true,
+    "function": "解毒，止痛，开窍醒神。",
+    "precautions": "本品有毒，内服切勿过量；孕妇慎用；外用不可入目。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "红粉",
+    "nature": "热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "脾",
+      "肺"
+    ],
+    "toxic": true,
+    "function": "拔毒，除脓，去腐，生肌。",
+    "precautions": "本品有大毒，只可外用，不可内服；外用亦不宜久用；孕妇禁用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "吡石",
+    "nature": "大热",
+    "taste": [
+      "辛"
+    ],
+    "meridian": [
+      "肝",
+      "脾",
+      "肺"
+    ],
+    "toxic": true,
+    "function": "外用攻毒杀虫，蚀疮去腐；内服劫痰平喘，攻毒抑癌。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "铅丹",
+    "nature": "寒",
+    "taste": [
+      "咸",
+      "辛"
+    ],
+    "meridian": [
+      "心",
+      "肝",
+      "脾"
+    ],
+    "toxic": true,
+    "function": "外用拔毒生肌，杀虫止痒；内服坠痰镇惊。",
+    "precautions": "本品有毒，用之不当可引起铅中毒，宜慎用；亦不可持续使用以防蓄积中毒。孕妇禁用。",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "炉甘石",
+    "nature": "平",
+    "taste": [
+      "甘"
+    ],
+    "meridian": [
+      "肝",
+      "脾"
+    ],
+    "toxic": false,
+    "function": "解毒明目退翳，收湿止痒敛疮。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  },
+  {
+    "name": "硼砂",
+    "nature": "凉",
+    "taste": [
+      "咸",
+      "甘"
+    ],
+    "meridian": [
+      "肺",
+      "胃"
+    ],
+    "toxic": false,
+    "function": "外用清热解毒，内服清肺化痰。",
+    "precautions": "",
+    "source": "中药学（新世纪第五版）"
+  }
+]

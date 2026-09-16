@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# CatBoost training artifacts
+catboost_info/
+
+# Excel source data (too large, not needed at runtime)
+data/*.xlsx
+data/*.xls
+data/external/
+data/中药成方制剂/
+data/test_sets/
+
+# LLM cache (auto-generated at runtime)
+data/llm_herb_cache.json
+data/herb_llm_cache.json
+
+# Temporary files
+~$*.xlsx
+*.tmp
+
+# Archive experiments
+archive/
+
+# Outputs (generated at runtime)
+outputs/paper/
+outputs/logs/
+
+# API key
+.env
+!.env.example
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml
