@@ -95,7 +95,7 @@ print('Preparing CatBoost model...')
 from sklearn.preprocessing import LabelEncoder
 import pickle
 
-MODEL_DIR = 'web_app'
+MODEL_DIR = os.path.dirname(os.path.abspath(__file__))
 CBM_PATH = os.path.join(MODEL_DIR, 'catboost_model.cbm')
 ENCODER_PATH = os.path.join(MODEL_DIR, 'label_encoder.pkl')
 COLS_PATH = os.path.join(MODEL_DIR, 'feature_cols.pkl')
@@ -943,8 +943,9 @@ def api_examples():
 # 启动
 # ==============================================
 if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
     print('\n' + '=' * 60)
     print('  KG-RAR 中药剂型智能推荐系统')
-    print('  http://localhost:5000')
+    print(f'  http://localhost:{port}')
     print('=' * 60 + '\n')
-    app.run(host='0.0.0.0', port=5000, debug=False)
+    app.run(host='0.0.0.0', port=port, debug=False)
