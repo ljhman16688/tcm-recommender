@@ -550,12 +550,18 @@ def llm_generate_reasoning(top5, evidence, herbs, indication, all_matched):
 
     from openai import OpenAI
     client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL)
-    resp = client.chat.completions.create(
-        model=LLM_MODEL,
-        messages=[{'role': 'system', 'content': LLM_SYSTEM_PROMPT},
-                  {'role': 'user', 'content': prompt}],
-        temperature=0, max_tokens=3000,
-    )
+    try:
+        resp = client.chat.completions.create(
+            model=LLM_MODEL,
+            messages=[{'role': 'system', 'content': LLM_SYSTEM_PROMPT},
+                      {'role': 'user', 'content': prompt}],
+            temperature=0, max_tokens=3000,
+        )
+    except Exception as e:
+        # LLM API 不可用（key 缺失/失效、网络或限流）时不得让整个请求 500，
+        # 回退模板推理并在响应中标注 llm_failed=True。
+        print('  [LLM] API 调用失败，回退模板推理: %s' % e)
+        return None, None, None, []
     content = resp.choices[0].message.content or ''
     # 清理推理标签 + markdown 代码块
     text = re.sub(r'<thinking>.*?</thinking>', '', content, flags=re.DOTALL)
