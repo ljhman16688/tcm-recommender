@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-中药剂型智能推荐 Web 应用
-Flask 后端：特征提取 + CatBoost 推理 + KG 锚定 + 模板推理
+中药剂型智能推荐 Web 应用（2026-10-14 部署重构：对齐论文主模型 G / 712 协议）
+Flask 后端：712 冻结聚合 + CatBoost G 推理（109 维 / 19 类）+ KG 锚定 + 模板推理 + LLM 增强
 启动: python web_app/app.py
+部署资源由 scripts/utils/freeze_deploy_assets.py 冻结并端到端验证（测试集 Top-1=45.15%）。
 """
 
 import sys, io, re, json, os
@@ -11,16 +12,21 @@ import pandas as pd
 from collections import Counter
 from flask import Flask, render_template, request, jsonify
 
+# 加载 .env 文件中的环境变量
+from dotenv import load_dotenv
+load_dotenv(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), '.env'))
+
 # 确保项目根目录在 path 中，方便加载 data/
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(BASE_DIR)
 sys.path.insert(0, BASE_DIR)
 
 from src.features.extract_features import (
-    normalise_herb, parse_prescription, FeatureExtractor,
-    ALL_FORMS, EXTRACT_MAP, ALIAS,
+    normalise_herb, parse_prescription, ALL_FORMS,
 )
 from src.features.llm_herb_property import infer_herb_properties
+from src.data.protocol_712 import herb_dict as _merged_herb_dict
+from src.deploy_712 import load_agg, build_row
 
 app = Flask(__name__,
             template_folder=os.path.join(os.path.dirname(__file__), 'templates'),
@@ -31,19 +37,14 @@ app = Flask(__name__,
 # ==============================================
 print('Loading KG-RAR resources...')
 
-with open('data/herb_property_dict.json', 'r', encoding='utf-8') as f:
-    herb_dict = json.load(f)
+herb_dict = _merged_herb_dict  # 合并词典 1,826 味（protocol_712 模块级加载，与训练同源）
 with open('data/tcm_knowledge_graph.json', 'r', encoding='utf-8') as f:
     kg = json.load(f)
 with open('data/dosage_form_rules.json', 'r', encoding='utf-8') as f:
     rules_db = json.load(f)['rules']
 
 print(f'  Rules: {len(rules_db)} rules loaded from dosage_form_rules.json')
-
-# 初始化特征提取器
-extractor = FeatureExtractor(herb_dict, kg)
-
-# 剂型列表（从 extract_features 模块导入 ALL_FORMS）
+print(f'  Herb dict: {len(herb_dict)} herbs (merged, 与训练同源)')
 
 # KG 索引
 id2ent = {int(eid): info['name'] for eid, info in kg['entities'].items()}
@@ -67,9 +68,26 @@ for t in kg['triples']:
             formula_to_herbs[fid] = set()
         formula_to_herbs[fid].add(id2ent.get(t['head'], ''))
 
-# 药材→剂型偏好（复用 extractor 的索引）
-herb_name_to_forms = extractor.herb_name_to_forms
-ind_to_forms = extractor.ind_to_forms
+# 药材→剂型历史偏好 / 适应症→剂型关联（KG 证据展示用，不进分类器特征——
+# 分类器 KG 特征由 712 冻结聚合径路 src/deploy_712.build_row 提供）
+herb_name_to_forms = {}
+for h_id, f_ids in herb_to_formulas.items():
+    h_name = id2ent.get(h_id, str(h_id))
+    fc = Counter()
+    for f_id in f_ids:
+        f = formula_to_form.get(f_id)
+        if f:
+            fc[f] += 1
+    if fc:
+        total = sum(fc.values())
+        herb_name_to_forms[h_name] = {k: v / total for k, v in fc.most_common()}
+
+ind_to_forms = Counter()
+for t in kg['triples']:
+    if t['relation_name'] == 'treats':
+        f = formula_to_form.get(t['head'])
+        if f:
+            ind_to_forms[(t['tail_name'], f)] += 1
 
 # 统计 KG 中实际可用的药材数（标准化后在 herb_dict 中有属性的）
 _kg_herbs_normalized = set()
@@ -80,70 +98,36 @@ print(f'  KG: {len(formula_to_form)} formulas, '
       f'{len(herb_name_to_forms)} herb entities '
       f'(→ {len(_kg_herbs_normalized)} unique, {_kg_herbs_known} in herb_dict)')
 
-# extract_features 函数引用（兼容旧代码）
-extract_features = extractor.extract_features
-
 # ==============================================
 # ==============================================
 
 
 # ==============================================
-# 训练/加载 CatBoost 模型（首次训练后保存 .cbm，后续秒加载）
+# 加载主模型 G（712 口径：手工 68 + PMI-KG 41 = 109 维 / 19 类）
+# 冻结资源由 scripts/utils/freeze_deploy_assets.py 生成并端到端验证（测试集 Top-1=45.15%）
 # ==============================================
-print('Preparing CatBoost model...')
+print('Preparing CatBoost model (G, 712-caliber)...')
 
-from sklearn.preprocessing import LabelEncoder
-import pickle
+from catboost import CatBoostClassifier
 
 MODEL_DIR = os.path.dirname(os.path.abspath(__file__))
-CBM_PATH = os.path.join(MODEL_DIR, 'catboost_model.cbm')
-ENCODER_PATH = os.path.join(MODEL_DIR, 'label_encoder.pkl')
-COLS_PATH = os.path.join(MODEL_DIR, 'feature_cols.pkl')
+CBM_PATH = os.path.join(MODEL_DIR, 'catboost_G.cbm')
+AGG_PATH = os.path.join(BASE_DIR, 'data', 'deploy', 'pmic_agg_712.json')
 
-if os.path.exists(CBM_PATH) and os.path.exists(ENCODER_PATH):
-    print('  Loading saved model...')
-    from catboost import CatBoostClassifier
-    model = CatBoostClassifier()
-    model.load_model(CBM_PATH)
-    with open(ENCODER_PATH, 'rb') as f:
-        le = pickle.load(f)
-    with open(COLS_PATH, 'rb') as f:
-        feat_cols = pickle.load(f)
-    print(f'  Model loaded: {len(feat_cols)} features, {len(le.classes_)} classes')
-else:
-    print('  Training new model (one-time, ~30s)...')
-    # 加载预计算特征表
-    X1 = pd.read_csv('outputs/datasets/Dataset1_pharmacopoeia_features.csv')
-    X2 = pd.read_csv('outputs/datasets/Dataset2_ministerial_features.csv')
-    df_all = pd.concat([X1, X2], ignore_index=True)
+if not os.path.exists(CBM_PATH):
+    raise RuntimeError(
+        '缺少主模型 G：%s。请先运行 scripts/utils/freeze_deploy_assets.py 冻结部署资源。' % CBM_PATH)
+if not os.path.exists(AGG_PATH):
+    raise RuntimeError(
+        '缺少冻结聚合统计：%s。请先运行 scripts/utils/freeze_deploy_assets.py 冻结部署资源。' % AGG_PATH)
 
-    form_counts = df_all['form'].value_counts()
-    keep = form_counts[form_counts >= 5].index
-    df_all = df_all[df_all['form'].isin(keep)].copy()
-
-    le = LabelEncoder()
-    y = le.fit_transform(df_all['form'])
-
-    meta = ['drug_name', 'herb_list', 'indication_text', 'form']
-    feat_cols = [c for c in df_all.columns if c not in meta]
-    X = df_all[feat_cols].fillna(0).copy()
-    if 'urgency' in X.columns:
-        urg_map = {'acute': 0, 'chronic': 1, 'unspecified': 2}
-        X['urgency'] = X['urgency'].map(urg_map).fillna(2)
-
-    from catboost import CatBoostClassifier
-
-    model = CatBoostClassifier(
-        iterations=1000, learning_rate=0.05, depth=6, l2_leaf_reg=3,
-        random_seed=42, loss_function='MultiClass', verbose=0
-    )
-    model.fit(X, y)
-    model.save_model(CBM_PATH)
-    with open(ENCODER_PATH, 'wb') as f:
-        pickle.dump(le, f)
-    with open(COLS_PATH, 'wb') as f:
-        pickle.dump(feat_cols, f)
-    print(f'  Model trained & saved: {len(X)} samples, {len(le.classes_)} classes')
+model = CatBoostClassifier()
+model.load_model(CBM_PATH)
+feat_cols = list(model.feature_names_)
+classes = sorted(ALL_FORMS)  # 训练 le.classes_ = sorted(ALL_FORMS)，与 cbm 整数类号 0..18 一一对应
+pmi_agg = load_agg(AGG_PATH)
+print(f'  Model G loaded: {len(feat_cols)} features, {len(model.classes_)} classes')
+print(f'  Frozen aggregates loaded: {len(pmi_agg[0])} herb-form / {len(pmi_agg[1])} ind-form pairs')
 
 
 # ==============================================
@@ -266,7 +250,6 @@ def match_rules(herb_list, features):
                 'category': rule['category'],
                 'action': rule['action'],
                 'target_forms': rule.get('target_forms', []),
-                'boost_weight': rule.get('boost_weight'),
                 'recommendation': rec,
                 'source': rule['source'],
                 'exceptions': rule.get('exceptions', []),
@@ -441,30 +424,33 @@ def generate_reasoning(top5, evidence, excluded, herb_props_detail, all_matched,
 # ==============================================
 # LLM 增强推理（KG-RAG 的 Generate 环节，体现大语言模型）
 # ==============================================
-LLM_API_KEY = 'sk-zk2faa63c8d59e691b199fcdb2873b1624569afdfb598afe'
-LLM_BASE_URL = 'https://api.zhizengzeng.com/v1'
-LLM_MODEL = 'qwen3.7-max'
+LLM_API_KEY = os.environ.get('LLM_API_KEY', '')
+LLM_BASE_URL = os.environ.get('LLM_BASE_URL', 'https://api.zhizengzeng.com/v1')
+LLM_MODEL = os.environ.get('LLM_MODEL', 'qwen3.7-max')
 
-LLM_SYSTEM_PROMPT = """你是资深中药制剂专家。系统已通过知识图谱检索和规则引擎（4级证据体系）完成了预推理，你的任务是整合这些信息，为每个推荐剂型生成推理依据，并标注与规则引擎的冲突。
+LLM_SYSTEM_PROMPT = """你是资深中药制剂专家。系统已完成 CatBoost 多分类预测（19 种剂型）、知识图谱多路检索和 4 级规则引擎匹配。你的任务是为每个推荐/排除的剂型生成结构化的推理文本。
 
-规则引擎的4级证据体系：
-- L1 法规禁忌（硬约束）：基于药典/法规，绝对不可违反。若某剂型被L1排除，绝不可推荐。
-- L2 风险警示：基于药理学/毒理学证据，需审慎评估。若某剂型被L2警示，需在推理中提及风险。
-- L3 工艺调整建议：基于药剂学，建议性指导。若推荐某剂型但L3提出工艺限制，需在推理中说明条件。
-- L4 弱先验：基于KG统计规律，弱参考信号。若推荐与L4偏好一致，可作为加分项；若不一致，可忽略。
+## 4级证据体系
+- L1 法规禁忌：基于药典/法规，作为排除某剂型的解释依据
+- L2 风险警示：基于药理学/毒理学证据，需在推理中标注风险
+- L3 工艺调整建议：基于药剂学，需在推理中说明工艺条件
+- L4 弱先验：基于 KG 统计规律，偏好一致则为加分项
 
-严格约束：
-1. 推荐依据必须严格对应"分类器 Top-5"列出的5个剂型，逐一生成，剂型名称必须与列表完全一致。
-2. 推理时必须交叉引用规则引擎结论：若某推荐剂型与L1/L2/L3规则冲突，必须在reason中明确指出冲突。
-3. 排除的剂型从"分类器 Top-5"之外的常见剂型中选取，优先排除被L1/L2命中的剂型。
-4. 禁止杜撰不存在的药理机制或临床证据。
+## 输出要求
+1. 为 Top-5 每个剂型单独生成一段 2-4 句的推荐理由，必须以剂型名开头
+2. 每条理由必须交叉引用：①具体规则编号和结论 ②KG 证据（相似处方、药材历史偏好）③药材属性（性味归经、毒性、挥发油等）
+3. 对 L1 命中的排除剂型，逐一生成排除理由，引用具体规则编号
+4. 排除剂型优先从 L1/L2 命中的剂型中选取，不限于此
+5. 禁止杜撰不存在的药理机制或临床证据
 
-只输出 JSON（不要输出其他内容）：
-{"recommendations":[{"rank":1,"form":"剂型名","reason":"推荐依据（含规则交叉验证）"},{"rank":2,"form":"剂型名","reason":"推荐依据（含规则交叉验证）"},{"rank":3,"form":"剂型名","reason":"推荐依据（含规则交叉验证）"},{"rank":4,"form":"剂型名","reason":"推荐依据（含规则交叉验证）"},{"rank":5,"form":"剂型名","reason":"推荐依据（含规则交叉验证）"}],"excluded":[{"form":"剂型名","reason":"排除原因"}]}"""
+只输出 JSON：
+{"recommendations":[{"rank":1,"form":"剂型名","reason":"…"},…],"excluded":[{"form":"剂型名","reason":"…"},…]}"""
 
 
 def llm_generate_reasoning(top5, evidence, herbs, indication, all_matched):
-    """调用大语言模型，基于分类器结果 + KG证据 + 规则引擎 生成可解释推荐"""
+    """调用大语言模型，为每个 Top-5 剂型单独生成推荐理由，为 L1/L2 命中剂型生成排除理由"""
+    if not LLM_API_KEY:
+        return None, None, None, None
     # 分类器 Top-5
     classifier_str = '\n'.join(
         f'{i+1}. {item["form"]}（置信度 {item["confidence"]:.1%}）'
@@ -478,7 +464,15 @@ def llm_generate_reasoning(top5, evidence, herbs, indication, all_matched):
         tastes = ''.join(p.get('taste', []))
         mers = ''.join(p.get('meridian', []))
         prefs = '、'.join(f'{f["form"]}({f["ratio"]}%)' for f in p.get('kg_top_forms', []))
-        prop_lines.append(f'- {p["name"]}：性{p.get("nature", "")}，味{tastes}，归{mers}经；KG历史偏好 {prefs}')
+        tags = []
+        if p.get('toxic'): tags.append('有毒')
+        if p.get('volatile'): tags.append('含挥发油')
+        if p.get('mineral'): tags.append('矿物药')
+        if p.get('precious'): tags.append('贵细药')
+        tag_str = '；' + '、'.join(tags) if tags else ''
+        prop_lines.append(
+            f'- {p["name"]}：性{p.get("nature", "")}，味{tastes}，归{mers}经{tag_str}；'
+            f'KG历史偏好 {prefs}')
     prop_str = '\n'.join(prop_lines) if prop_lines else '（无）'
     # 相似处方
     sim_lines = []
@@ -489,40 +483,70 @@ def llm_generate_reasoning(top5, evidence, herbs, indication, all_matched):
     dis_items = sorted(evidence.get('disease_preference', {}).items(), key=lambda x: -x[1])[:5]
     dis_str = '\n'.join(f'- {f}（{pct}%）' for f, pct in dis_items) if dis_items else '（无）'
 
-    # 规则引擎结论
-    level_labels = {1: 'L1-法规禁忌（硬约束）', 2: 'L2-风险警示',
+    # ---- 规则引擎：按剂型分组，方便 LLM 逐剂型交叉引用 ----
+    level_labels = {1: 'L1-法规禁忌', 2: 'L2-风险警示',
                     3: 'L3-工艺调整建议', 4: 'L4-弱先验'}
-    rule_lines = []
+    form_rules = {}  # form -> {level: [rule_summaries]}
     for level in [1, 2, 3, 4]:
-        lr = all_matched.get('L%d' % level, [])
-        if lr:
-            for r in lr:
-                targets = '、'.join(r.get('target_forms', [])) or '全部'
-                rule_lines.append(
-                    f'[{level_labels[level]}] {r["rule_name"]} -> 目标剂型: {targets} | '
-                    f'{r["recommendation"][:150]}'
-                )
-    rule_str = '\n'.join(rule_lines) if rule_lines else '（无匹配规则）'
+        for r in all_matched.get(f'L{level}', []):
+            for f in r.get('target_forms', []):
+                if f not in form_rules:
+                    form_rules[f] = {}
+                if level not in form_rules[f]:
+                    form_rules[f][level] = []
+                form_rules[f][level].append(
+                    f'[{level_labels[level]}] {r["id"]} {r["rule_name"]}：{r["recommendation"][:120]}')
 
-    prompt = f"""【药材组成】{'、'.join(herbs)}
-【适应症】{indication or '未填写'}
+    # 为 Top-5 每个剂型列出命中规则
+    top5_rule_lines = []
+    for item in top5:
+        f = item['form']
+        rules = form_rules.get(f, {})
+        if rules:
+            top5_rule_lines.append(f'◆ {f}（置信度 {item["confidence"]:.1%}）')
+            for lv in sorted(rules.keys()):
+                for rl in rules[lv]:
+                    top5_rule_lines.append(f'  {rl}')
+        else:
+            top5_rule_lines.append(f'◆ {f}（置信度 {item["confidence"]:.1%}） — 无规则命中')
+    top5_rule_str = '\n'.join(top5_rule_lines) if top5_rule_lines else '（无）'
 
-【分类器 Top-5】
+    # L1/L2 排除/警示的剂型（用于 LLM 生成 excluded 列表）
+    l1_l2_forms = {}
+    for level in ['L1', 'L2']:
+        for r in all_matched.get(level, []):
+            for f in r.get('target_forms', []):
+                if f not in l1_l2_forms:
+                    l1_l2_forms[f] = []
+                l1_l2_forms[f].append(
+                    f'[{level_labels[int(level[1])]}] {r["id"]} {r["rule_name"]}：{r["recommendation"][:150]}')
+    exclude_hint = '\n'.join(
+        f'- {f}：\n  ' + '\n  '.join(rs)
+        for f, rs in l1_l2_forms.items() if f not in {t['form'] for t in top5}
+    ) if l1_l2_forms else '（无）'
+
+    prompt = f"""## 处方信息
+药材：{'、'.join(herbs)}
+适应症：{indication or '未填写'}
+
+## CatBoost 模型 Top-5 预测
 {classifier_str}
 
-【知识图谱检索依据】
-药材属性与历史偏好：
+## 知识图谱证据
+### 药材属性与历史剂型偏好
 {prop_str}
-相似处方：
+### 相似处方（KG 检索）
 {sim_str}
-适应症-剂型偏好：
+### 适应症-剂型偏好
 {dis_str}
 
-【规则引擎结论（4级证据体系）】
-{rule_str}
+## 规则引擎命中（按剂型分组）
+### Top-5 各剂型的规则匹配
+{top5_rule_str}
+### 被 L1/L2 命中的非 Top-5 剂型（应作为排除候选）
+{exclude_hint}
 
-请为上述5个推荐剂型分别生成一句推理依据，并给出应排除的剂型及原因。
-特别注意：推理时必须交叉引用上述规则引擎结论，若某推荐与规则冲突，必须在reason中明确指出。"""
+请为 Top-5 中每个剂型逐一生成推荐理由，并为排除候选剂型生成排除理由。每条理由须引用具体规则编号和 KG 证据。"""
 
     from openai import OpenAI
     client = OpenAI(api_key=LLM_API_KEY, base_url=LLM_BASE_URL)
@@ -530,11 +554,11 @@ def llm_generate_reasoning(top5, evidence, herbs, indication, all_matched):
         model=LLM_MODEL,
         messages=[{'role': 'system', 'content': LLM_SYSTEM_PROMPT},
                   {'role': 'user', 'content': prompt}],
-        temperature=0, max_tokens=2000,
+        temperature=0, max_tokens=3000,
     )
     content = resp.choices[0].message.content or ''
     # 清理推理标签 + markdown 代码块
-    text = re.sub(r'<think>.*?</think>', '', content, flags=re.DOTALL)
+    text = re.sub(r'<thinking>.*?</thinking>', '', content, flags=re.DOTALL)
     text = re.sub(r'```(?:json)?\s*', '', text)
     text = re.sub(r'```', '', text)
     try:
@@ -542,9 +566,10 @@ def llm_generate_reasoning(top5, evidence, herbs, indication, all_matched):
         data = json.loads(m.group())
         recs = data.get('recommendations', [])
         excs = data.get('excluded', [])
-        # 防线：只保留分类器 Top-5 中真实存在的剂型
-        top5_forms = {item['form'] for item in top5}
-        lines = []
+
+        # ---- 构建 reasoning_list（结构化，前端逐剂型展示） ----
+        top5_forms = {item['form']: item for item in top5}
+        reasoning_list = []
         conflicts = []
         for r in recs:
             form = r.get('form', '')
@@ -553,15 +578,29 @@ def llm_generate_reasoning(top5, evidence, herbs, indication, all_matched):
                 conflict_tags = _check_rule_conflicts(form, reason, all_matched)
                 if conflict_tags:
                     conflicts.append({'form': form, 'conflicts': conflict_tags})
-                    reason += ' ' + ' '.join(conflict_tags)
-                lines.append(f'推荐**{form}**：{reason}')
-        reasoning = '\n\n'.join(lines) if lines else None
+                reasoning_list.append({
+                    'rank': r.get('rank', 0),
+                    'form': form,
+                    'confidence': top5_forms[form]['confidence'],
+                    'confidence_pct': f'{top5_forms[form]["confidence"] * 100:.1f}%',
+                    'reason': reason,
+                    'has_conflict': bool(conflict_tags),
+                })
+
+        # ---- 构建 reasoning 字符串（兼容旧版） ----
+        reasoning = '\n\n'.join(
+            f'推荐**{ri["form"]}**（置信度 {ri["confidence_pct"]}）：{ri["reason"]}'
+            for ri in reasoning_list
+        ) if reasoning_list else None
+
+        # ---- 排除列表 ----
         excluded = [{'form': e['form'], 'reason': e['reason']}
                     for e in excs
                     if e.get('form') and e.get('reason') and e['form'] not in top5_forms]
-        return reasoning, excluded, conflicts
+
+        return reasoning, reasoning_list, excluded, conflicts
     except Exception:
-        return None, None, []
+        return None, None, None, []
 
 
 def _detect_rule_conflicts(all_matched):
@@ -592,7 +631,7 @@ def _detect_rule_conflicts(all_matched):
             conflicts.append({
                 'form': form,
                 'type': 'exclude_vs_boost',
-                'message': f'L1排除规则（{", ".join(exclude_rules)}）与L3/L4偏好规则（{", ".join(boost_rules)}）存在冲突：该剂型被硬约束排除，但统计偏好倾向于推荐。已按L1排除处理。',
+                'message': f'L1排除规则（{", ".join(exclude_rules)}）与L3/L4偏好规则（{", ".join(boost_rules)}）存在分歧：该剂型被L1规则建议排除，但统计偏好倾向于推荐。已作为解释性排除理由记录。',
                 'severity': 'resolved_l1'
             })
         elif has_warn and has_boost:
@@ -634,7 +673,7 @@ def _check_rule_conflicts(form, reason, all_matched):
             conflicts.append(f'[LLM标注] {snippet}...')
             break
 
-    # 2. L1 硬约束
+    # 2. L1 法规禁忌（解释性排除理由）
     for r in all_matched.get('L1', []):
         if form in r.get('target_forms', []):
             conflicts.append(f'[L1冲突] {r["rule_name"]}')
@@ -659,41 +698,68 @@ def _check_rule_conflicts(form, reason, all_matched):
 
 
 # ==============================================
+# 药材属性明细（规则引擎/证据展示用；LLM 兜底不进入分类器特征）
+# ==============================================
+def collect_herb_props(herbs):
+    """查询合并词典；未收录药材走 LLM 兜底（仅用于解释层，与训练口径一致）。"""
+    from src.features.herb_category import usable_props
+    detail = []
+    for herb in herbs:
+        hc = normalise_herb(herb)
+        props = herb_dict.get(hc) or herb_dict.get(herb)
+        parent_name = None
+        source = 'dict'
+        if props is None:
+            raw = infer_herb_properties(herb)
+            if isinstance(raw, dict):
+                parent_name = raw.get('parent')
+            props = usable_props(raw, herb_dict)
+            source = 'dict:parent' if (parent_name and parent_name in herb_dict) else 'llm'
+        if props:
+            detail.append({
+                'name': herb, 'found': True,
+                'nature': props.get('nature', ''), 'taste': props.get('taste', []),
+                'meridian': props.get('meridian', []),
+                'volatile': props.get('volatile', False), 'toxic': props.get('toxic', False),
+                'mineral': props.get('mineral', False), 'precious': props.get('precious', False),
+                'texture': props.get('texture', 'normal'), '_source': source,
+            })
+        else:
+            detail.append({'name': herb, 'found': False})
+    return detail
+
+
+# ==============================================
 # 预测函数
 # ==============================================
-def predict(herbs, doses, indication, herb_props_detail):
-    feats, _ = extract_features(herbs, doses, indication)
-    if feats is None:
+def predict(herbs, doses, indication, admin, herb_props_detail):
+    """712 口径推理：冻结聚合 + 主模型 G。规则仅解释、不改变概率（见下文注释）。"""
+    if not herbs:
         return None
 
-    X_input = pd.DataFrame([feats])
-    X_input = X_input.reindex(columns=feat_cols, fill_value=0)
-    if 'urgency' in X_input.columns:
-        urg_map = {'acute': 0, 'chronic': 1, 'unspecified': 2}
-        X_input['urgency'] = X_input['urgency'].map(urg_map).fillna(2)
+    row = build_row(herbs, doses, indication, admin, pmi_agg)
+    X_input = pd.DataFrame([row]).reindex(columns=feat_cols, fill_value=0)
 
     probs = model.predict_proba(X_input)[0]
 
-    # ---- 规则引擎：L1硬排除 + L2风险警示 + L3/L4纯解释（不再加权） ----
+    # ---- 规则引擎：四级规则全部为纯解释性，不修改 CatBoost 预测概率 ----
     herb_list = [p['name'] for p in herb_props_detail if p.get('found')]
     rule_features = build_features(herb_list, indication)
     all_matched = match_rules(herb_list, rule_features)
 
-    # 记录哪些剂型被规则加权 / 被L2警示
-    rule_evidence = set()   # 有 L3/L4 规则支持的剂型（解释性，不改变概率）
-    l2_warned_forms = {}    # form -> list of rule names (L2只警示不排除)
+    # 记录剂型的规则证据（全部四级规则仅用于解释，不改变概率）
+    rule_evidence = set()   # 有 L3/L4 规则支持的剂型（解释性）
+    l2_warned_forms = {}    # form -> list of rule names (L2风险警示)
 
-    # L1 硬排除：仅 L1 的排除类动作将概率置零
-    for r in all_matched.get('L1', []):
-        if r['action'] in ('exclude',):
-            for f in r['target_forms']:
-                if f in le.classes_:
-                    probs[list(le.classes_).index(f)] = 0.0
+    # L1 不再硬排除：原 L1"排除"逻辑已移除，CatBoost 概率完全保留。
+    # L1 匹配的规则仅在后端生成 excluded 列表，作为"排除理由"传入推理层，
+    # 不再将对应剂型的概率置零。
+    # （此处不再修改 probs）
 
-    # L2 风险警示：不置零，仅记录警告信息（在推理中提示风险）
+    # L2 风险警示：记录警告信息（在推理中提示风险，不改变概率）
     for r in all_matched.get('L2', []):
         for f in r['target_forms']:
-            if f in le.classes_:
+            if f in classes:
                 if f not in l2_warned_forms:
                     l2_warned_forms[f] = []
                 l2_warned_forms[f].append({
@@ -702,27 +768,23 @@ def predict(herbs, doses, indication, herb_props_detail):
                     'source': r['source'],
                 })
 
-    # 注意：L3/L4 规则不再干预概率，仅作为解释性证据传入推理层。
+    # L3/L4 规则：仅作为解释性证据传入推理层。
     # CatBoost 模型已包含 41 维 KG 特征，概率排序由模型独立完成，
     # 规则匹配结果（all_matched）在推理生成阶段提供结构化论据。
-    # 收集 L3/L4 支持的剂型（用于前端展示规则证据，不改变概率）
     for level in ['L3', 'L4']:
         for r in all_matched.get(level, []):
             for f in r.get('target_forms', []):
-                if f in le.classes_:
+                if f in classes:
                     rule_evidence.add(f)
 
-    # 重新归一化
-    total = probs.sum()
-    if total > 0:
-        probs = probs / total
+    # 不再重新归一化（原归一化仅在 L1 概率置零后需要）
 
     # 重新排序
     top_idx = np.argsort(probs)[::-1][:5]
 
     top5 = []
     for rank, idx in enumerate(top_idx, 1):
-        form = le.classes_[idx]
+        form = classes[idx]
         top5.append({
             'rank': rank,
             'form': form,
@@ -761,8 +823,8 @@ def predict(herbs, doses, indication, herb_props_detail):
                 break
 
     # 规则引擎：基于已计算的 all_matched 生成 excluded 和 warned 列表
-    # L1 → excluded（硬约束排除）
-    # L2 → warned（风险警示，不排除但需在推理中标注）
+    # L1 → excluded（解释性排除理由，不改变 CatBoost 预测概率）
+    # L2 → warned（风险警示，在推理中标注但不排除）
     excluded = []
     warned = []
     seen_excluded = {}
@@ -841,6 +903,11 @@ def predict(herbs, doses, indication, herb_props_detail):
 # ==============================================
 # Flask 路由
 # ==============================================
+@app.route('/healthz')
+def healthz():
+    return jsonify({'status': 'ok'})
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -851,7 +918,8 @@ def api_predict():
     data = request.get_json()
     prescription = data.get('prescription', '').strip()
     indication = data.get('indication', '').strip()
-    use_llm = bool(data.get('use_llm', False))
+    administration = data.get('administration', '').strip()
+    use_llm = bool(data.get('use_llm', True))
 
     if not prescription:
         return jsonify({'error': '请输入药材处方'}), 400
@@ -860,10 +928,10 @@ def api_predict():
     if not herbs:
         return jsonify({'error': '未能解析到药材，请使用"药名 克数"格式，如"丹参 15g, 三七 9g"'}), 400
 
-    # 先提取药材属性（用于规则和应用）
-    _, herb_props_detail = extract_features(herbs, doses, indication)
+    # 药材属性明细（规则引擎与证据展示用；分类器特征由 predict 按 712 口径独立构建，无在线 LLM 兜底）
+    herb_props_detail = collect_herb_props(herbs)
 
-    result = predict(herbs, doses, indication, herb_props_detail)
+    result = predict(herbs, doses, indication, administration, herb_props_detail)
     if result is None:
         return jsonify({'error': '特征提取失败'}), 500
 
@@ -871,11 +939,13 @@ def api_predict():
     llm_used = False
     llm_failed = False
     if use_llm:
-        llm_reasoning, llm_excluded, llm_conflicts = llm_generate_reasoning(
+        llm_reasoning, llm_reasoning_list, llm_excluded, llm_conflicts = llm_generate_reasoning(
             result['top5'], result['evidence'], herbs, indication, result['matched_rules'])
         if llm_reasoning:
             result['reasoning'] = llm_reasoning
             llm_used = True
+        if llm_reasoning_list is not None:
+            result['reasoning_list'] = llm_reasoning_list
         if llm_excluded is not None:
             result['excluded'] = llm_excluded
         if llm_conflicts:
@@ -900,6 +970,7 @@ def api_predict():
         'herbs': herbs,
         'doses': doses,
         'indication': indication,
+        'administration': administration,
         'props_summary': props_summary,
         'matched_rules': result.get('matched_rules', {}),
         'warned': result.get('warned', []),

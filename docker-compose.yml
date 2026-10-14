@@ -1,0 +1,14 @@
+services:
+  tcm-recommender:
+    build: .
+    container_name: tcm-recommender
+    ports:
+      - "5000:5000"
+    environment:
+      - LLM_API_KEY=${LLM_API_KEY:-}
+      - LLM_BASE_URL=${LLM_BASE_URL:-https://api.zhizengzeng.com/v1}
+      - LLM_MODEL=${LLM_MODEL:-qwen3.7-max}
+    restart: unless-stopped
+    volumes:
+      # 挂载缓存文件，保留 LLM 查询历史（文件名与代码一致：herb_llm_cache.json）
+      - ./data/herb_llm_cache.json:/app/data/herb_llm_cache.json

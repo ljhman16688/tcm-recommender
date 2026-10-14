@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+.agents/
+.claude/
+memory/
+logs/
+experiments/
+.env
+.env.*
+*.docx
+
+# CatBoost training artifacts
+catboost_info/
+
+# Exclude large source Excel files (only JSON needed at runtime)
+data/*.xlsx
+data/*.xls
+data/external/
+data/中药成方制剂/
+data/test_sets/
+data/real_data_loader.py
+
+# Exclude archive (old experiments)
+archive/
+
+# Git
+.git/
+.gitignore
+
+# Exclude generated outputs except pre-computed feature CSVs
+outputs/
+outputs/paper/
+outputs/logs/
+outputs/*.html
+outputs/*.md
+
+# Docs (except README)
+*.md
+!README.md
+
+# Notebooks
+*.ipynb
+
+# Docker
+Dockerfile
+.dockerignore
+docker-compose.yml

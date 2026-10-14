@@ -4,131 +4,18 @@
 import re, json, numpy as np
 from collections import Counter
 
-# ==============================================
-# 药材名标准化映射表
-# ==============================================
-EXTRACT_MAP = {
-    '广藿香油': '广藿香', '紫苏叶油': '紫苏叶', '甘草浸膏': '甘草',
-    '薄荷油': '薄荷', '薄荷脑': '薄荷', '薄荷素油': '薄荷',
-    '丁香油': '丁香', '丁香罗勒油': '丁香',
-    '肉桂油': '肉桂', '桂皮油': '肉桂',
-    '刺五加浸膏': '刺五加', '颠茄流浸膏': '颠茄草',
-    '当归油': '当归', '川芎油': '川芎',
-    '八角茴香油': '八角茴香', '小茴香油': '小茴香',
-    '干姜油': '干姜', '生姜油': '生姜',
-    '陈皮油': '陈皮', '砂仁叶油': '砂仁',
-    '荆芥油': '荆芥', '荆芥穗油': '荆芥',
-    '降香油': '降香', '檀香油': '檀香',
-    '蛇床子油': '蛇床子', '艾叶油': '艾叶',
-    '藿香油': '广藿香', '满山红油': '满山红',
-    '水牛角浓缩粉': '水牛角', '水牛角浓缩丸': '水牛角',
-    '人工牛黄': '牛黄', '人工麝香': '麝香',
-    '羚羊角粉': '羚羊角', '珍珠粉': '珍珠',
-    '三七粉': '三七', '熊胆粉': '熊胆',
-}
+# 单源化（2026-10-12）：药材名标准化唯一实现在 src/features/herb_normalize.py，
+# 本文件 re-export normalise_herb / ALIAS / EXTRACT_MAP 以兼容旧导入方。
+from src.features.herb_normalize import normalise_herb, ALIAS, EXTRACT_MAP
 
-ALIAS = {
-    '萸肉': '山茱萸', '法半夏': '半夏', '清半夏': '半夏', '姜半夏': '半夏',
-    '胆南星': '胆南星',   # 胆汁制，毒性显著降低；保持独立实体，不与生天南星混淆
-    '制首乌': '制何首乌',  # 补肝肾、益精血，安全
-    '生首乌': '生何首乌',  # 肝毒性风险，与制何首乌严格区分
-    '炙甘草': '甘草',
-    '熟地黄': '熟地黄',  # 微温，滋阴补血；不与生地黄（寒性）混淆
-    '生地黄': '生地黄',  # 寒性，清热凉血；保持独立
-    '鲜地黄': '生地黄',  # 鲜地黄与生地黄药性相近
-    '白茯苓': '茯苓', '云茯苓': '茯苓', '赤茯苓': '茯苓',
-    '於术': '白术', '于术': '白术', '生白术': '白术', '炒白术': '白术',
-    '白芍药': '白芍', '杭白芍': '白芍', '生白芍': '白芍', '炒白芍': '白芍', '酒白芍': '白芍',
-    '川芎藭': '川芎', '抚芎': '川芎',
-    '当归身': '当归', '当归尾': '当归', '全当归': '当归',
-    '淮山药': '山药', '怀山药': '山药', '薯蓣': '山药',
-    '川黄连': '黄连', '雅连': '黄连', '炒黄连': '黄连',
-    '枯芩': '黄芩', '条芩': '黄芩', '子芩': '黄芩',
-    '绵黄芪': '黄芪', '生黄芪': '黄芪', '炙黄芪': '黄芪',
-    '官桂': '肉桂', '桂心': '肉桂', '上肉桂': '肉桂',
-    '炮附子': '附子', '制附子': '附子', '黑附子': '附子',
-    '制半夏': '半夏', '姜半夏': '半夏', '法半夏': '半夏',
-    '茅术': '苍术', '制苍术': '苍术',
-    '广陈皮': '陈皮', '新会皮': '陈皮', '橘皮': '陈皮', '橘红': '陈皮',
-    '淮牛膝': '牛膝', '怀牛膝': '牛膝', '川牛膝': '牛膝',
-    '北柴胡': '柴胡', '软柴胡': '柴胡',
-    '川大黄': '大黄', '锦纹': '大黄', '生大黄': '大黄', '酒大黄': '大黄',
-    '金银花': '金银花', '双花': '金银花', '忍冬': '金银花',
-    '瓜蒌': '瓜蒌', '全瓜蒌': '瓜蒌', '瓜蒌皮': '瓜蒌',
-    '麦门冬': '麦冬', '天门冬': '天冬',
-    '山萸肉': '山茱萸', '山萸': '山茱萸',
-    '焦山楂': '山楂', '生山楂': '山楂', '炒山楂': '山楂',
-    '建曲': '神曲', '六神曲': '神曲', '炒神曲': '神曲',
-    '生牡蛎': '牡蛎', '煅牡蛎': '牡蛎',
-    '生龙骨': '龙骨', '煅龙骨': '龙骨',
-    '川厚朴': '厚朴', '姜厚朴': '厚朴', '制厚朴': '厚朴',
-    '潞党参': '党参', '台党参': '党参', '西党参': '党参',
-    '北沙参': '北沙参',  # 伞形科，与南沙参（桔梗科）不同基原
-    '南沙参': '南沙参',
-    '玄参': '玄参', '元参': '玄参',
-    '川贝母': '川贝母', '浙贝母': '浙贝母', '象贝': '浙贝母',
-    '白芥子': '白芥子', '黄芥子': '芥子',
-    '草决明': '决明子', '石决明': '石决明',
-    '抚川芎': '川芎',
-    '苏薄荷': '薄荷', '南薄荷': '薄荷',
-    '冬桑叶': '桑叶', '霜桑叶': '桑叶',
-    '鲜地黄': '生地黄',
-    '乌贼骨': '海螵蛸',
-    '元胡': '延胡索', '玄胡': '延胡索', '延胡': '延胡索',
-    '粉防己': '防己', '汉防己': '防己',
-    '栝楼': '瓜蒌', '栝楼根': '天花粉',
-    '潞参': '党参', '台乌药': '乌药',
-    '仙灵脾': '淫羊藿', '破故纸': '补骨脂',
-    '白僵蚕': '僵蚕', '蝉衣': '蝉蜕',
-    '地鳖虫': '土鳖虫', '庶虫': '土鳖虫',
-    '云木香': '木香', '广木香': '木香',
-    '天花粉': '天花粉', '栝蒌根': '天花粉',
-    '北五味子': '五味子', '南五味子': '五味子',
-    '杭菊花': '菊花', '滁菊花': '菊花', '甘菊花': '菊花',
-    '甘枸杞': '枸杞子', '宁枸杞': '枸杞子',
-    '怀生地': '地黄', '远志肉': '远志', '制远志': '远志',
-    '粉甘草': '甘草', '生甘草': '甘草', '国老': '甘草',
-    '大红枣': '大枣', '净麻黄': '麻黄', '川桂枝': '桂枝',
-    '生石膏': '石膏', '煅石膏': '石膏',
-    '光杏仁': '苦杏仁', '苦杏': '苦杏仁',
-    '鲜生姜': '生姜', '干生姜': '干姜',
-    '川羌活': '羌活', '西羌活': '羌活',
-    '香白芷': '白芷', '杭白芷': '白芷',
-    '苦桔梗': '桔梗', '甜桔梗': '桔梗',
-    '生薏仁': '薏苡仁', '炒薏仁': '薏苡仁', '苡仁': '薏苡仁',
-    '白蔻仁': '豆蔻', '白豆蔻': '豆蔻',
-    '缩砂仁': '砂仁', '阳春砂': '砂仁',
-    '潞党': '党参', '真阿胶': '阿胶', '驴皮胶': '阿胶',
-    '茜草根': '茜草', '侧柏炭': '侧柏叶', '藕节炭': '藕节',
-    '小蓟炭': '小蓟', '血余炭': '血余', '陈棕炭': '棕榈',
-    '百草霜': '百草霜', '伏龙肝': '伏龙肝',
-    '风化硝': '芒硝', '玄明粉': '芒硝', '皮硝': '芒硝',
-    '明矾': '白矾', '枯矾': '白矾',
-    '朱砂': '朱砂', '辰砂': '朱砂', '丹砂': '朱砂',
-    '煅磁石': '磁石', '灵磁石': '磁石',
-    '代赭石': '代赭石', '赭石': '代赭石',
-    '花蕊石': '花蕊石', '赤石脂': '赤石脂', '禹余粮': '禹余粮',
-    '煅瓦楞子': '瓦楞子', '海蛤壳': '海蛤壳',
-    '沉香曲': '沉香', '檀香末': '檀香',
-}
+# （原 EXTRACT_MAP / ALIAS / _PROCESS_PREFIXES / _KNOWN_HERBS 已迁移至 src/features/herb_normalize.py）
 
-# 剂型列表
-ALL_FORMS = ['丸剂', '片剂', '胶囊剂', '颗粒剂', '口服液', '散剂', '膏剂', '糖浆剂',
+# 剂型列表（口服液已并入合剂，20→19）
+ALL_FORMS = ['丸剂', '片剂', '胶囊剂', '颗粒剂', '合剂', '散剂', '膏剂', '糖浆剂',
              '注射剂', '酒剂', '酊剂', '栓剂', '茶剂', '丹剂', '搽剂', '洗剂',
              '气雾剂', '露剂', '膜剂']
 
-# 炮制标记前缀（长度降序，优先匹配最长）
-_PROCESS_PREFIXES = [
-    '姜汁炙', '蛤粉炒', '姜汁炒',
-    '酒炒', '醋炒', '麸炒', '米炒', '土炒', '砂炒', '盐炒', '蜜炒', '姜汁',
-    '酒炙', '醋炙', '蜜炙', '盐炙', '姜炙', '油炙',
-    '酒制', '醋制', '姜制', '盐制', '蜜制', '水制', '泔制',
-    '酒蒸', '醋蒸', '酒炖', '姜炖',
-    '炙', '炒', '酒', '醋', '姜', '盐', '蜜', '煅', '焦',
-    '制', '法', '麸', '煨', '蒸', '煮', '淬', '漂', '泡', '浸',
-]
-# 已知标准药材名集合（ALIAS.keys ∪ ALIAS.values），用于校验剥离后的基原名称
-_KNOWN_HERBS = set(ALIAS.keys()) | set(ALIAS.values())
+# （原 _PROCESS_PREFIXES / _KNOWN_HERBS 已迁移至 src/features/herb_normalize.py）
 
 # 炮制标记 → 特征类别（用于生成炮制相关特征）
 _PROCESS_CATEGORIES = {
@@ -209,36 +96,7 @@ def get_process_features(herbs):
     return feats
 
 
-def normalise_herb(name):
-    """药材名标准化：ALIAS查表 → 炮制前缀剥离 → EXTRACT_MAP"""
-    name = str(name).strip()
-    name = re.sub(r'[（(][^)）]*[)）]', '', name)
-
-    # 1. 精确ALIAS查表
-    name = ALIAS.get(name, name)
-
-    # 2. 若仍非已知药材名，迭代剥离炮制前缀
-    if name not in _KNOWN_HERBS:
-        changed = True
-        while changed:
-            changed = False
-            for pf in _PROCESS_PREFIXES:
-                if name.startswith(pf) and len(name) > len(pf):
-                    base = name[len(pf):]
-                    # 基原名必须看起来像个药材：≥2汉字，且（在已知集合中 或 为纯汉字）
-                    looks_valid = base in _KNOWN_HERBS or bool(re.match(r'^[一-龥]{2,}$', base))
-                    if looks_valid:
-                        name = ALIAS.get(base, base)
-                        changed = True
-                        break
-                    mapped = ALIAS.get(base)
-                    if mapped and mapped in _KNOWN_HERBS:
-                        name = mapped
-                        changed = True
-                        break
-
-    name = EXTRACT_MAP.get(name, name)
-    return name
+# （normalise_herb 已收敛至 src/features/herb_normalize.py，本文件顶部 re-export）
 
 
 def parse_prescription(text):
@@ -301,13 +159,16 @@ class FeatureExtractor:
         self.herb_name_to_forms = herb_name_to_forms
         self.ind_to_forms = ind_to_forms
 
-    def extract_features(self, herbs, doses, indication):
+    def extract_features(self, herbs, doses, indication, administration=''):
         """核心特征提取：68维手工特征 + 41维KG特征"""
         n = len(herbs)
         if n == 0:
             return None, []
 
         feats = {'num_herbs': n}
+        # 四气五味折叠：微寒/大寒→寒，微温→温，大热→热；微苦→苦，微甘→甘，微辛→辛
+        nature_fold = {'微寒': '寒', '大寒': '寒', '微温': '温', '大热': '热'}
+        taste_fold = {'微苦': '苦', '微甘': '甘', '微辛': '辛'}
         nc = {'寒': 0, '凉': 0, '平': 0, '温': 0, '热': 0}
         tc = {'辛': 0, '甘': 0, '酸': 0, '苦': 0, '咸': 0, '淡': 0, '涩': 0}
         mc = {'心': 0, '肝': 0, '脾': 0, '肺': 0, '肾': 0, '胃': 0,
@@ -323,19 +184,22 @@ class FeatureExtractor:
             if props is None:
                 # LLM 兜底机制：字典中查不到时，调用 LLM 推断属性
                 from src.features.llm_herb_property import infer_herb_properties
-                props = infer_herb_properties(herb)
+                from src.features.herb_category import usable_props
+                raw = infer_herb_properties(herb)
+                parent_name = raw.get('parent') if isinstance(raw, dict) else None
+                props = usable_props(raw, self.herb_dict)  # 分流+缺失标记：非中药/无母药/属性缺失 → 未知
                 if props is None:
                     xc['normal'] += 1
                     herb_props_detail.append({'name': herb, 'found': False})
                     continue
-                # 标记为 LLM 推断
+                # 有效兜底（herb 或 母药药典值）
                 herb_props_detail.append({
                     'name': herb, 'found': True, 'nature': props.get('nature', ''),
                     'taste': props.get('taste', []), 'meridian': props.get('meridian', []),
                     'volatile': props.get('volatile', False), 'toxic': props.get('toxic', False),
                     'mineral': props.get('mineral', False), 'precious': props.get('precious', False),
                     'texture': props.get('texture', 'normal'),
-                    '_source': 'llm',
+                    '_source': 'dict:parent' if (parent_name and parent_name in self.herb_dict) else 'llm',
                 })
                 kn += 1
                 if props.get('volatile'): cv += 1
@@ -343,8 +207,10 @@ class FeatureExtractor:
                 if props.get('mineral'): cm += 1
                 if props.get('precious'): cp += 1
                 nat = props.get('nature', '')
+                nat = nature_fold.get(nat, nat)
                 if nat in nc: nc[nat] += 1
                 for t in props.get('taste', []):
+                    t = taste_fold.get(t, t)
                     if t in tc: tc[t] += 1
                 for m in props.get('meridian', []):
                     if m in mc: mc[m] += 1
@@ -357,8 +223,10 @@ class FeatureExtractor:
             if props.get('mineral'): cm += 1
             if props.get('precious'): cp += 1
             nat = props.get('nature', '')
+            nat = nature_fold.get(nat, nat)
             if nat in nc: nc[nat] += 1
             for t in props.get('taste', []):
+                t = taste_fold.get(t, t)
                 if t in tc: tc[t] += 1
             for m in props.get('meridian', []):
                 if m in mc: mc[m] += 1
@@ -399,7 +267,8 @@ class FeatureExtractor:
             feats['urgency'] = 'chronic'
         else:
             feats['urgency'] = 'unspecified'
-        feats['is_topical'] = int(any(w in ind for w in ['外用', '涂', '敷', '贴']))
+        admin = str(administration) if administration else ''
+        feats['is_topical'] = int(any(w in admin for w in ['外用','涂','敷','贴','搽','洗','熏','点眼','滴眼','滴鼻','滴耳','灌肠','注入','塞入','塞肛','阴道','吹','喷','滴入']))
 
         for k, ps in {
             'syndrome_blood_stasis': ['血瘀', '化瘀', '活血'],

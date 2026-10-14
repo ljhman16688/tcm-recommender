@@ -57,6 +57,15 @@
         <input type="text" id="indication"
           placeholder="例：冠心病心绞痛，气滞血瘀证">
       </div>
+      <div class="input-group">
+        <label for="administration">
+          <span class="label-icon">💊</span>
+          用法给药方式
+          <span class="label-hint">可选，如"口服"或"外用涂擦患处"</span>
+        </label>
+        <input type="text" id="administration"
+          placeholder="例：口服；或外用涂擦患处">
+      </div>
     </div>
     <div class="button-row">
       <button id="predict-btn" onclick="console.log('Button clicked!'); doPredict();">
@@ -64,7 +73,7 @@
       </button>
       <button class="clear-btn" onclick="clearAll()">清空</button>
       <label class="llm-toggle" title="调用大语言模型基于知识图谱证据生成推理依据（KG-RAR Generate 环节）">
-        <input type="checkbox" id="llm-toggle">
+        <input type="checkbox" id="llm-toggle" checked>
         <span class="toggle-track"><span class="toggle-thumb"></span></span>
         <span class="toggle-label">LLM 增强推理</span>
       </label>
@@ -96,6 +105,8 @@
       <span class="summary-value" id="summary-herbs"></span>
       <span class="summary-tag">🎯 适应症</span>
       <span class="summary-value" id="summary-indication"></span>
+      <span class="summary-tag hidden" id="summary-admin-tag">💊 用法</span>
+      <span class="summary-value hidden" id="summary-administration"></span>
     </div>
 
     <!-- Anchor badge -->
@@ -165,7 +176,7 @@
           <span class="module-icon">📜</span>
           <div>
             <span class="module-title">规则引擎约束匹配</span>
-            <span class="module-subtitle">—— 25 条专业规则 · 4 级证据体系（L1 法规禁忌 → L4 弱先验）</span>
+            <span class="module-subtitle">—— 74 条专业规则 · 4 级证据体系（L1 法规禁忌 → L4 弱先验）</span>
           </div>
         </div>
         <span class="module-badge">Step 4 · 规则约束</span>
@@ -177,9 +188,9 @@
         <div id="rules-detail" class="rules-detail"></div>
       </div>
 
-      <!-- L1 硬约束排除的剂型 -->
+      <!-- L1 法规禁忌，解释性排除的剂型 -->
       <div id="excluded-section" class="hidden">
-        <div class="sub-module-title">⛔ L1 硬约束 — 应排除的剂型（不可违反）</div>
+        <div class="sub-module-title">⛔ L1 法规禁忌 — 解释性排除理由（不修改模型预测，仅供推理参考）</div>
         <div id="excluded-list" class="excluded-list"></div>
       </div>
 
@@ -303,6 +314,7 @@ fetch('/api/examples')
 async function doPredict() {
   const prescription = document.getElementById('prescription').value.trim();
   const indication = document.getElementById('indication').value.trim();
+  const administration = document.getElementById('administration').value.trim();
 
   if (!prescription) {
     showError('请输入药材处方');
@@ -329,7 +341,7 @@ async function doPredict() {
     const resp = await fetch('/api/predict', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ prescription, indication, use_llm: useLlm })
+      body: JSON.stringify({ prescription, indication, administration, use_llm: useLlm })
     });
     const data = await resp.json();
 
@@ -358,6 +370,17 @@ function renderResults(data) {
   document.getElementById('summary-herbs').textContent =
     data.herbs.map((h, i) => `${h} ${data.doses[i]}g`).join(', ');
   document.getElementById('summary-indication').textContent = data.indication || '(未填写)';
+  const adminTag = document.getElementById('summary-admin-tag');
+  const adminVal = document.getElementById('summary-administration');
+  if (data.administration) {
+    adminTag.classList.remove('hidden');
+    adminVal.classList.remove('hidden');
+    adminVal.textContent = data.administration;
+  } else {
+    adminTag.classList.add('hidden');
+    adminVal.classList.add('hidden');
+    adminVal.textContent = '';
+  }
 
   // ---- Anchor badge ----
   const anchorBadge = document.getElementById('anchor-badge');
@@ -422,7 +445,7 @@ function renderResults(data) {
 
   if (data.matched_rules) {
     const levelMeta = {
-      'L1': { label: '法规禁忌（硬约束）', cls: 'level-1', icon: '🛡️', desc: '基于药典/法规，具有强制性约束力' },
+      'L1': { label: '法规禁忌（解释性排除理由）', cls: 'level-1', icon: '🛡️', desc: '基于药典/法规，作为排除剂型的解释依据，不修改模型预测概率' },
       'L2': { label: '风险警示', cls: 'level-2', icon: '⚠️', desc: '基于药理学/毒理学证据，需审慎评估' },
       'L3': { label: '工艺调整建议', cls: 'level-3', icon: '🔧', desc: '基于药剂学/制剂工艺，建议性指导' },
       'L4': { label: '弱先验', cls: 'level-4', icon: '📊', desc: '基于KG统计规律，弱参考信号' },
@@ -493,7 +516,7 @@ function renderResults(data) {
       <div class="excluded-item">
         <div class="exc-header">
           <span class="exc-form">✕ ${e.form}</span>
-          <span class="exc-level level-1">L1 硬约束</span>
+          <span class="exc-level level-1">L1 法规禁忌</span>
         </div>
         <span class="exc-reason">${e.reason}</span>
         ${src}
@@ -659,8 +682,23 @@ function renderResults(data) {
     conflictsDiv.classList.add('hidden');
   }
 
-  // Reasoning paragraphs
-  if (data.reasoning) {
+  // Reasoning: 优先使用 reasoning_list（结构化，逐剂型展示），兼容旧版 reasoning 字符串
+  if (data.reasoning_list && data.reasoning_list.length > 0) {
+    reasoningList.innerHTML = data.reasoning_list.map((item, idx) => {
+      const rankLabel = item.rank || (idx + 1);
+      const isFirst = idx === 0;
+      return `
+        <div class="reasoning-card${isFirst ? ' reasoning-card-top' : ''}">
+          <div class="rc-header">
+            <span class="rc-rank${isFirst ? ' rc-rank-top' : ''}">#${rankLabel}</span>
+            <span class="rc-form">${item.form}</span>
+            <span class="rc-confidence">置信度 ${item.confidence_pct}</span>
+            ${item.has_conflict ? '<span class="rc-conflict-tag">⚠ 规则冲突</span>' : ''}
+          </div>
+          <div class="rc-body">${item.reason.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')}</div>
+        </div>`;
+    }).join('');
+  } else if (data.reasoning) {
     const paras = data.reasoning.split('\n\n').filter(p => p.trim());
     reasoningList.innerHTML = paras.map((p, idx) => {
       const icon = idx === 0 ? '⭐' : '💡';
@@ -687,6 +725,7 @@ function showError(msg) {
 function clearAll() {
   document.getElementById('prescription').value = '';
   document.getElementById('indication').value = '';
+  document.getElementById('administration').value = '';
   document.getElementById('results').classList.add('hidden');
   document.getElementById('error').classList.add('hidden');
 }
@@ -696,6 +735,9 @@ document.getElementById('prescription').addEventListener('keydown', e => {
   if (e.key === 'Enter' && e.ctrlKey) doPredict();
 });
 document.getElementById('indication').addEventListener('keydown', e => {
+  if (e.key === 'Enter') doPredict();
+});
+document.getElementById('administration').addEventListener('keydown', e => {
   if (e.key === 'Enter') doPredict();
 });
 </script>
